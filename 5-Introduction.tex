@@ -1,0 +1,84 @@
+% Dans l'introduction, on présente le problème étudié et les buts
+% poursuivis. L'introduction permet de faire connaître le cadre de la
+% recherche et d'en préciser le domaine d'application. Elle fournit
+% les précisions nécessaires en ce qui concerne le contexte de
+% réalisation de la recherche, l'approche envisagée, l'évolution de
+% la réalisation. En fait, l'introduction présente au lecteur ce
+% qu'il doit savoir pour comprendre la recherche et en connaître la
+% portée.
+\selectlanguage{french}
+\Chapter{INTRODUCTION}\label{sec:Introduction}  % 10-12 lignes pour introduire le sujet.
+
+Même si on ne les voit pas, les satellites artificiels sont essentiels à la société moderne. 
+Ils permettent d'acquérir des données scientifiques importantes dans des domaines tels que l'astronomie \cite{Freedman2001}, l'étude des plaques tectoniques et des volcans \cite{Christodoulidis1985}, la climatologie \cite{Hollmann2013}, le suivi de l'état des glaciers \cite{Goldstein1993} ou l'analyse de l'état de l'atmosphère \cite{Laube2014}. 
+Également, ils ont de nombreuses applications civiles telles que les prévisions météorologiques \cite{Bauer2015}, la navigation \cite{Getting1993}, les télécommunications \cite{Evans2005}, l'agriculture \cite{Lobell2002} ou mesurer l'étendue des désastres majeurs\cite{Tralli2005}.  
+Qu'ils soient opérés par des entités gouvernementales ou privées, tous les satellites doivent être positionnés en orbite à l'aide de lanceurs de satellites. 
+Ces derniers doivent garantir des niveaux de fiabilité très élevés et livrer avec une très grande précision les satellites sur les trajectoires convenues tout en minimisant les coûts. 
+
+Le potentiel commercial d'un lanceur de satellite est fortement lié au ratio entre la masse utile qu'il peut élever en orbite et sa masse. 
+Afin d'optimiser ce ratio, il est nécessaire de sélectionner des matériaux offrant de bonnes propriétés mécaniques ainsi qu'un poids minimal. 
+Les matériaux composites permettent d'atteindre ces deux buts en permettant de créer des pièces aux propriétés optimisées en fonction de l'application tout en minimisant leur masse. 
+Le développement d'une nouvelle génération de lanceurs en matériaux composites est justifié par des impératifs techniques ainsi qu'économiques. 
+Cependant, la transition vers les matériaux composites pose de nombreux défis. 
+
+Dans la conception des lanceurs modernes, les réservoirs de carburant et de comburant agissent comme composant structurel et supportent le poids du lanceur. 
+Dans le cas d'Ariane 6, ces réservoirs ainsi que de nombreux composants en matériaux composites seront produits par déposition automatisée de fibres (AFP) ou par enroulement filamentaire avec une consolidation \textit{in situ} au laser \cite{Krzeminski2014}. 
+Les jupettes quant à elles agissent comme élément de transition entre les sections et étages du lanceur. 
+Ainsi, le joint structurel entre une jupette et un réservoir (Fig. \ref{fig:schema_jonction}) doit supporter les forces rencontrées durant le décollage et est nécessaire au maintien de l'intégrité du lanceur. 
+De plus, cette jonction doit être flexible, car durant un décollage, le diamètre des réservoirs change en fonction de leur pression interne résiduelle. 
+Ces déformations doivent alors être absorbées par les joints avec les jupettes. 
+L'emploi de jonctions flexibles permet également d'absorber une partie des vibrations causées lors du décollage et ainsi minimiser les charges que doit supporter le chargement. 
+Dans le cas d'assemblages de pièces en composite, une grande attention doit être portée aux jonctions entre les composants. 
+Ces dernières sont généralement des points critiques pour la conception des structures. 
+Dans ce cas particulier, la jonction entre la jupette et le réservoir présente des conditions d'opération particulièrement difficiles. 
+
+\begin{figure}[h]
+	\centering
+	\input{tikz/jonction.tex}
+	\caption{a) Schéma de la jonction flexible entre le réservoir et la jupette b) Emplacement des jonctions sur le second étage de la fusée Saturn V (tiré de \cite{OfficeofMannedSpaceFligt1968}) }
+	\label{fig:schema_jonction}
+\end{figure}
+
+Une solution initiale employant des colles structurelles et une mousse élastomère permettait d'atteindre les requis de performance pour les lanceurs fabriqués en composites thermodurcissables. 
+En raison de problèmes de sensibilité environnementale lors de la préparation des joints et de longs temps de mise en œuvre, ArianeGroup a décidé d'explorer la possibilité de passer aux composites à matrice thermoplastique. 
+Tout d'abord, cette transition leur permettra d'accélérer les cadences de production et de tirer profit des propriétés des composites à matrice thermoplastique. 
+Ensuite, cette conversion leur permettra d'augmenter la robustesse du joint et d'éviter des problèmes liés au collage tels que de longs temps de réticulation et une grande sensibilité à la préparation des surfaces et aux contaminants. 
+Afin de compléter cette transition vers des structures en composites à matrices thermoplastiques, il est nécessaire de développer une nouvelle solution. 
+
+L'objectif général des travaux présentés dans le cadre de ce doctorat est de développer un procédé de soudage par résistance utilisant un nanocomposite conducteur comme élément chauffant pour joindre un adhérent en composite thermoplastique et un élastomère thermoplastique. 
+
+%%
+%%  CONCEPTS DE BASE / BASIC CONCEPTS
+%%
+%\section{Concepts de base}
+
+
+\section{Éléments de la problématique}
+
+L'obtention d'une soudure flexible entre des adhérents en composite thermoplastique nécessite l'obtention de soudures multiples avec des matériaux aux propriétés très différentes. 
+
+Dans un premier temps, il sera nécessaire d'explorer les concepts associés au soudage tels que l'autohésion et la diffusion des chaînes de polymères. 
+Une recension des écrits concernant le soudage des composites thermoplastiques permettra de bien cibler les paramètres clés à optimiser et d'établir des comparatifs avec les résultats qui sont obtenus. 
+
+En second lieu, pour la jonction avec l'élastomère, peu de réponses existent déjà dans la littérature scientifique.
+Il est donc nécessaire de développer une approche expérimentale progressive et méthodique pour résoudre cette portion du problème. 
+
+%%
+%% PLAN DU MEMOIRE / THESIS OUTLINE
+%%
+\section{Plan de la thèse}  % 0.5 page
+
+Suivant cette introduction, le chapitre \ref{sec:RevLitt} présentera l'ensemble des connaissances contenues dans les travaux publiés ayant rapport à la production de jonctions flexibles par soudage résistif. 
+Cette section discutera tout d'abord des matériaux composites, des techniques de mise en forme ainsi que des paramètres propres au soudage. S'ensuivra une section à propos des nanocomposites conducteurs d'électricité. La section se termine avec une courte discussion sur les élastomères thermoplastiques.
+
+Par la suite, au chapitre \ref{sec:Objectifs}, une analyse objective des écrits publiés permettra de cerner les limites de la connaissance actuelle et définira plus particulièrement les objectifs du projet de recherche. 
+
+Les chapitres \ref{sec:Theme1} à \ref{sec:Theme3} quant à eux présenteront les principaux travaux réalisés dans le cadre de ce doctorat. 
+Les sujets de ces chapitres seront directement en lien avec les objectifs précédemment présentés. 
+
+Le chapitre \ref{sec:Contributions} mettra en valeur les contributions originales de ce doctorat. 
+Ce chapitre présentera une synthèse des principaux résultats positifs et négatifs. 
+Il démontrera comment les travaux réalisés durant ce doctorat ont permis d'avancer le niveau de connaissance en rapport au soudage par résistance et la production de jonction flexible. 
+Ce chapitre portera également un regard critique sur les résultats obtenus en recherchant les limites d'applicabilité des nouvelles connaissances et conclura en suggérant des pistes pour de nouveaux projets de recherche. 
+
+

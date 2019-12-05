@@ -1,0 +1,59 @@
+\tikzset{
+	basic/.style  = {draw, text width=6cm, drop shadow, rectangle},
+	root/.style   = {basic, rounded corners=2pt, thin, align=center,
+                   fill=gray!30},
+	level 2/.style = {basic, rounded corners=5.5pt, thin,align=center, fill=gray!10,
+                   text width=8em},
+	level 3/.style = {basic, thin, align=left, fill=white, text width=6.em}
+}
+
+
+\begin{tikzpicture}[
+	level 1/.style={sibling distance=45mm},
+	edge from parent/.style={->,draw},
+	>=latex,
+	scale=0.9,
+	level distance=1.8cm]
+
+% root of the the initial tree, level 1
+\node[root] {Procédés de soudage}
+% The first level, as children of the initial tree
+	child {node[level 2] (c1) {Chauffage en volume}}
+	child {node[level 2] (c2) {Chauffage par friction}}
+	child {node[level 2] (c3) {Chauffage électromagnétique}}
+	child {node[level 2] (c4) {Soudage en deux étapes}};
+
+% The second level, relatively positioned nodes
+\begin{scope}[every node/.style={level 3}]
+\node [below of = c1, xshift=5pt, yshift=-11pt] (c11) {Co-consolidation};
+\node [below of = c11, yshift=-6pt] (c12) {Adhésifs à chaud};
+\node [below of = c12, yshift=-13pt] (c13) {Assemblage avec film \mbox{amorphe}};
+
+\node [below of = c2, xshift=5pt, yshift=-11pt] (c21) {Soudage par friction};
+\node [below of = c21, yshift=-6pt] (c22) {Soudage par vibration};
+\node [below of = c22, yshift=-6pt] (c23) {Soudage par ultrasons};
+
+\node [below of = c3, xshift=5pt, yshift=-11pt] (c31) {Soudage par induction};
+\node [below of = c31, yshift=-6pt] (c32) {Soudage par micro-onde};
+\node [below of = c32, yshift=-6pt] (c33) {Soudage \mbox{diélectrique}};
+\node [below of = c33, yshift=-6pt] (c34) {Soudage \mbox{par résistance}};
+
+\node [below of = c4, xshift=5pt, yshift=-17pt] (c41) {Soudage par plaque \mbox{chauffante}};
+\node [below of = c41, yshift=-14pt] (c42) {Soudage au gaz chaud};
+\node [below of = c42, yshift=-6pt] (c43) {Soudage \mbox{infrarouge}};
+\node [below of = c43, yshift=-6pt] (c44) {Soudage au laser};
+\end{scope}
+
+% lines from each level 1 node to every one of its "children"
+\foreach \value in {1,2,3}
+	\draw[->] (c1.195) |- (c1\value.west);
+
+\foreach \value in {1,...,3}
+	\draw[->] (c2.195) |- (c2\value.west);
+
+\foreach \value in {1,...,4}
+	\draw[->] (c3.195) |- (c3\value.west);
+
+\foreach \value in {1,...,4}
+	\draw[->] (c4.195) |- (c4\value.west);
+\end{tikzpicture}
