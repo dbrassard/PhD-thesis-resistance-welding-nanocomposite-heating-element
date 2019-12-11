@@ -57,9 +57,12 @@
 %%
 %% Utilisation de natbib pour les citations et la bibliographie.
 %\usepackage{natbib}
+\usepackage[numbers,sort&compress]{natbib} % Permet de comprimer les citations lorsqu'elle sont séquentielles 
+\usepackage{notoccite}
 %%
 %% Autres packages.
-\usepackage{amsmath,color,soulutf8,longtable,colortbl,setspace,xspace,url,pdflscape,cite}
+\usepackage{amsmath,color,soulutf8,longtable,colortbl,setspace,xspace,url,pdflscape}
+%\usepackage{cite}
 \usepackage[list-units = single, range-units = single]{siunitx}
 \sisetup{separate-uncertainty}
 \addto\extrasfrench{\sisetup{locale = FR}} % Change le séparateur de décimale pour une virgule dans les sectione en français de la thèse et laisse un point dans les sections anglaises
@@ -139,7 +142,7 @@
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 \begin{document}
-\bstctlcite{IEEEexample:BSTcontrol}
+%\bstctlcite{IEEEexample:BSTcontrol}
 
 %%
 %% Page de titre du mémoire.
@@ -232,14 +235,15 @@ a été dûment accepté\ifthenelse{\equal{\monDiplome}{M}}{}{e} par le jury d'e
 % \include{10-Conclusion}         % Conclusion.
 %\backmatter
 \ifthenelse{\equal{\Langue}{english}}{
-	\renewcommand\bibname{REFERENCES}
-	\bibliography{Bibliographie}
-	\bibliographystyle{IEEEtran}			% Bibliography style. 
+%	\renewcommand\bibname{REFERENCES}
+%	\bibliography{Bibliographie}
+%	\bibliographystyle{IEEEtran}			% Bibliography style. 
 }{
 	\renewcommand\bibname{RÉFÉRENCES}
 	\bibliography{Bibliographie}
 	%\bibliographystyle{IEEEtran-francais}    % Style de la bibliographie. 
-	\bibliographystyle{unsrt}
+	\bibliographystyle{unsrtnat}
+	%\bibliographystyle{plain}
 }
 %
 \ifthenelse{\equal{\AnnexesPresentes}{O}}{
