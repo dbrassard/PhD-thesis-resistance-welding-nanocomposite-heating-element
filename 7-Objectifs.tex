@@ -1,9 +1,9 @@
 \selectlanguage{french}
 \Chapter{OBJECTIFS DE LA RECHERCHE}\label{sec:Objectifs}
 
-\section{Analyse des trous dans les connaissances actuelles}
+\section{Analyse des lacunes dans les connaissances actuelles}
 
-Le procédé de soudures par résistance des composites thermoplastiques avec un élément chauffant en acier inoxydable est un procédé simple qui offre de bonnes propriétés mécaniques et qui peut facilement être mis à l'échelle. 
+Le procédé de soudure par résistance des composites thermoplastiques avec un élément chauffant en acier inoxydable est un procédé simple qui offre de bonnes propriétés mécaniques et qui peut facilement être mis à l'échelle. 
 Sa faiblesse réside dans le manque d'interaction entre le polymère et l'élément chauffant. 
 Celle-ci peut être contournée de deux façons \begin{inparaenum}[a)]
 	\item en effectuant des traitements de surface permettant d'augmenter l'adhésion entre la matrice et l'acier inoxydable ou 
@@ -13,10 +13,13 @@ En ce qui concerne la première solution, des travaux de recherche sont en cours
 Pour la seconde solution, un élément chauffant constitué d'un nanocomposite conducteur pourrait être employé. 
 Le polymère de la matrice de ce nanocomposite devra pouvoir diffuser au travers du polymère des adhérents et l'ajout de particules conductrices le rendra conducteur. 
 Ainsi, le nanocomposite développé servirait à la fois d'élément chauffant et offrira une zone riche en polymère pour produire une soudure. 
-Cette seconde solution est inexplorée dans les articles précédemment publiés. 
+Bien entendu, la conductivité électrique du nanocomposite ne pourra certainement pas atteindre celle de l'élément chauffant en acier inoxydable. 
+Sa plus faible conductivité fera en sorte que le nanocomposite aura une résistance électrique beaucoup plus élevée. 
+Il sera alors possible de tirer parti de cette résistance pour utiliser le nanocomposite comme élément chauffant. 
+Cette solution est inexplorée dans les articles précédemment publiés. 
 
 Un autre trou existe dans les écrits recensés en rapport à la possibilité de souder un élastomère thermoplastique avec un autre polymère rigide. 
-Dans le meilleur des cas, un mélange biphasique avec un élastomère et un autre polymère est utilisé dans une jonction, mais sans obtenir de diffusion entre les phases. 
+Dans le meilleur des cas, un mélange biphasique avec un élastomère et un autre polymère est utilisé dans une jonction, mais sans obtenir de diffusion entre les phases \cite{Hollande1998}. 
 Aucun cas documenté de soudage mixte entre un élastomère et un autre polymère n'a été trouvé. 
 
 Ainsi, nous pouvons détecter deux besoins de recherche. 
@@ -28,10 +31,45 @@ En second lieu, par l'obtention d'une soudure mixte avec un élastomère.
 En considérant l'ensemble des connaissances publiées et des besoins du partenaire industriel, voici la liste des objectifs sur lesquels se concentreront ces travaux. 
 
 \begin{enumerate}
-	\item Développer un nanocomposite conducteur pouvant servir d'élément chauffant dans un procédé de soudage par résistance. 
-	\item Produire une soudure par résistance entre des adhérents en composites thermoplastiques. 
-	\item Établir une méthode de soudage par résistance pour la production d'une jonction flexible intégrant un élastomère thermoplastique entre des adhérents en composites thermoplastiques. 
+	\item Produire un élément chauffant nanocomposite conducteur en tenant compte des propriétés électriques et thermiques nécessaires au procédé de soudage par résistance. 
+	\item Produire une soudure avec un élément chauffant nanocomposite entre deux adhérents en composite à matrice thermoplastique. 
+	\item Déterminer les propriétés mécaniques de la soudure par résistance avec un élément chauffant nanocomposite entre deux adhérents en composite à matrice thermoplastique. 
+	\item Développer un modèle numérique pour la simulation du soudage par résistance avec un élément chauffant nanocomposite entre deux adhérents en composite à matrice thermoplastique. 
+	\item Produire une soudure par résistance entre un adhérent en composite à matrice thermoplastique et un adhérent en élastomère thermoplastique à l'aide d'un élément chauffant nanocomposite. 
+	\item Déterminer les propriétés mécaniques d'un joint soudé par résistance avec un élément chauffant nanocomposite entre un adhérent en composite à matrice thermoplastique et un adhérent en élastomère thermoplastique. 
 \end{enumerate}
+
+\section{Cibles de performance}
+
+Afin d'évaluer l'atteinte des objectifs et pour aides dans la sélection des matériaux, ArianeGroup a fourni des cibles de performance calquées sur les caractéristiques dela solution actuelle pour les composites à matrice thermodurcissable. 
+L'élastomère devra tout d'abord rencontrer un certain nombre de requis techniques. 
+
+\begin{enumerate}
+	\item Il doit supporter une contrainte ultime en tension supérieure à \SI{15}{\mega\pascal}. 
+	\item Il doit atteindre une élongation à la rupture d'au moins 400\%. 
+	\item Il doit nécessiter une contrainte en tension inférieure à \SI{6}{\mega\pascal} pour atteindre une déformation de 100\%. 
+\end{enumerate}
+
+Des requis techniques ont également été énoncés en ce qui concerne la jonction soudée. 
+
+\begin{enumerate}
+	\item Elle doit atteindre une résistance en cisaillement supérieure à \SI{14}{\mega\pascal}. 
+	\item Elle doit avoir un module de cisaillement supérieur à \SI{1.5}{\mega\pascal} à 100\% de déformation. 
+	\item Elle doit perdre moins de 30 \% de sa résistance à \SI{45}{\celsius} et moins de 40\% a \SI{80}{\celsius}. 
+	\item Elle doit se rompre selon un mode de rupture cohésif. 
+\end{enumerate}
+
+Des requis ont également étés énoncés en rapport aux conditions environnementales dans laquelle la jonction devra opérer. 
+
+\begin{enumerate}
+	\item Elle doit pouvoir supporter une température maximale d'au moins \SI{80}{\celsius} durant son service. 
+	\item Elle doit supporter des températures d'opérations normales se trouvant entre la température ambiante et \SI{40}{\celsius}. 
+	\item Elle doit être stable sur 20 ans. 
+	\item Elle doit être stable dans des conditions d'humidité relative entre 35\% et 65\% avec des pointes temporairement à 100\%. 
+	\item Elle ne doit pas être affectée pas le 1,1,1-trichloroéthane. 
+\end{enumerate}
+
+Finalement, il est nécessaire que la solution développée respecte les requis de la normes REACH. 
 
 \section{Contenu des chapitres \ref{sec:Theme1} à \ref{sec:Theme3}}
 

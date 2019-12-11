@@ -12,7 +12,14 @@ Cette partie du joint soudé constitue uniquement la moitié du joint structurel
 Pour terminer le joint, une seconde soudure, cette fois entre l'élément chauffant nanocomposite et un élastomère thermoplastique, doit être produite. 
 Une fois la jonction obtenue, il est nécessaire d'en évaluer les performances afin de les comparer aux valeurs du cahier des charges d'ArianeGroup. 
 
-Aucun exemple d'un tel type de soudure similaire n'a pu être répertorié lors de la recension des écrits. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=1]{jonction_multi_materiau.pdf}
+	\caption{Schéma de la soudure multi matériaux présentant les deux soudures}
+	\label{fig:scema_double_jonction}
+\end{figure}
+
+Aucun exemple d'un tel type de soudure similaire n'a pu être répertorié lors de la revue de la littérature. 
 Ainsi, en raison de la nature exploratoire de cette portion du projet, les travaux de caractérisation sont réalisés avec une approche progressive et méthodique. 
 
 \section{Méthodologie}
@@ -26,37 +33,30 @@ En parallèle à la caractérisation mécanique, des essais progressifs de souda
 \subsection{Matériaux}
 
 Pour les essais de soudage, trois élastomères ont été évalués. 
-Le premier élastomère retenu se trouve dans la famille des copolymères polystyrène-b-polyisoprène-b-polystyrène (SIS) et a 22\% en fraction molaire de styrène (Sigma-Aldrich \#432415). 
-Le second élastomère est un copolymère tribloc linéaire polystyrène-b-poly(éthylène-butylène)-b-polystyrène (SEBS) produit par Kraton\textregistered sous le numéro de désignation A1536 H. 
-Le troisième élastomère est un copolymère multi bloc de PEI et de polysiloxane produit par SABIC sous le nom ULTEM STM1500 avec des segments successifs de longueur variables\footnote{$A\cdot n_{i}$--$B\cdot n_{i+1}$--$A\cdot n_{i+2}$--$B\cdot n_{i+3}$--$A\cdot n_{i+4}$--...} \cite{mark2013,Holden2002}. 
-Il est à noter que la nature exacte de la structure du STM1500 est matière à caution puisqu'un autre chercheur présente la structure comme un simple copolymère alterné \footnote{$A$--$B$--$A$--$B$--$A$--$B$-...} \cite{Hatui2015}. 
+\begin{inparaenum}[]
+	\item Un copolymères tri blocs polystyrène-b-polyisoprène-b-polystyrène (SIS) possédant une fraction molaire de styrène de 22\% (Sigma-Aldrich \#432415). 
+	\item Un copolymère tri blocs linéaire polystyrène-b-poly(éthylène-butylène)-b-polystyrène (SEBS) produit par Kraton\textregistered \ sous le numéro de désignation A1536 H. 
+	\item Un copolymère multi bloc (Fig. \ref{fig:polymere_multi_bloc}) de PEI et de polysiloxane produit par SABIC sous le nom ULTEM STM1500 avec des segments successifs de longueur variables  \cite{mark2013,Holden2002}. 
+\end{inparaenum}
+les copolymères tri blocs possèdent une structure générale telle que présentée à la figure \ref{fig:polymere_tri_bloc}. 
+Il est à noter que la nature exacte de la structure du STM1500 est matière à caution puisqu'un autre chercheur présente la structure comme un simple copolymère alterné (Fig. \ref{fig:polymere_alternee}) \cite{Hatui2015}. 
 Toujours selon ce dernier auteur, le STM1500 serait miscible avec le PEI. 
 
-Le nanocomposite des éléments chauffants est composé d'une matrice de PEI et de 10\% massique de nanotubes de carbone multi parois avec une pureté d'au moins 99\%. 
-Le nanocomposite a été produit à l'aide d'une extrudeuse bi vis dans laquelle ont été introduits les granules de PEI et les nanotubes. 
-Le filament obtenu a été découpé en granule, mélangé vigoureusement et extrudé deux autres fois pour obtenir un mélange homogène avec une bonne dispersion des nanotubes. 
-Les éléments chauffants ont été produits en pressant les granules obtenues à l'aide d'une presse chauffante pour former un film de \SI{0,65}{\milli\metre} d'épaisseur. 
-Ce film a été découpé en morceaux de \SI{12,7}{\milli\metre} de large et \SI{40}{\milli\metre} de long. 
-
-Les adhérents en composite sont produits en consolidant 16 plis pré imprégnés de fibre de carbone avec une matrice de PEEK dans une presse chauffante à \SI{390}{\celsius}.
-Les plis sont initialement comprimés avec une pression de \SI{0,25}{\mega\pascal} durant la chauffe.
-La pression est ensuite augmentée à \SI{1}{\mega\pascal} une fois la température de consolidation atteinte. 
-Après \SI{30}{\minute}, le système de refroidissement est activé et les laminés sont refroidis jusqu'à température ambiante en environ \SI{60}{\minute}. 
-Les plaques de composite sont découpées à l'aide d'une machine de découpe au jet d'eau ou d'une scie abrasive. 
-
-Les adhérents sont découpés pour former des rectangles de \SI{100}{\milli\metre} de long et \SI{25}{\milli\metre} de large. 
+Les éléments chauffants ainsi que les adhérents en composite ont été produits selon la méthodologie présentée aux chapitres \ref{sec:Theme1} et \ref{sec:Theme2}. 
 
 \subsection{Caractérisation de la stabilité thermique des élastomères}
 
 Des analyses thermogravimétriques (TGA) des élastomères ont été réalisées avec des appareils TA Instruments Q50 et Q500. 
 Deux types d'analyses ont été réalisés. 
-Dans un premier temps, les échantillons ont été soumis à une rampe de \SI{10}{\celsius\per\minute} jusqu'à une température de \SI{575}{\celsius} sous une atmosphère régulière et sous une atmosphère d'azote. 
+Dans un premier temps, tel que présenté dans la norme ASTM E2550 - 17, les échantillons ont été soumis à une rampe de \SI{10}{\celsius\per\minute} jusqu'à une température de \SI{575}{\celsius} sous une atmosphère régulière et sous une atmosphère d'azote. 
 Par la suite, certains échantillons ont été également testés en condition isotherme autant avec une atmosphère d'air qu'avec une atmosphère d'azote pour évaluer la stabilité thermique dans le temps de l'élastomère. 
+Ce sedond type d'analyse ne fait pas l'objet d'une norme standardisée de l'ASTM. 
 
 Une seconde méthode plus sensible a été employée pour évaluer la stabilité thermique des élastomères. 
-Une TGA permet de détecter la présence de dégradation lorsque la masse de l'échantillon change. 
-Cependant, lorsque la dégradation se produit par une modification de la structure du polymère, par scission de chaînes ou par réaction entre celles-ci, la perte de masse ne peut pas détecter ce changement. 
-Ainsi, une mesure indirecte de la viscosité a pu être réalisée pour certains matériaux en mesurant l'évolution temporelle du couple lors de la production d'un mélange en condition isotherme à l'aide d'un mélangeur interne Haake PolyLab OS. 
+Les essais de TGA permet de détecter la présence de dégradation lorsque la masse de l'échantillon change. 
+Cependant, lorsque la dégradation se produit par une modification de la structure du polymère, par scission de chaînes ou par réaction entre celles-ci, une mesure de la masse peut être insensible à ce changement. 
+Ainsi, une mesure indirecte de la viscosité durant un brassage à haute température a pu être réalisée pour certains matériaux en mesurant l'évolution temporelle du couple lors de la production d'un mélange en condition isotherme à l'aide d'un mélangeur interne Haake PolyLab OS. 
+Cette mesure ne pourra pas mesurer le degré de dégradation de l'élastomère mais elle permettra d'identifier la présence et l'évolution d'un mécanisme de dégradation. 
 
 \subsection{Caractérisation mécanique des élastomères}
 
@@ -68,32 +68,56 @@ Les échantillons ont ensuite été découpés à l'aide d'un poinçon et d'une 
 \subsection{Essais de soudage}
 
 Les essais de soudage ont été réalisés en étape afin de maximiser la possibilité d'obtenir une diffusion des chaînes de polymère. 
-Les premiers essais de soudage ont été réalisés sous vide dans une étuve chauffante. 
+Les premiers essais de soudage ont été réalisés sous vide dans une étuve chauffante (Fig. \ref{fig:schema_soudure_etuve}). 
 Lors de ce test, un empilement d'échantillons de composite, de nanocomposite et d'élastomère est positionné dans l'étuve. 
 Des poids sont ensuite ajoutés pour simuler la pression exercée lors du soudage. 
 En raison de la taille de l'étuve et de l'échantillon ainsi que des poids disponibles il était impossible de maintenir en équilibre suffisamment de poids pour obtenir la même pression que dans le montage de soudage. 
 L'échantillon était installé dans l'étuve avant le début du chauffage jusqu'à la température désirée. 
 
-La seconde méthode utilisée était un soudage dans une presse chauffante manuelle. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{schema_soudure_etuve.pdf}
+	\caption{Schéma du procédé de soudage dans une étuve}
+	\label{fig:schema_soudure_etuve}
+\end{figure}
+
+La seconde méthode utilisée était un soudage dans une presse chauffante manuelle (Fig. \ref{fig:schema_soudure_presse}). 
 Durant ce test, un empilement symétrique en sandwich avec deux échantillons de composite et de nanocomposite ainsi qu'un échantillon d'élastomère au centre était positionné entre deux plaques métalliques. 
 La presse était préchauffée à la température désirée avant d'insérer l'empilement. 
 Lorsque les plateaux de la presse atteignent à la température de consigne, une pression est ensuite appliquée sur l'empilement pour le consolider. 
 Après 10 minutes, le chauffage de la presse est arrêté et un ventilateur est utilisé pour accélérer le refroidissement du montage. 
 Les échantillons sont retirés de la presse une fois qu'ils sont refroidis. 
 
-Les échantillons ayant démontré la possibilité de produire une soudure sont ensuite évalués à l'aide du montage de soudage. 
-Dans ce dernier, une couche d'élastomère est déposée sur un élément chauffant nanocomposite déposé à son tour sur un échantillon de composite. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{schema_soudure_presse.pdf}
+	\caption{Schéma du procédé de soudage à la presse chauffante}
+	\label{fig:schema_soudure_presse}
+\end{figure}
+
+
+Les élastomères ayant démontré une bonne adhésion avec le nanocomposite ont évalués à l'aide du montage de soudage. 
+Dans ce dernier, une couche d'élastomère est déposée sur un élément chauffant nanocomposite reposant sur un adhérent de composite. 
 L'empilement était déposé sur une céramique isolante avant qu'un autre morceau de céramique ne soit positionné au-dessus de la soudure. 
 Les vérins étaient ensuite abaissés pour appliquer une pression sur la zone soudée ainsi que sur les électrodes en contact avec le nanocomposite. 
-Lors du soudage, un courant électrique circule dans le nanocomposite pour le faire fondre et obtenir une soudure. 
-Une source de courant DC programmable de \SI{10}{\kW} de la série XR de chez Magna-Power capable de fournir jusqu'à \SI{160}{\volt} et \SI{60}{\ampere} a été utilisée. 
-La quantité de courant et le voltage durant les essais de soudage ont été contrôlés afin de maintenir une puissance électrique surfacique constante tout au long de chaque test. 
-Deux modes de soudures distincts ont été évalués. 
-Lors des essais avec le premier mode de soudure, les soudures des deux côtés de l'élément chauffant nanocomposite, soit la soudure entre le composite et le nanocomposite ainsi que la soudure entre l'élastomère et le nanocomposite ont été réalisés d'un seul coup. 
-Ces essais visaient à produire une soudure multi matériaux complète en une seule étape. 
-Autrement, lors des essais avec le second mode de soudure, une première soudure était préalablement réalisée entre le composite et le nanocomposite. 
-La soudure entre le nanocomposite et l'élastomère est ensuite réalisée en appliquant, de nouveau, un courant électrique dans le nanocomposite déjà fixé au composite. 
-Ce second mode de soudage avait pour but d'employer des conditions d'opération différentes pour chaque combinaison de matériau. 
+La quantité de courant et le voltage appliqués durant les essais de soudage ont été contrôlés afin de maintenir une puissance électrique surfacique constante tout au long de chaque test. 
+
+Deux modes de soudures distincts ont été évalués (Fig. \ref{fig:schema_processus_soudure_resistance}). 
+\begin{enumerate}
+	\item Les soudures des deux côtés de l'élément chauffant nanocomposite, soit la soudure entre le composite et le nanocomposite ainsi que la soudure entre l'élastomère et le nanocomposite ont été réalisés en une seule étape. 
+	Ces essais visaient à produire une soudure multi matériaux complète en une seule étape. 
+	\item Les soudures ont été réalisées en deux étapes. 
+	Une première soudure est réalisée entre le composite et le nanocomposite. 
+	Une seconde soudure entre le nanocomposite et l'élastomère est ensuite réalisée en appliquant, de nouveau, un courant électrique dans le nanocomposite déjà soudé au composite. 
+	Ce second mode de soudage avait pour but d'employer des conditions d'opération différentes pour chaque combinaison de matériau. 
+\end{enumerate}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=1]{schema_processus_soudure_resistance.pdf}
+	\caption{Schéma du procédé de soudage par résistance}
+	\label{fig:schema_processus_soudure_resistance}
+\end{figure}
 
 Lors du soudage des échantillons pour les essais de caractérisation mécanique, l'élément chauffant nanocomposite est positionné en retrait du bout de l'adhérent d'une distance d'environ 1 à \SI{2}{\milli\metre}. 
 L'élastomère est également positionné de façon à obtenir un retrait de 1 à \SI{2}{\milli\metre} avec le bout de l'échantillon. 
@@ -106,17 +130,90 @@ Dans ces cas particuliers, la soudure était évaluée par pelage manuel du join
 Si nécessaire, des outils étaient utilisés pour tenter de décoller les faciès en contact. 
 Après la séparation des faciès, une observation visuelle des joints, parfois suivie d'une observation au microscope optique, permet de juger de la qualité du joint. 
 
-La performance des joints plus performants est évaluée à l'aide d'un chargement en simple cisaillement entre deux adhérents. 
-Des talons sont installés aux deux extrémités pour faciliter le montage de l'échantillon dans la machine de traction. 
+\begin{figure}[h]
+	\centering
+	\input{tikz/lap_shear_geometry.tex}
+	\caption{Géométries évaluées pour les essais mécaniques. }
+	\label{fig:geometrie_echantillons}
+\end{figure}
+
+
+Pour de déterminer la géométrie optimale des échantillons afin d'évaluer la résistance des joints soudés avec le montage de soudage par résistance, des modèles par éléments finis ont été développés. 
+Plusieurs géométries d'échantillons ont été évaluées (Fig. \ref{fig:geometrie_echantillons}). 
+Avant de procéder à la modélisation, une analyse des capacités de production a déterminé que les joints évalués devraient autant que possible n'avoir qu'une seule soudure. 
+Également, la solution retenu devait limiter la déformation en rotation du joint causée par l'épaisseur de l'élastomère. 
+
+Il a été jugé que les géométries DSL 1 et QLS n'étaient pas des solutions désirables en raison du nombre de soudures à réaliser. 
+De plus, la solution SLS 1, nécessitant 2 soudures et causant une déformation en rotation du joint, ne présentait aucun avantage par rapport à la solution SLS 2 qui ne nécessite qu'une seule soudure. 
+
+Des modèles par éléments finis ont été établis pour les solutions SLS 2, DLS 2 et DLS 3 dans le logiciel COMSOL Mul\-ti\-phy\-sics\-\textregistered . 
+Dans ces modèles, basés sur les propriétés des matériaux, une force était appliqué de façon à simuler un essai mécanique en simple ou en double cisaillement avec des échantillons fixé dans les mors d'une machine de traction. 
+L'extrémité d'un des adhérents était fixé et l'extrémité de l'autre était soumise à un chargement dans l'axe de l'échantillon sans possibilité de se déplacer ou de se déformer dans une autre direction. 
+
+L'analyse des résultats pour la solution DSL 2, avec une couche d'élastomère servant d'adhérent, a démontré que la fabrication de cet échantillon nécessiterait un adhérent élastomère avec une épaisseur d'au moins \SI{15}{\milli\metre} afin d'obtenir une rupture dans le joint plutôt qu'une rupture en tension de l'adhérent. 
+Cette analyse ne prend pas en compte l'effet local des mâchoires. 
+Une rupture pourrait se produire dans cette zone. 
+Le tout est sans compter la difficulté de produire un échantillon sans défauts de \SI{15}{\milli\metre} d'épaisseur. 
+Basé sur ces résultats, la géométrie d'échantillon DSL 2 a été mise de coté.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{DLS_Comp-TPE.png}
+	\caption{Déformations et champ de contrainte pour un échantillon DLS 2 avec une couche d'élastomère de \SI{15}{\milli\metre} d'épaisseur, un plan de symétrie au milieu de l'élastomère est employé pour simplifier le modèle}
+	\label{fig:DLS_comp_TPE}
+\end{figure}
+
+Les prochains modèles ont étudiés la géométrie DSL 3 où des couches d'élastomère sont collées sur un substrat en composite ou en acier (Fig. \ref{fig:DLS_metal}. 
+Cette géométrie avait pour but de limiter le transfert de charge au travers de l'élastomère. 
+Le principal élément évalué avec ces simulations est l'effet de l'épaisseur de l'élastomère sur le champ de contrainte. 
+Il est important d'éviter les effets de bord causés par le substrat rigide lorsqu'une couche d'élastomère trop mince est utilisée. 
+On peut voir qu'une épaisseur d'élastomère de \SI{1}{\milli\metre} (Fig. \ref{fig:DLS_metal_1mm}) produit un champ de contrainte qui est fortement affecté par la présence d'un substrat en acier. 
+Lorsque l'épaisseur de l'élastomère est augmenté à 2 et \SI{5}{\milli\metre} (Fig. \ref{fig:DLS_metal_2mm} et \ref{fig:DLS_metal_5mm}), le champ de contrainte est de moins en moins affecté par l'influence du substrat. 
+Une épaisseur supérieure à \SI{2}{\milli\metre} sera suffisante pour minimiser l'effet du substrat en acier sur la jonction soudée. 
+
+\begin{figure}[h!]
+	\centering
+	\subfigure[\SI{1}{\milli\metre}]
+	{\label{fig:DLS_metal_1mm} 								\includegraphics[width=0.45\textwidth]{DLS_Comp-TPE(metal)_1mm.png}
+	}\qquad
+	\subfigure[\SI{2}{\milli\metre}]
+	{\label{fig:DLS_metal_2mm}
+		\includegraphics[width=0.45\textwidth]{DLS_Comp-TPE(metal)_2mm.png}
+	} \\
+	\subfigure[\SI{5}{\milli\metre}]
+	{\label{fig:DLS_metal_5mm}
+		\includegraphics[width=0.45\textwidth]{DLS_Comp-TPE(metal)_5mm.png}
+	}
+	\caption{Analyse de l'effet de l'épaisseur de l'élastomère sur le champ de contrainte dans les échantillons DLS 3, avec un substrat en acier, un plan de symétrie au milieu du substrat en acier est employé pour simplifier le modèle}
+	\label{fig:DLS_metal}
+%\end{figure}
+%
+%\begin{figure}[h]
+%	\centering
+	\subfigure[\SI{1}{\milli\metre}]
+	{\label{fig:SLS_metal_1mm} 								\includegraphics[width=0.45\textwidth]{SLS_Comp-TPE(metal)_1mm.png}
+	}\qquad
+	\subfigure[\SI{2}{\milli\metre}]
+	{\label{fig:SLS_metal_2mm}
+		\includegraphics[width=0.45\textwidth]{SLS_Comp-TPE(metal)_2mm.png}
+	} 
+	\caption{Analyse de la rotation et du champ de contrainte dans les échantillons SLS 2, avec un substrat en acier}
+	\label{fig:SLS_metal}
+\end{figure}
+
+Afin d'évaluer la possibilité d'utiliser une géométrie plus simple à produire pour les échantillons, des modèles par éléments finis ont été développés pour analyser la rotation du joint et le champ de contrainte dans l'élastomère pour la géométrie SLS 2 (Fig. \ref{fig:SLS_metal}). 
+Un autre but de ce modèle était de déterminer l'épaisseur requise pour le substrat en acier afin de minimiser les déformations hors du plan.  
+Le premier constat lors de l'analyse des résultats est que l'épaisseur de l'élastomère a le même impact sur le champ de contrainte. 
+L'évaluation de l'épaisseur nécessaire pour obtenir un champ de contrainte non affecté par le substrat en acier précédemment effectuée pour la géométrie DLS 3 reste donc valide pour cette géométrie, lorsque le substrat en acier possède une rigidité suffisante pour minimiser la rotation du joint. 
+Un deuxième constat est qu'une plaque d'acier de \SI{2.4}{\milli\metre} d'épaisseur permet de minimiser la rotation du joint. 
+
+Au vues de ces analyses, il a été décidé que la performance des joints produits avec le montage de soudage par résistance serait évaluée à l'aide d'un chargement en simple cisaillement entre deux adhérents selon la géométrie SLS 2. 
+En raison des moules disponibles, une couche d'élastomère de \SI{3.18}{\milli\metre} sera utilisée avec un substrat en acier de \SI{2.4}{\milli\metre}. 
+Les adhérents d'élastomère a été collé aux substrats d'acier à l'aide d'une colle époxyde structurelle. 
+Des talons ont été installés aux deux extrémités pour faciliter le montage de l'échantillon dans la machine de traction. 
 Les essais de caractérisation mécanique ont été réalisés avec une machine Landmark de MTS qui possède une cellule de charge de \SI{100}{\kilo\newton}. 
 
-En raison de la différence de rigidité entre l'élastomère et les adhérents en composite, les adhérents d'élastomère utilisés pour les essais de caractérisation mécanique sont collés à un substrat en acier à l'aide d'une colle structurelle. 
-L'épaisseur de la couche d'élastomère et du substrat en acier ont été sélectionnés par simulation du comportement mécanique à l'aide d'un modèle par éléments finis grâce au logiciel COMSOL Mul\-ti\-phy\-sics\-\textregistered . 
-Le premier but de ce modèle était de minimiser la déformation en torsion de l'échantillon en raison de la différence de rigidité entre les deux adhérents et du couple causé par la géométrie de l'échantillon. 
-Le second but du modèle était d'évaluer l'épaisseur d'élastomère nécessaire pour éliminer l'effet de la rigidité du substrat métallique sur la distribution des contraintes dans le joint soudé. 
-Les modèles ont permis de déterminer qu'une épaisseur supérieure à \SI{2}{\milli\metre} était nécessaire pour obtenir un profil de contrainte totalement développé, sans influence du substrat rigide, à l'interface entre le nanocomposite et l'élastomère. 
-Un moule de \SI{3.18}{\milli\metre} a été utilisé pour mouler les plaques d'élastomères ayant servi à fabriquer les adhérents. 
-
+\FloatBarrier
 \section{Résultats et analyse}
 
 \subsection{Stabilité thermique du nanocomposite}
@@ -128,7 +225,7 @@ Comme prévu, le PEI du nanocomposite a démontré des signes de dégradation lo
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=0.45\textwidth]{TGA_nanocomposite.pdf}
-	\caption{Résultats en TGA sous une atmosphère standard pour le nanocomposite}
+	\caption{Résultats en TGA dans l'air pour le nanocomposite}
 	\label{fig:TGA_nanocomposite}
 \end{figure}
 
@@ -162,10 +259,11 @@ Dans ces conditions, le SEBS a démontré une meilleure stabilité thermique que
 
 \begin{figure}[h]
 	\centering
-	\subfigure[Atmosphère standard]
-	{\label{fig:TGA_rampe_SEBS_air} 								\includegraphics[width=0.45\textwidth]{TGA_SEBS_1536H_Air.pdf}
+	\subfigure[Air]
+	{\label{fig:TGA_rampe_SEBS_air} 								
+		\includegraphics[width=0.45\textwidth]{TGA_SEBS_1536H_Air.pdf}
 	}\qquad
-	\subfigure[Atmosphère d'azote]
+	\subfigure[Azote]
 	{\label{fig:TGA_rampe_SEBS_N2}
 		\includegraphics[width=0.45\textwidth]{TGA_SEBS_1536H_N2.pdf}
 	}
@@ -174,7 +272,7 @@ Dans ces conditions, le SEBS a démontré une meilleure stabilité thermique que
 \end{figure}
 
 Il a été décidé de pousser plus loin l'analyse thermique de cet élastomère avec des essais de TGA isotherme. 
-Les essais en isotherme sont beaucoup plus demandants que les essais standard avec une rampe de température. 
+Les essais en isotherme sont beaucoup plus demandants que les essais standards avec une rampe de température. 
 Cette méthode de test permet de valider hors de tout doute la stabilité thermique d'un polymère. 
 Lorsque le test est réalisé avec une atmosphère standard (Fig. \ref{fig:TGA_iso_SEBS_air}), on observe une bonne stabilité thermique à \SI{200}{\celsius} (Fig. \ref{fig:TGA_iso_SEBS_air_200}), mais on observe une dégradation thermique lente quand on répète l'essai à \SI{230}{\celsius} (Fig. \ref{fig:TGA_iso_SEBS_air_230}). 
 Quand cet essai est plutôt réalisé sous une atmosphère d'azote (Fig. \ref{fig:TGA_iso_SEBS_N2}), on observe des températures de dégradation légèrement plus élevées. 
@@ -189,7 +287,7 @@ Le SEBS est stable lorsqu'il est soumis à une température de \SI{275}{\celsius
 	{\label{fig:TGA_iso_SEBS_air_230}
 		\includegraphics[width=0.45\textwidth]{TGA_SEBS_1536H_Air_Isotherm_230.pdf}
 	}
-	\caption{Résultats en TGA isotherme pour l'élastomère SEBS A1536 H sous une atmosphère standard}
+	\caption{Résultats en TGA isotherme pour l'élastomère SEBS A1536 H dans l'air}
 	\label{fig:TGA_iso_SEBS_air}
 	%\end{figure}
 	%
@@ -202,7 +300,7 @@ Le SEBS est stable lorsqu'il est soumis à une température de \SI{275}{\celsius
 	{\label{fig:TGA_iso_SEBS_N2_290}
 		\includegraphics[width=0.45\textwidth]{TGA_SEBS_1536H_N2_Isotherm_290.pdf}
 	}
-	\caption{Résultats en TGA isotherme pour l'élastomère SEBS A1536 H sous une atmosphère standard}
+	\caption{Résultats en TGA isotherme pour l'élastomère SEBS A1536 H sous une atmosphère d'azote}
 	\label{fig:TGA_iso_SEBS_N2}
 \end{figure}
 
@@ -210,22 +308,29 @@ Le SEBS est stable lorsqu'il est soumis à une température de \SI{275}{\celsius
 
 En dernier lieu, la stabilité thermique du STM1500 a été évaluée. 
 L'élastomère a conservé au moins 99,5\% de sa masse jusqu'à la température de \SI{360}{\celsius} sous une atmosphère standard (Fig. \ref{fig:TGA_STM1500}). 
-La stabilité thermique de cet élastomère est supérieure aux deux autres élastomères étudiés. 
+La stabilité thermique de cet élastomère est supérieure aux deux autres élastomères étudiés et est suffisamment élevée pour la réalisation d'essais de soudage. 
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.45\textwidth]{TGA_STM1500.pdf}
-	\caption{Résultats en TGA sous une atmosphère standard pour le STM1500}
+	\caption{Résultats en TGA dans l'air pour le STM1500}
 	\label{fig:TGA_STM1500}
 \end{figure}
 
 \FloatBarrier
 \subsection{Caractérisation mécanique des élastomères}
 
-Les échantillons de STM1500 ont atteint une contrainte à la rupture de \SI{28.8}{\mega\pascal} avec une déformation de 250\%. 
+Les échantillons de STM1500 ont atteint une contrainte à la rupture de \SI{29}{\mega\pascal} avec une déformation de 250\% (Fig. \ref{fig:STM1500_tension}). 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.45\textwidth]{STM1500_tension.pdf}
+	\caption{Résultats des essais de traction pour le STM1500}
+	\label{fig:STM1500_tension}
+\end{figure}
 
 \FloatBarrier
-\subsection{Essais de soudage}
+\subsection{Essais de soudage isotherme}
 
 La stabilité thermique de l'élastomère SEBS a été jugée suffisamment bonne pour tenter de réaliser des jonctions soudées. 
 Les premiers essais de soudage ont été réalisés dans une étuve sous vide en isotherme afin d'éviter de dégrader l'élastomère et de donner aux chaînes de polymère une longue période de temps afin qu'elles aient le temps de migrer au travers de l'interface. 
@@ -235,21 +340,25 @@ De plus, dans la zone où de l'élastomère était encore en contact avec le nan
 Ce test n'a pas été jugé totalement concluant puisqu'en raison du fluage de l'élastomère, la pression sur ce dernier n'était pas uniforme durant le test. 
 La faible pression pouvait avoir nui au processus de diffusion des chaînes. 
 
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
 	\subfigure[Préparation de l'échantillon]
-	{\label{fig:weldstack_SEBS} 								\includegraphics[height=6.cm]{20171215_091800_crop_resize.jpg}
+	{\label{fig:weldstack_SEBS} 								\includegraphics[height=5.5cm]{20171215_091800_crop_resize.jpg}
 	} \qquad
 	\subfigure[Échantillon à la sortie de l'étuve]
-	{\label{fig:etuve_SEBS_flat} 								\includegraphics[height=6.cm]{20180117_153151_crop_resize.jpg}
+	{\label{fig:etuve_SEBS_flat} 								\includegraphics[height=5.5cm]{20180117_153151_crop_resize.jpg}
 	} \\
 	\subfigure[Pelage de l'élastomère]
 	{\label{fig:etuve_SEBS_pelage}
-		\includegraphics[width=0.5\textwidth]{20180117_154300_crop_resize.jpg}
+		\includegraphics[width=0.45\textwidth]{20180117_154300_crop_resize.jpg}
 	}
 	\caption{Essai de soudage dans une étuve sous vide à \SI{260}{\celsius} pour l'élastomère SEBS}
-	
 	\label{fig:etuve_SEBS}
+\end{figure}
+
+\FloatBarrier
+
+\begin{figure}[h]
 	\centering
 	\subfigure[Échantillon à la sortie de la presse]
 	{\label{fig:welds_SEBS_presse} 								
@@ -268,7 +377,7 @@ Cependant, la force minimale que la presse a pu appliquer durant ce test a caus�
 Encore une fois, l'élastomère a pu être facilement séparé du nanocomposite (Fig. \ref{fig:welds_SEBS_presse_pelage}). 
 En raison de l'ensemble des résultats obtenus pour le SEBS, les essais pour cette famille de polymère se sont conclus à ce point. 
 
-Avec les deux premières options éliminées, des recherches plus approfondies ont permis de trouver le ULTEM STM1500. 
+Avec les deux premières options éliminées, les travaux de recherches se sont poursuivis avec le ULTEM STM1500. 
 Les essais de soudage pour cet élastomère ont débuté avec un essai dans une étuve sous vide. 
 Un échantillon (Fig. \ref{fig:etuve_STM1500}) y a été inséré et chauffé jusqu'à \SI{280}{\celsius} pendant 24 heures. 
 À la sortie de l'étuve, l'échantillon était totalement plat (Fig. \ref{fig:etuve_STM1500_flat}), mais après avoir séparé le nanocomposite du composite, une portion de l'élastomère ne pouvait être retirée (Fig. \ref{fig:etuve_STM1500_adhesion}). 
@@ -278,40 +387,44 @@ Ce dernier signe démontre un début de dégradation thermique de l'élastomère
 Il est important de vérifier qu'un procédé plus court ne produira pas de dégradation de l'élastomère. 
 La prochaine étape de cette validation pour le STM1500 était de produire une soudure dans une presse chauffante. 
 À la fin de cet essai, encore une fois, en raison de la pression élevée, l'élastomère a presque totalement quitté la zone à souder (Fig. \ref{fig:welds_STM1500_presse}), mais après séparation des composants un film d'élastomère est resté fortement adhéré au nanocomposite (Fig. \ref{fig:welds_STm1500_presse_adhesion}). 
-Cette fois par contre, le procédé a été assez rapide pour ne pas altérer de la couleur de l'élastomère. 
+Cette fois par contre, le procédé, d'une durée d'approximativement \SI{15}{\minute} en incluant le temps de refroidissement, a été assez rapide pour ne pas altérer de la couleur de l'élastomère. 
 
 \begin{figure}[h]
 	\centering
 	\subfigure[Préparation de l'échantillon]
-	{\label{fig:weldstack_STm1500} 								\includegraphics[width=0.5\textwidth]{20181002_121017_crop_resize.jpg}	
+	{\label{fig:weldstack_STm1500} 								\includegraphics[width=0.45\textwidth]{20181002_121017_crop_resize.jpg}	
 	} \\ 
 	\subfigure[Échantillon à la sortie de l'étuve]
-	{\label{fig:etuve_STM1500_flat} 								\includegraphics[height=5.cm]{20181003_100733_crop_resize.jpg}
+	{\label{fig:etuve_STM1500_flat} 								\includegraphics[height=4.5cm]{20181003_100733_crop_resize.jpg}
 	} \qquad
 	\subfigure[Adhésion de l'élastomère sur le nanocomposite]
 	{\label{fig:etuve_STM1500_adhesion}
-		\includegraphics[height=5.cm]{20181003_102113_crop_resize.jpg}
+		\includegraphics[height=4.5cm]{20181003_102113_crop_resize.jpg}
 	}
 	\caption{Essai de soudage dans une étuve sous vide à \SI{280}{\celsius} pour l'élastomère STM1500}
 	\label{fig:etuve_STM1500}
-	
+
 	\centering
 	\subfigure[Échantillon à la sortie de la presse]
 	{\label{fig:welds_STM1500_presse} 								
-		\includegraphics[height=5.cm]{20181108_100951_crop_resize.jpg}
+		\includegraphics[height=4.5cm]{20181108_100951_crop_resize.jpg}
 	} \qquad
 	\subfigure[Adhésion de l'élastomère sur le nanocomposite]
-	{\label{fig:welds_STm1500_presse_adhesion} 								\includegraphics[height=5.cm]{20181108_101250_resize_crop.jpg}
+	{\label{fig:welds_STm1500_presse_adhesion} 								\includegraphics[height=4.5cm]{20181108_101250_resize_crop.jpg}
 	}
 	\caption{Essai de soudage à la presse à \SI{280}{\celsius} pour l'élastomère STM1500}
 	\label{fig:presse_STM1500}
 \end{figure}
+
+\FloatBarrier
 
 Un point intéressant à noter est que malgré l'adhésion visible entre l'élastomère et le nanocomposite, le soudage entre le composite et le nanocomposite n'arrive pas à se produire aux températures employées lors des essais à l'étuve ou dans la presse. 
 Ce comportement peut être lié à la quantité de charges dans le nanocomposite qui en viennent à affecter la mobilité des chaînes de polymère. 
 Ce même comportement avait été dénoté dans le chapitre \ref{sec:Theme2} et causait une augmentation de la température nécessaire pour le soudage. 
 Cet indice porte à croire que les températures d'opération pour les deux types de soudage ne seront pas nécessairement compatibles. 
 \clearpage
+
+\subsection{Évaluation de la vitesse de dégradation thermique du STM1500}
 
 Afin de déterminer un temps maximal pour le soudage, il est nécessaire d'évaluer plus précisément la vitesse de dégradation thermique du STM1500. 
 Un mélange composé de PEI et 10\% d'élastomère a été produit. 
@@ -348,8 +461,9 @@ Ces résultats permettent de confirmer que la stabilité thermique du STM1500 es
 	\label{fig:STM1500_soudure}
 \end{figure}
 
-Au vu des résultats présentés précédemment, il a été décidé de poursuivre les essais avec le montage de soudage. 
-Un premier essai a été réalisé à l'aide de petits échantillons d'élastomère et de composite ainsi qu'un élément chauffant nanocomposite. 
+\subsection{Essais de soudage par résistance}
+
+Un premier essai a été réalisé dans le montage de soudage par résistance à l'aide de petits échantillons d'élastomère et de composite ainsi qu'un élément chauffant nanocomposite. 
 L'échantillon a été installé dans le montage de soudage (Fig. \ref{fig:STM1500_soudure_montage}) et un essai de soudage a été réalisé avec une puissance surfacique de \SI{260}{\kilo\watt\per\square\metre} pendant \SI{60}{\second}. 
 Une jonction a été obtenue en une seule étape lors de cet essai. 
 Les tentatives pour séparer l'élastomère ont, encore une fois, permis de séparer le nanocomposite du composite, mais sans permettre de séparer l'élastomère du nanocomposite. 
@@ -402,15 +516,15 @@ Dans tous les cas, sauf pour la soudure réalisée avec une puissance de \SI{220
 	\centering
 	\begin{tabular}{@{}cccC{1in}c@{}}
 		\toprule
-		Puissance                &       Temps        &        Pression         & Nombre d'échantillons &       LSS (Écart type)        \\
+		              Puissance                &       Temps        &        Pression         & Nombre d'échantillons &    LSS (Écart type)     \\
 		{[}\si{\kilo\watt\per\square\metre}{]} & {[}\si{\second}{]} & {[}\si{\mega\pascal}{]} &                       & {[}\si{\mega\pascal}{]} \\ \midrule
-		300                   &         45         &            1            &           1           &       8,2 (S.O..)        \\
-		300                   &         35         &            1            &           1           &       5,7 (S.O..)        \\
-		300                   &         45         &           0,4           &           5           &        6,3 (1,0)        \\
-		280                   &         45         &           0,4           &           2           &        4,2 (0,1)        \\
-		260                   &         45         &           0,4           &           2           &        4,6 (0,8)        \\
-		240                   &         45         &           0,4           &           2           &        2,6 (0,7)        \\
-		220                   &         45         &           0,4           &           2           &        2,0 (0,2)        \\ \bottomrule
+		                 300                   &         45         &            1            &           1           &       8,2 (S.O.)        \\
+		                 300                   &         35         &            1            &           1           &       5,7 (S.O.)        \\
+		                 300                   &         45         &           0,4           &           5           &        6,3 (1,0)        \\
+		                 280                   &         45         &           0,4           &           2           &        4,2 (0,1)        \\
+		                 260                   &         45         &           0,4           &           2           &        4,6 (0,8)        \\
+		                 240                   &         45         &           0,4           &           2           &        2,6 (0,7)        \\
+		                 220                   &         45         &           0,4           &           2           &        2,0 (0,2)        \\ \bottomrule
 	\end{tabular}
 	\caption{Essais de caractérisation mécanique de soudures multi matériaux}
 	\label{tab:LSS_multi_materiau}
@@ -423,13 +537,13 @@ Dans tous les cas, sauf pour la soudure réalisée avec une puissance de \SI{220
 	\label{fig:facies_multi_materiau}
 \end{figure}
 
-Une analyse des faciès de rupture des échantillons (Fig. \ref{fig:facies_multi_materiau}) permet de voir que des conditions de soudage non optimales entraînent la dégradation thermique du nanocomposite. 
+Une analyse des faciès de rupture des échantillons (Fig. \ref{fig:facies_multi_materiau}) permet de voir que des conditions de soudage sous-optimales entraînent la dégradation thermique du nanocomposite. 
 Sur cette figure, on peut observer une section centrale fortement dégradée ainsi que des résidus adhérés à l'élastomère. 
 Une observation au microscope optique a également révélé la formation de bulles et porosités dans l'élastomère. 
 
 La seconde série de tests employant des puissances réduites avait pour but de déterminer une puissance propice à générer une soudure, mais qui ne mènerait pas à une dégradation thermique de l'élastomère. 
 L'observation des faciès obtenus lors de cette série de tests a permis de récolter un grand nombre d'informations. 
-La demi-soudure entre l'élément chauffant et le nanocomposite a généralement été le point faible des soudures. 
+La demi-soudure entre l'élément chauffant nanocomposite et le composite a généralement été le point faible des soudures. 
 Celle-ci doit en effet atteindre un état pleinement soudé après la réalisation des deux joints, mais sans atteindre la dégradation thermique. 
 Il sera nécessaire d'optimiser les paramètres de la première soudure en fonction de la puissance qui sera appliquée lors de la deuxième soudure. 
 Pour les joints produits avec des puissances de 260 et \SI{280}{\kilo\watt\per\square\metre}, la rupture s'est produite dans le nanocomposite, du côté du composite. 
@@ -478,7 +592,7 @@ Lors de ce mélange, le PEI a été initialement mélangé pendant 10 minutes à
 Le mélange obtenu a été observé au microscope électronique afin d'observer la présence ou l'absence de compatibilité et de diffusion entre les phases. 
 Les images obtenues (Fig. \ref{fig:SEM_mix_STM1500_PEI}) indiquent que 3 minutes n'ont pas été suffisantes pour obtenir un mélange uniforme puisqu'on dénote deux phases distinctes. 
 Cependant, les structures de la section indiquée ont la même morphologie que les structures obtenues lors d'un mélange complet \cite{Hatui2015}. 
-L'absence de séparation de phase confirme la miscibilité de 10\% de STM1500 dans une matrice de PEI. 
+L'absence de ségrégation complète entre les phases entraînant des frontières nettes et sans diffusion confirme la miscibilité de 10\% de STM1500 dans une matrice de PEI. 
 
 \begin{figure}[h]
 	\centering
@@ -493,10 +607,12 @@ L'absence de séparation de phase confirme la miscibilité de 10\% de STM1500 da
 Au vu des résultats obtenus, on peut confirmer que, parmi les élastomères sélectionnés, le STM1500 présente le meilleur potentiel pour obtenir une jonction soudée. 
 Cet élastomère est miscible dans le PEI jusqu'à une fraction massique supérieure à 10\%. 
 Il offre également de bonnes propriétés mécaniques et une excellente stabilité thermique. 
-Cependant, jusqu'à présent, il n'a pas été possible de trouver des conditions propices à l'obtention d'une bonne soudure. 
+Cependant, jusqu'à présent, il n'a pas été possible de trouver des conditions propices à l'obtention d'une bonne soudure avec une bonne diffusion des chaînes de polymères. 
 Cet élastomère forme rapidement des porosités lorsqu'il est chauffé et ces dernières empêchent la formation d'une jonction solide. 
-Le taux d'humidité dans l'élastomère n'ayant pas été pris en compte pour les soudages, il serait approprié d'au moins répéter les essais en laboratoire avec des adhérents ayant été séchés à l'étuve. 
-Également, les cycles thermiques à haute température répétés pour le nanocomposite causent une dégradation de ses propriétés. 
+Le taux d'humidité dans l'élastomère et le PEI composant le nanocomposite n'ayant pas été pris en compte pour les soudages, il serait approprié d'au moins répéter les essais en laboratoire avec des adhérents et des éléments chauffants ayant été séchés à l'étuve. 
+Une partie des porosités rencontrées dans les soudures entre adhérents composites pourrait d'ailleurs être expliquées de cette façon. 
+Une autre approche qui pourrait être envisagée, à défaut d'une soudure, est de texturer l'élément chauffant pour améliorer le blocage mécanique entre les phases. 
+Un autre point noté durant ces essais est que les cycles thermiques à haute température répétés pour le nanocomposite causent une dégradation de ses propriétés. 
 Encore une fois, en raison de la quantité de nanotubes de carbone dans le nanocomposite, la diffusion des chaînes de polymères est ralentie et nécessite des températures élevées qui sont propices à la dégradation des polymères. 
 Cet effet était visible dans la fenêtre d'opération pour le soudage d'adhérents composites et il a de nouveau un impact pour la production de soudures multi matériaux. 
-Les travaux afin d'obtenir un soudage multi matériaux n'ont pas permis d'aboutir à une solution rencontrant les requis techniques d'ArianeGroup. 
+Les travaux afin d'obtenir un soudage multi matériaux n'ont pas permis, pour l'instant, d'aboutir à une solution rencontrant les requis techniques d'ArianeGroup. 
