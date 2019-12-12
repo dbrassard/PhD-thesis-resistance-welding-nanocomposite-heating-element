@@ -42,7 +42,7 @@ les copolymères tri blocs possèdent une structure générale telle que présen
 Il est à noter que la nature exacte de la structure du STM1500 est matière à caution puisqu'un autre chercheur présente la structure comme un simple copolymère alterné (Fig. \ref{fig:polymere_alternee}) \cite{Hatui2015}. 
 Toujours selon ce dernier auteur, le STM1500 serait miscible avec le PEI. 
 
-Les éléments chauffants ainsi que les adhérents en composite ont été produits selon la méthodologie présentée aux chapitres \ref{sec:Theme1} et \ref{sec:Theme2}. 
+Les éléments chauffants ainsi que les adhérents en composite ont la même composition et ont été produits selon la même méthode que dans les chapitres \ref{sec:Theme1} et \ref{sec:Theme2}. 
 
 \subsection{Caractérisation de la stabilité thermique des élastomères}
 
@@ -115,7 +115,7 @@ Deux modes de soudures distincts ont été évalués (Fig. \ref{fig:schema_proce
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=1]{schema_processus_soudure_resistance.pdf}
-	\caption{Schéma du procédé de soudage par résistance}
+	\caption{Schéma du procédé de soudage par résistance montrant les processus en une étape et en deux étapes}
 	\label{fig:schema_processus_soudure_resistance}
 \end{figure}
 
@@ -133,13 +133,13 @@ Après la séparation des faciès, une observation visuelle des joints, parfois 
 \begin{figure}[h]
 	\centering
 	\input{tikz/lap_shear_geometry.tex}
-	\caption{Géométries évaluées pour les essais mécaniques. }
+	\caption{Géométries en simple cisaillement (SLS), en double cisaillement (DLS) et en quadruple cisaillement (QLS) évaluées pour les essais de caractérisation mécaniques de la jonction flexible}
 	\label{fig:geometrie_echantillons}
 \end{figure}
 
 
 Pour de déterminer la géométrie optimale des échantillons afin d'évaluer la résistance des joints soudés avec le montage de soudage par résistance, des modèles par éléments finis ont été développés. 
-Plusieurs géométries d'échantillons ont été évaluées (Fig. \ref{fig:geometrie_echantillons}). 
+Plusieurs géométries d'échantillons comprenant des joints en simple cisaillement (SLS), des joints en double cisaillement (DLS) et des joints en quadruple cisaillement (QLS) ont été évaluées (Fig. \ref{fig:geometrie_echantillons}). 
 Avant de procéder à la modélisation, une analyse des capacités de production a déterminé que les joints évalués devraient autant que possible n'avoir qu'une seule soudure. 
 Également, la solution retenu devait limiter la déformation en rotation du joint causée par l'épaisseur de l'élastomère. 
 
@@ -158,10 +158,28 @@ Basé sur ces résultats, la géométrie d'échantillon DSL 2 a été mise de co
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{DLS_Comp-TPE.png}
+	\includegraphics[width=0.6\textwidth]{DLS_Comp-TPE.pdf}
 	\caption{Déformations et champ de contrainte pour un échantillon DLS 2 avec une couche d'élastomère de \SI{15}{\milli\metre} d'épaisseur, un plan de symétrie au milieu de l'élastomère est employé pour simplifier le modèle}
 	\label{fig:DLS_comp_TPE}
 \end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\subfigure[\SI{1}{\milli\metre}]
+	{\label{fig:DLS_metal_1mm} 								\includegraphics[width=0.6\textwidth]{DLS_Comp-TPE(metal)_1mm.pdf}
+	} \\
+	\subfigure[\SI{2}{\milli\metre}]
+	{\label{fig:DLS_metal_2mm}
+		\includegraphics[width=0.6\textwidth]{DLS_Comp-TPE(metal)_2mm.pdf}
+	} \\
+	\subfigure[\SI{5}{\milli\metre}]
+	{\label{fig:DLS_metal_5mm}
+		\includegraphics[width=0.6\textwidth]{DLS_Comp-TPE(metal)_5mm.pdf}
+	}
+	\caption{Analyse de l'effet de l'épaisseur de l'élastomère sur le champ de contrainte dans les échantillons DLS 3, avec un substrat en acier, un plan de symétrie au milieu du substrat en acier est employé pour simplifier le modèle}
+	\label{fig:DLS_metal}
+\end{figure}
+\FloatBarrier
 
 Les prochains modèles ont étudiés la géométrie DSL 3 où des couches d'élastomère sont collées sur un substrat en composite ou en acier (Fig. \ref{fig:DLS_metal}. 
 Cette géométrie avait pour but de limiter le transfert de charge au travers de l'élastomère. 
@@ -171,31 +189,16 @@ On peut voir qu'une épaisseur d'élastomère de \SI{1}{\milli\metre} (Fig. \ref
 Lorsque l'épaisseur de l'élastomère est augmenté à 2 et \SI{5}{\milli\metre} (Fig. \ref{fig:DLS_metal_2mm} et \ref{fig:DLS_metal_5mm}), le champ de contrainte est de moins en moins affecté par l'influence du substrat. 
 Une épaisseur supérieure à \SI{2}{\milli\metre} sera suffisante pour minimiser l'effet du substrat en acier sur la jonction soudée. 
 
-\begin{figure}[h!]
+
+
+\begin{figure}[h]
 	\centering
 	\subfigure[\SI{1}{\milli\metre}]
-	{\label{fig:DLS_metal_1mm} 								\includegraphics[width=0.45\textwidth]{DLS_Comp-TPE(metal)_1mm.png}
-	}\qquad
-	\subfigure[\SI{2}{\milli\metre}]
-	{\label{fig:DLS_metal_2mm}
-		\includegraphics[width=0.45\textwidth]{DLS_Comp-TPE(metal)_2mm.png}
-	} \\
-	\subfigure[\SI{5}{\milli\metre}]
-	{\label{fig:DLS_metal_5mm}
-		\includegraphics[width=0.45\textwidth]{DLS_Comp-TPE(metal)_5mm.png}
-	}
-	\caption{Analyse de l'effet de l'épaisseur de l'élastomère sur le champ de contrainte dans les échantillons DLS 3, avec un substrat en acier, un plan de symétrie au milieu du substrat en acier est employé pour simplifier le modèle}
-	\label{fig:DLS_metal}
-%\end{figure}
-%
-%\begin{figure}[h]
-%	\centering
-	\subfigure[\SI{1}{\milli\metre}]
-	{\label{fig:SLS_metal_1mm} 								\includegraphics[width=0.45\textwidth]{SLS_Comp-TPE(metal)_1mm.png}
+	{\label{fig:SLS_metal_1mm} 								\includegraphics[width=0.6\textwidth]{SLS_Comp-TPE(metal)_1mm.pdf}
 	}\qquad
 	\subfigure[\SI{2}{\milli\metre}]
 	{\label{fig:SLS_metal_2mm}
-		\includegraphics[width=0.45\textwidth]{SLS_Comp-TPE(metal)_2mm.png}
+		\includegraphics[width=0.6\textwidth]{SLS_Comp-TPE(metal)_2mm.pdf}
 	} 
 	\caption{Analyse de la rotation et du champ de contrainte dans les échantillons SLS 2, avec un substrat en acier}
 	\label{fig:SLS_metal}
@@ -224,7 +227,7 @@ Comme prévu, le PEI du nanocomposite a démontré des signes de dégradation lo
 
 \begin{figure}[htb]
 	\centering
-	\includegraphics[width=0.45\textwidth]{TGA_nanocomposite.pdf}
+	\includegraphics[width=0.75\textwidth]{TGA_nanocomposite.pdf}
 	\caption{Résultats en TGA dans l'air pour le nanocomposite}
 	\label{fig:TGA_nanocomposite}
 \end{figure}
@@ -241,11 +244,11 @@ Ce matériau a été rejeté avant d'atteindre le stade des essais de soudage.
 \begin{figure}[h]
 	\centering
 	\subfigure[SIS vierge]
-	{\label{fig:TGA_SIS_vierge} 								\includegraphics[width=0.45\textwidth]{TGA_Commercial_SIS_22p100_N2.pdf}
-	}\qquad
+	{\label{fig:TGA_SIS_vierge} 								\includegraphics[width=0.75\textwidth]{TGA_Commercial_SIS_22p100_N2.pdf}
+	}\\
 	\subfigure[SIS ayant subi un traitement d'hydrogénation]
 	{\label{fig:TGA_SYS_hydrogenated}
-		\includegraphics[width=0.45\textwidth]{TGA_Commercial_SIS_22p100_Hydrogenated_N2.pdf}
+		\includegraphics[width=0.75\textwidth]{TGA_Commercial_SIS_22p100_Hydrogenated_N2.pdf}
 	}
 	\caption{Résultats en TGA sous une atmosphère d'azote pour l'élastomère SIS commercial avec 22\% de styrène}
 	\label{fig:TGA_SIS}
@@ -261,11 +264,11 @@ Dans ces conditions, le SEBS a démontré une meilleure stabilité thermique que
 	\centering
 	\subfigure[Air]
 	{\label{fig:TGA_rampe_SEBS_air} 								
-		\includegraphics[width=0.45\textwidth]{TGA_SEBS_1536H_Air.pdf}
-	}\qquad
+		\includegraphics[width=0.75\textwidth]{TGA_SEBS_1536H_Air.pdf}
+	}\\
 	\subfigure[Azote]
 	{\label{fig:TGA_rampe_SEBS_N2}
-		\includegraphics[width=0.45\textwidth]{TGA_SEBS_1536H_N2.pdf}
+		\includegraphics[width=0.75\textwidth]{TGA_SEBS_1536H_N2.pdf}
 	}
 	\caption{Résultats en TGA l'élastomère SEBS A1536 H}
 	\label{fig:TGA_rampe_SEBS}
@@ -281,30 +284,28 @@ Le SEBS est stable lorsqu'il est soumis à une température de \SI{275}{\celsius
 \begin{figure}[h]
 	\centering
 	\subfigure[\SI{200}{\celsius}]
-	{\label{fig:TGA_iso_SEBS_air_200} 								\includegraphics[width=0.45\textwidth]{TGA_SEBS_1536H_Air_Isotherm_200.pdf}
-	}\qquad
+	{\label{fig:TGA_iso_SEBS_air_200} 								\includegraphics[width=0.75\textwidth]{TGA_SEBS_1536H_Air_Isotherm_200.pdf}
+	}\\
 	\subfigure[\SI{230}{\celsius}]
 	{\label{fig:TGA_iso_SEBS_air_230}
-		\includegraphics[width=0.45\textwidth]{TGA_SEBS_1536H_Air_Isotherm_230.pdf}
+		\includegraphics[width=0.75\textwidth]{TGA_SEBS_1536H_Air_Isotherm_230.pdf}
 	}
 	\caption{Résultats en TGA isotherme pour l'élastomère SEBS A1536 H dans l'air}
 	\label{fig:TGA_iso_SEBS_air}
-	%\end{figure}
-	%
-	%\begin{figure}[h]
+	\end{figure}
+	
+	\begin{figure}[h]
 	\centering
 	\subfigure[\SI{275}{\celsius}]
-	{\label{fig:TGA_iso_SEBS_N2_275} 								\includegraphics[width=0.45\textwidth]{TGA_SEBS_1536H_N2_Isotherm_275.pdf}
-	}\qquad
+	{\label{fig:TGA_iso_SEBS_N2_275} 								\includegraphics[width=0.75\textwidth]{TGA_SEBS_1536H_N2_Isotherm_275.pdf}
+	}\\
 	\subfigure[\SI{290}{\celsius}]
 	{\label{fig:TGA_iso_SEBS_N2_290}
-		\includegraphics[width=0.45\textwidth]{TGA_SEBS_1536H_N2_Isotherm_290.pdf}
+		\includegraphics[width=0.75\textwidth]{TGA_SEBS_1536H_N2_Isotherm_290.pdf}
 	}
 	\caption{Résultats en TGA isotherme pour l'élastomère SEBS A1536 H sous une atmosphère d'azote}
 	\label{fig:TGA_iso_SEBS_N2}
 \end{figure}
-
-\FloatBarrier
 
 En dernier lieu, la stabilité thermique du STM1500 a été évaluée. 
 L'élastomère a conservé au moins 99,5\% de sa masse jusqu'à la température de \SI{360}{\celsius} sous une atmosphère standard (Fig. \ref{fig:TGA_STM1500}). 
@@ -312,7 +313,7 @@ La stabilité thermique de cet élastomère est supérieure aux deux autres éla
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.45\textwidth]{TGA_STM1500.pdf}
+	\includegraphics[width=0.75\textwidth]{TGA_STM1500.pdf}
 	\caption{Résultats en TGA dans l'air pour le STM1500}
 	\label{fig:TGA_STM1500}
 \end{figure}
@@ -324,7 +325,7 @@ Les échantillons de STM1500 ont atteint une contrainte à la rupture de \SI{29}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.45\textwidth]{STM1500_tension.pdf}
+	\includegraphics[width=0.7\textwidth]{STM1500_tension.pdf}
 	\caption{Résultats des essais de traction pour le STM1500}
 	\label{fig:STM1500_tension}
 \end{figure}
@@ -416,13 +417,12 @@ Cette fois par contre, le procédé, d'une durée d'approximativement \SI{15}{\m
 	\label{fig:presse_STM1500}
 \end{figure}
 
-\FloatBarrier
-
 Un point intéressant à noter est que malgré l'adhésion visible entre l'élastomère et le nanocomposite, le soudage entre le composite et le nanocomposite n'arrive pas à se produire aux températures employées lors des essais à l'étuve ou dans la presse. 
 Ce comportement peut être lié à la quantité de charges dans le nanocomposite qui en viennent à affecter la mobilité des chaînes de polymère. 
 Ce même comportement avait été dénoté dans le chapitre \ref{sec:Theme2} et causait une augmentation de la température nécessaire pour le soudage. 
 Cet indice porte à croire que les températures d'opération pour les deux types de soudage ne seront pas nécessairement compatibles. 
-\clearpage
+
+\FloatBarrier
 
 \subsection{Évaluation de la vitesse de dégradation thermique du STM1500}
 
@@ -447,6 +447,8 @@ Ces résultats permettent de confirmer que la stabilité thermique du STM1500 es
 	\caption{Évaluation de la stabilité thermique du STM1500 à l'aide d'un mélangeur interne}
 	\label{fig:STM1500_thermo_Haake}
 \end{figure}
+
+\FloatBarrier
 
 \begin{figure}[h]
 	\centering
@@ -597,7 +599,7 @@ L'absence de ségrégation complète entre les phases entraînant des frontière
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\textwidth]{PEI_STM1500_09(x800).pdf}
-	\caption{Mécanisme de rupture de l'élastomère après une soudure multi matériau}
+	\caption{Observation au microscope électronique à balayage d'un mélange composé de PEI et de 10\% massique de STM1500}
 	\label{fig:SEM_mix_STM1500_PEI}
 \end{figure}
 
