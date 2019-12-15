@@ -1,3 +1,10 @@
+%\begin{filecontents*}{\jobname.xmpdata}
+%	\Title{Développement d'un nanocomposite conducteur pour le soudage par résistance des composites thermoplastiques}
+%	\Author{David Brassard}
+%	\Language{fr-CA}
+%	\Keywords{Composites thermoplastiques\sep Soudage\sep Soudage par Résistance\sep Nanocomposite}
+%	\Source{https://github.com/dbrassard/PhD-thesis-resistance-welding-nanocomposite-heating-element}
+%\end{filecontents*}
 \documentclass[letterpaper,12pt,oneside,final]{book}
 %\documentclass[letterpaper,12pt,oneside,draft]{book}
 %%
@@ -28,6 +35,9 @@
 % THE NEXT COMMAND DETERMINES THE LANGUAGE OF THE THESIS: WRITE english FOR A THESIS IN ENGLISH
 \newcommand\Langue{french}            
 
+% Génère un fichier PDF/A (format PDF sans référence externe pour archivage)
+\usepackage[a-3b]{pdfx}
+
 \usepackage{ifthen}
 \usepackage[utf8]{inputenc}
 %%
@@ -35,6 +45,11 @@
 %\usepackage[cyr]{aeguill}
 \usepackage{lmodern}      % Police de caractères plus complète et généralement indistinguable visuellement de la police standard de LaTeX (Computer Modern).
 \usepackage[T1]{fontenc}  % Bon encodage des caractères pour qu'Acrobat Reader reconnaisse les accents et les ligatures telles que ffi.
+
+%% Utilisation de natbib pour les citations et la bibliographie.
+%\usepackage{natbib}
+\usepackage[numbers,sort&compress]{natbib} % Permet de comprimer les citations lorsqu'elle sont séquentielles 
+\usepackage{notoccite} % Ne pas commencer à numéroter les références dans la table des matières
 
 % le langage par défaut est le dernier de la liste, c'est-à-dire français
 \ifthenelse{\equal{\Langue}{english}}{
@@ -50,15 +65,12 @@
 \usepackage{epstopdf}  % Permet d'utiliser des .eps avec pdfLaTeX.
 %%
 %% Recherche des images dans les répertoires.
-\graphicspath{{./images/}{./images_article1/}{./images_article2/}{./images_theme3/}}
+\graphicspath{{./images/}{./images_article1/}{./images_article2/}{./images_theme3/}{./images_discussion/}}
 %%
 %% Un float peut apparaître seulement après sa définition, jamais avant.
 \usepackage{flafter,placeins}
 %%
-%% Utilisation de natbib pour les citations et la bibliographie.
-%\usepackage{natbib}
-\usepackage[numbers,sort&compress]{natbib} % Permet de comprimer les citations lorsqu'elle sont séquentielles 
-\usepackage{notoccite}
+
 %%
 %% Autres packages.
 \usepackage{amsmath,color,soulutf8,longtable,colortbl,setspace,xspace,url,pdflscape}

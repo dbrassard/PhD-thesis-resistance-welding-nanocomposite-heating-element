@@ -330,8 +330,8 @@ Thermocouples could not be located inside the weld as they were subject to elect
 \subsection{Material characterization}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The $C_p$ obtained by MDSC are presented at Table \ref{tab:table1}. 
-The thermal conductivity as a function of temperature for CF/PEEK, the PEI/MWCNT nanocomposite and the alumina silicate are reported in Table \ref{tab:table2}. 
+The $C_p$ obtained by MDSC are presented at Table \ref{tab:T2_table1}. 
+The thermal conductivity as a function of temperature for CF/PEEK, the PEI/MWCNT nanocomposite and the alumina silicate are reported in Table \ref{tab:T2_table2}. 
 The asperities roughness $\sigma_{asp}$ and asperities average slopes $m_{asp}$ were measured respectively at \mbox{0.26\,$\mu$m} and 0.15. 
 The microhardness was set at \mbox{0.1\,GPa} in the model. 
 
@@ -353,7 +353,7 @@ The microhardness was set at \mbox{0.1\,GPa} in the model.
 		       399        &             1790             &             1955             &                              \\ \bottomrule
 	\end{tabular}
 	\caption{Results for Specific heat measurements}
-	\label{tab:table1}
+	\label{tab:T2_table1}
 \end{table}
 
 \begin{table}[ht]
@@ -371,7 +371,7 @@ The microhardness was set at \mbox{0.1\,GPa} in the model.
 		       200        &            3.02             &            0.73             &                             &                             \\ \bottomrule
 	\end{tabular}
 	\caption{Results for thermal conductivity measurement}
-	\label{tab:table2}
+	\label{tab:T2_table2}
 \end{table}
 
 \FloatBarrier
@@ -445,10 +445,10 @@ The average single lap shear strength for all welded joints are presented in \mb
 Current leakage in the composite adherents can be a problem for resistance welding of carbon fibre laminates at high power and it currently limits resistance welding with a nanocomposite HE to unidirectional adherents. 
 The model pointed toward the possibility to produce welds at lower power and longer times to reduce the voltage difference along the length of the nanocomposite HE to minimize the risk of current leakage. 
 Successful welding tests were performed with power densities as low as \mbox{250\,kW\,m$^{-2}$} (resulting LSS $\sim$ \mbox{14\,MPa}). 
-These additional tests, along with previous results are included in \mbox{Fig. \ref{fig:2_Fig7}} and in \mbox{Table \ref{tab:table3} and \ref{tab:table4}}. 
+These additional tests, along with previous results are included in \mbox{Fig. \ref{fig:2_Fig7}} and in \mbox{Table \ref{tab:T2_table3} and \ref{tab:T2_table4}}. 
 The highest average LSS (\mbox{24.9\,MPa}) was obtained at a power density of \mbox{350\,kW\,m$^{-2}$}, a clamping distance of \mbox{1.3\,mm}, a pressure of \mbox{1\,MPa} on the weld and a welding time of \mbox{120\,s}. 
 This LSS corresponds to a 28\% improvement relative to previously published results, thanks to a better processing window predicted by the finite element model, with LSS ranging from 14.1 to \mbox{35.2\,MPa}. 
-LSS results of joints welded using non-optimal sets of welding parameters are also presented in Table \ref{tab:table3} and \ref{tab:table4} \cite{Brassard2019b}. 
+LSS results of joints welded using non-optimal sets of welding parameters are also presented in Table \ref{tab:T2_table3} and \ref{tab:T2_table4} \cite{Brassard2019b}. 
 A welding experiment at \mbox{200\,kW\,m$^{-2}$} during \mbox{900\,s} did not result in a successful weld.  
 
 \begin{table}[htb]
@@ -473,7 +473,7 @@ A welding experiment at \mbox{200\,kW\,m$^{-2}$} during \mbox{900\,s} did not re
 		                   &          &           & Samples           &       &                   & 3                 & 3                 & 3                 & 3                 &                   &                   \\ \bottomrule
 		\end{tabular}}
 	\caption{LSS tests results}
-	\label{tab:table3}
+	\label{tab:T2_table3}
 \end{table}
 
 \begin{table}[htb]
@@ -504,7 +504,7 @@ A welding experiment at \mbox{200\,kW\,m$^{-2}$} during \mbox{900\,s} did not re
 			                   &          &           & Samples           &           &                   &                   &                   &                  & 3                 &                   \\ \bottomrule
 		\end{tabular}}
 	\caption{LSS tests results (continued)}
-	\label{tab:table4}
+	\label{tab:T2_table4}
 \end{table}
 
 \FloatBarrier
@@ -562,3 +562,101 @@ Future work will aim at producing a conductive nanocomposite with a higher ducti
 
 This work was supported by ArianeGroup and CREPEC. 
 The authors would also like to thank Vincent Rohart for his time and help for the SEM imaging and Prof. Philippe Pasquier for the thermal conductivity measurements. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Supplementary Information}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+It section present a summary of all the materials properties used in the model. 
+
+The relative permittivity for the PEI/MWCNT nanocomposite was calculated with the law of mixture from the reported value of 3.15 for SABIC’s PEI grade ULTEM 1010 and a relative permittivity of 15 for MWCNTs \cite{Katsounaros2011}. 
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[ht]
+	\centering
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{@{}cccccc@{}}
+			\toprule
+			Temperature & CF/PEEK    & PEI/MWCNT  & Alumina Silicate & Copper     & GPO3       \\
+			{[}$^{\circ}$C{]} & {[}J\,kg$^{-1}$\,K$^{-1}${]} & {[}J\,kg$^{-1}$\,K$^{-1}${]} & {[}J\,kg$^{-1}$\,K$^{-1}${]}  & {[}J\,kg$^{-1}$\,K$^{-1}${]} & {[}J\,kg$^{-1}$\,K$^{-1}${]} \\ \midrule
+			
+			Constant    &            &            &                  & 385        & 1260       \\
+			40          & 926        & 1059       &                  &            &            \\
+			97          &            &            & 975              &            &            \\
+			139         & 1265       &            &                  &            &            \\
+			159         & 1359       &            &                  &            &            \\
+			207         &            & 1561       &                  &            &            \\
+			227         &            & 1765       &                  &            &            \\
+			310         & 1809       &            &                  &            &            \\
+			343         & 2400       &            &                  &            &            \\
+			360         & 1792       &            &                  &            &            \\
+			399         & 1790       & 1955       &                  &            &            \\ \midrule
+			Source      & Measured   & Measured   & Measured         & COMSOL     & Suppliers  \\ \bottomrule
+	\end{tabular} }
+	\caption{List of all specific heat used in the model}
+	\label{tab:SI2_table1}
+\end{table}
+
+\begin{table}[ht]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{@{}ccccccc@{}}
+			\toprule
+			Temperature & CF/PEEK   & CF/PEEK       & PEI/MWCNT & Alumina   & Copper    & GPO3      \\
+			& Parallel  & Perpendicular &           & Silicate  &           &           \\
+			{[}$^{\circ}$C{]} & {[}W\,m$^{-1}$\,K$^{-1}${]} & {[}W\,m$^{-1}$\,K$^{-1}${]} & {[}W\,m$^{-1}$\,K$^{-1}${]} & {[}W\,m$^{-1}$\,K$^{-1}${]} & {[}W\,m$^{-1}$\,K$^{-1}${]} & {[}W\,m$^{-1}$\,K$^{-1}${]} \\ \midrule
+			Constant    &           &               &           & 5.7       & 400       & 0.27      \\
+			20          & 2.25      & 0.55          & 0.41      &           &           &           \\
+			40          &           &               & 0.30      &           &           &           \\
+			60          &           &               & 0.43      &           &           &           \\
+			110         &           &               & 0.46      &           &           &           \\
+			150         &           &               & 0.48      &           &           &           \\
+			200         & 3.02      & 0.73          &           &           &           &           \\ \midrule
+			Source      & Measured  & Measured      & Measured  & Measured  & COMSOL    & Suppliers \\ \bottomrule
+		\end{tabular}%
+	}
+	\caption{List of all thermal conductivity used in the model}
+	\label{tab:SI2_table2}
+\end{table}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{graphicx}
+\begin{table}[ht]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{@{}llllll@{}}
+			\toprule
+			Temperature       & CF/PEEK            & PEI/MWCNT          & Alumina Silicate   & Copper             & GPO3               \\
+			{[}$^{\circ}$C{]} & {[}kg\,m$^{-3}${]} & {[}kg\,m$^{-3}${]} & {[}kg\,m$^{-3}${]} & {[}kg\,m$^{-3}${]} & {[}kg\,m$^{-3}${]} \\ \midrule
+			Constant          &                    & 1320               & 2500               & 8700               & 1800               \\
+			0                 & 1601               &                    &                    &                    &                    \\
+			50                & 1598               &                    &                    &                    &                    \\
+			100               & 1593               &                    &                    &                    &                    \\
+			150               & 1586               &                    &                    &                    &                    \\
+			200               & 1575               &                    &                    &                    &                    \\
+			250               & 1563               &                    &                    &                    &                    \\
+			300               & 1551               &                    &                    &                    &                    \\
+			350               & 1537               &                    &                    &                    &                    \\
+			400               & 1524               &                    &                    &                    &                    \\ \midrule
+			Source            & \cite{Talbot2013}  & Measured           & Measured           & COMSOL             & Suppliers          \\ \bottomrule
+		\end{tabular}%
+	}
+	\caption{List of all densities used in the model}
+	\label{tab:SI2_table3}
+\end{table}
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{@{}lccccc@{}}
+		\toprule
+		&                   & \multicolumn{2}{c}{PEI/MWCNT} & \multicolumn{2}{c}{Copper}  \\ \midrule
+		Electrical conductivity & {[}S\,m$^{-1}${]} & 80         & Measured         & $5.998 \times 10^7$ & COMSOL \\
+		Relative permittivity   & {[} \ {]}         & 4.3        & Calculated       & 1                  & COMSOL \\ \bottomrule
+	\end{tabular}%
+	\caption{List of electrical properties for the model}
+	\label{tab:SI2_table4}
+\end{table}
+
+\FloatBarrier
