@@ -30,7 +30,7 @@ The use of thermoplastic composite (TPC) materials is rising \cite{Mathijsen2016
 Their short processing cycle, improved impact resistance, end-of-life recyclability and chemical stability \cite{cogswell1992} make them good candidates for lightweight structural components compared to traditional thermoset resins. 
 A major difference between thermosets and thermoplastics is the methods to join parts together: while adhesive bonding and mechanical assembly is the norm for thermoset composites, assemblies of TPCs are preferably produced by welding together individual components. 
 This is achieved by localized heating of the weld zone through resistance, induction or ultrasonic welding. 
-During resistance welding, the weld zone temperature increases via joule heating of a resistive heating element (HE) located between the adherents \cite{Ageorges2001a,Stavrov2005a,Dube2007c,Shi2014,Brassard2019a,Eveno1988} (Fig. \ref{fig:2_Fig1}). 
+During resistance welding, the weld zone temperature increases via Joule heating of a resistive heating element (HE) located between the adherents \cite{Ageorges2001a,Stavrov2005a,Dube2007c,Shi2014,Brassard2019a,Eveno1988} (Fig. \ref{fig:2_Fig1}). 
 This process offers good mechanical performance and short processing times of the order of minutes, and can be achieved with HE such as carbon fibre plies \cite{Eveno1988}, stainless steel (SS) meshes \cite{Stavrov2005a,Dube2007c,Shi2014} or, more recently, an electrically conductive nanocomposite polymer \cite{Brassard2019a}. 
 
 \begin{figure}[ht]
@@ -70,13 +70,14 @@ This model is subsequently used to predict good welding conditions and establish
 
 A transient finite element model of the resistance welding process is developed with the COMSOL Multiphysics\textregistered \ software. 
 The model evaluates the effects of welding parameters on the temperature distribution and profile in the joint over time with the goal of establishing a processing window leading to good weld quality and mechanical performance based on these results. 
-This model evaluates the electrical field in the electrodes and nanocomposite HE, joule heating of the nanocomposite HE, heat transfer in the solids, heat dissipation through convection and radiation and thermal contact conductance between critical components. 
+This model evaluates the electrical field in the electrodes and nanocomposite HE, Joule heating of the nanocomposite HE, heat transfer in the solids, heat dissipation through convection and radiation and thermal contact conductance between critical components. 
 The geometry of the components is detailed in Fig. \ref{fig:2_Fig2}. 
 The gaps identified in the geometry were \mbox{0.1\,mm}.
 
 \begin{figure}[h!]
 	\center
-	\includegraphics[width=0.9\textwidth]{2_Fig2}
+	\resizebox{0.9\textwidth}{!}{
+	\input{tikz/modele_iso_comsol_soudage_BW.tex}}
 	\caption{Three-quarter section view of the geometry of the model highlighting the components of the model and location of the 0.1 mm air gaps \cite{Brassard2019b}}
 	\label{fig:2_Fig2}
 \end{figure} 
@@ -87,7 +88,7 @@ The gaps identified in the geometry were \mbox{0.1\,mm}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The model evaluates the electrical field in the nanocomposite HE and the electrodes. 
-The resulting field is used to compute the joule losses from current and electrical resistance. 
+The resulting field is used to compute the Joule losses from current and electrical resistance. 
 The constitutive rules for conservation of current and charges are imposed, with the application of the general equations \ref{eq:current_conservation_1} to \ref{eq:current_conservation_3} describing the electrical field within the nanocomposite HE and the copper electrodes. 
 The equation of continuity (Eq. \ref{eq:current_conservation_1}) defines that the divergence ($\nabla$) of the current density ($\mathbf{J}$) is equal to the current source ($Q_j$) (both expressed in \mbox{A\,m$^{-2}$}). 
 Ohm’s law (Eq. \ref{eq:current_conservation_2}) defines that the current density ($\mathbf{J}$) is equal to the sum of imposed external current density ($\mathbf{J_e}$ in \mbox{A\,m$^{-2}$}) and the product of the sum of the electrical conductivity ($\sigma$ in \mbox{S\,m$^{-1}$}) and the product of the permittivity of vacuum ($\varepsilon_0$ in \mbox{F\,m$^{-1}$}) and the relative permittivity ($\varepsilon_r$ a dimensionless value) as function of time with the electric field ($\mathbf{E}$ in \mbox{V\,m$^{-1}$}). 
@@ -137,7 +138,7 @@ Q_e =  \mathbf{J} \cdot \mathbf{E}
 \end{equation}
 
 The boundary layer thickness was evaluated with the Boussinesq approximation to confirm on which surfaces convective cooling boundary conditions should be considered. 
-For $Pr > 0.6 $, the thickness can be evaluated with Eq. \ref{eq:boundary_layer_thickness} with the Grashof number for a specific length ($Gr_L$) defined as in Eq. \ref{eq:grashof_number}. 
+For $Pr > 0.6 $, the thickness can be evaluated with Eq. \ref{eq:boundary_layer_thickness} with the Grashof number for a specific length ($Gr_L$) defined as in Eq. \ref{eq:grashof_number} \cite{Incropera2007}. 
 To confirm the validity of this equation, the Prandtl number ($Pr$) was evaluated with Eq. \ref{eq:prandtl_number}. 
 Based on the properties of air, the boundary layer thickness was evaluated to be at least \mbox{5\,mm} thick for a specific length of \mbox{12.7\,mm} that is representative of the height of the section enclosed between the sides of the welded joint and the electrodes. 
 
@@ -158,7 +159,7 @@ Pr = \frac{C_p \mu}{k}
 
 Considering that the clamping distance (Fig. \ref{fig:2_Fig2}) is usually less than \mbox{2\,mm}, it is assumed that no convective cooling takes place in the gaps of the model and in the enclosed space between the sides of the composite and the electrodes. 
 For the other outer surfaces of the model, natural convection described as in Eq. \ref{eq:natural_convection} is applied. 
-The natural convection coefficient ($h_{conv}$) for vertical surfaces with $10^4 < Pr \ Gr < 10^9$ can be approximated with Eq. \ref{eq:convection_vertical_plate} at \mbox{20\,W\,m$^{-1}$\,K$^{-1}$}.
+The natural convection coefficient ($h_{conv}$) for vertical surfaces with $10^4 < Pr \ Gr < 10^9$ can be approximated with Eq. \ref{eq:convection_vertical_plate} at \mbox{20\,W\,m$^{-1}$\,K$^{-1}$} \cite{Incropera2007}.
 This value is applied as a constant in the model for all outer surfaces. 
 
 \begin{equation}
@@ -171,7 +172,8 @@ h = \frac{0.59 \lambda_{air} \left(Pr \ Gr_L\right)^{0.25}}{L_c}
 \label{eq:convection_vertical_plate}
 \end{equation}
 
-The surface temperature of the exposed sections of the nanocomposite is high enough that radiative cooling must be accounted for, as defined in Eq. \ref{eq:radiative_cooling} with an emissivity of 1. 
+The surface temperature of the exposed sections of the nanocomposite is high enough that radiative cooling must be accounted for, as defined in Eq. \ref{eq:radiative_cooling}.
+An emissivity of 1 was defined in the model as a first approximation. 
 
 \begin{equation}
 - \mathbf{n} \cdot \mathbf{q} = \varepsilon \sigma_{SB} \left( T_{\infty}^4 - T_s^4 \right) 
@@ -312,11 +314,12 @@ The power supply was set up to operate at a constant power output during each te
 The power for each test was calculated based on the power density and the area of the nanocomposite between the electrodes, accounting for the area within the clamping distance in addition to the area within the weld. 
 The power density, the clamping distance, the pressure on the weld and the time during which power is applied were varied during the experiments. 
 Four K type thermocouples were located between the top adherent and the alumina silicate ceramic insulator block above the welding zone, as shown in \mbox{Fig. \ref{fig:2_Fig3}}, to serve as reference points to compare with the model. 
-Thermocouples could not be located inside the weld as they were subject to electrical interferences, even when protected by Kapton\textregistered \ tape, and they altered the heat transfer mechanism leading to premature degradation.  120mm
+Thermocouples could not be located inside the weld as they were subject to electrical interferences, even when protected by Kapton\textregistered \ tape, and they altered the heat transfer mechanism leading to premature degradation.  
 
 \begin{figure}[ht]
 	\center
-	\includegraphics[scale=0.75]{2_Fig3}
+	\resizebox{0.75\textwidth}{!}{
+	\input{tikz/thermocouple_welding_article2.tex}}
 	\caption{Location of thermocouples during welding experiments}
 	\label{fig:2_Fig3}
 \end{figure} 
@@ -337,6 +340,7 @@ The microhardness was set at \mbox{0.1\,GPa} in the model.
 
 \begin{table}[ht]
 	\centering
+	\caption{Results for Specific heat measurements}
 	\begin{tabular}{@{}cccc@{}}
 		\toprule
 		   Temperature    &           CF/PEEK            &          PEI/MWCNT           &       Alumina Silicate       \\
@@ -352,25 +356,24 @@ The microhardness was set at \mbox{0.1\,GPa} in the model.
 		       360        &             1792             &                              &                              \\
 		       399        &             1790             &             1955             &                              \\ \bottomrule
 	\end{tabular}
-	\caption{Results for Specific heat measurements}
 	\label{tab:T2_table1}
 \end{table}
 
 \begin{table}[ht]
 	\centering
+	\caption{Results for thermal conductivity measurement}
 	\begin{tabular}{@{}ccccc@{}}
 		\toprule
 		   Temperature    &           CF/PEEK           &           CF/PEEK           &          PEI/MWCNT          &      Alumina Silicate       \\
 		                  &          Parallel           &        Perpendicular        &                             &                             \\
 		{[}$^{\circ}$C{]} & {[}W\,m$^{-1}$\,K$^{-1}${]} & {[}W\,m$^{-1}$\,K$^{-1}${]} & {[}W\,m$^{-1}$\,K$^{-1}${]} & {[}W\,m$^{-1}$\,K$^{-1}${]} \\ \midrule
 		       20         &            2.25             &            0.55             &            0.41             &                             \\
-		       40         &                             &                             &            0.30             &             5.7             \\
+		       40         &                             &                             &            0.43             &             5.7             \\
 		       60         &                             &                             &            0.43             &                             \\
 		       110        &                             &                             &            0.46             &                             \\
 		       150        &                             &                             &            0.48             &                             \\
 		       200        &            3.02             &            0.73             &                             &                             \\ \bottomrule
 	\end{tabular}
-	\caption{Results for thermal conductivity measurement}
 	\label{tab:T2_table2}
 \end{table}
 
@@ -404,7 +407,7 @@ On the bottom surface of the nanocomposite, the cold edge is located on the mirr
 \begin{figure}[ht]
 	\center
 	\includegraphics[width=\textwidth]{2_Fig5}
-	\caption{Temperature distributions after 900 and 120 seconds for respective power densities of 275 and 350 kW/m2 at the interface on top of the nanocomposite HE with clamping distances of 0.001, 1.3 and 2.0 mm \cite{Brassard2019b}}
+	\caption{Temperature distributions after 900 and 120 seconds for respective power densities of 275 and \SI{350}{\kilo\watt\per\square\metre} at the interface on top of the nanocomposite HE with clamping distances of 0.001, 1.3 and 2.0 mm \cite{Brassard2019b}}
 	\label{fig:2_Fig5}
 \end{figure} 
 
@@ -453,6 +456,7 @@ A welding experiment at \mbox{200\,kW\,m$^{-2}$} during \mbox{900\,s} did not re
 
 \begin{table}[htb]
 	\centering
+	\caption{LSS tests results}
 	\resizebox{0.98\textwidth}{!}{
 		\begin{tabular}{@{}lll L{1.6cm} l C{1.1cm} C{1.1cm} C{1.1cm} C{1.1cm} C{1.1cm} C{1.1cm} C{1.1cm} @{}}
 		\toprule
@@ -472,12 +476,12 @@ A welding experiment at \mbox{200\,kW\,m$^{-2}$} during \mbox{900\,s} did not re
 		                   & 1.5      & 1.0       & LSS \mbox{± S.D.} & [MPa] &                   & 16.4 \mbox{± 7.8} & 18.6 \mbox{± 2.0} & 15.5 \mbox{± 3.8} & 19.6 \mbox{± 3.5} &                   &                   \\
 		                   &          &           & Samples           &       &                   & 3                 & 3                 & 3                 & 3                 &                   &                   \\ \bottomrule
 		\end{tabular}}
-	\caption{LSS tests results}
 	\label{tab:T2_table3}
 \end{table}
 
 \begin{table}[htb]
 	\centering
+	\caption{LSS tests results (continued)}
 	\resizebox{0.98\textwidth}{!}{
 		\begin{tabular}{@{}lll L{1.6cm} l C{1.1cm} C{1.1cm} C{1.1cm} C{1.1cm} C{1.1cm} C{1.1cm}@{}}
 			\toprule
@@ -503,7 +507,6 @@ A welding experiment at \mbox{200\,kW\,m$^{-2}$} during \mbox{900\,s} did not re
 			                   & 1.2      & 1.0       & LSS \mbox{± S.D.} & {[}MPa{]} &                   &                   &                   &                  & 19.4 \mbox{± 3.0} &                   \\
 			                   &          &           & Samples           &           &                   &                   &                   &                  & 3                 &                   \\ \bottomrule
 		\end{tabular}}
-	\caption{LSS tests results (continued)}
 	\label{tab:T2_table4}
 \end{table}
 
@@ -526,7 +529,7 @@ Direct imaging of the fractured surfaces (\mbox{Fig. \ref{fig:2_Fig8}}) provided
 First, signs of unstable crack propagation due to the brittleness of the nanocomposite are clearly visible. 
 Evenly spaced cracks in the matrix residues are visible on one face (\mbox{Fig. \ref{fig:2_Fig8}}a) and evenly spaced ridges are visible in the mirror matching face (\mbox{Fig. \ref{fig:2_Fig8}}b). 
 A close look at those ridges (\mbox{Fig. \ref{fig:2_Fig8}}c) shows polymer well bonded to the composite substrate. 
-Additionally, broken fibres can be seen embedded on top of nanocomposite residues still attached to opposing faces (\mbox{Fig. \ref{fig:2_Fig8}}d). 
+Second, broken fibres can be seen embedded on top of nanocomposite residues still attached to opposing faces (\mbox{Fig. \ref{fig:2_Fig8}}d). 
 Both of these observations are signs that the bonding between the nanocomposite and the composite adherents is not the weakest link. 
 Signs of thermal degradation could be observed in \mbox{Fig. \ref{fig:2_Fig8}}e serving as an example of porosities left by vaporized polymer. 
 Carbon fibres with no polymer attached to them or degraded polymer residues can be seen at other locations. 
@@ -535,7 +538,7 @@ Finally, when thermal degradation and unstable cracks combine in the same zone, 
 \begin{figure}[htb]
 	\center
 	\includegraphics[width=0.98\textwidth]{2_Fig8}
-	\caption{SEM fractography of welded specimens showing a) unstable crack propagation causing evenly spaced cracks in the nanocomposite b) and c) ridges left on the opposing surface when cracks forms d) fibre adherence to the nanocomfig:Figposite HE e) signs of localized thermal degradation f) unstable crack propagation combined with thermal degradation \cite{Brassard2019b}}
+	\caption{SEM fractography of welded specimens showing : a) unstable crack propagation causing evenly spaced cracks in the nanocomposite, b) and c) ridges left on the opposing surface when cracks forms, d) fibre adherence to the nanocomposite HE, e) signs of localized thermal degradation, f) unstable crack propagation combined with thermal degradation \cite{Brassard2019b}}
 	\label{fig:2_Fig8}
 \end{figure} 
 
@@ -552,7 +555,7 @@ Improvements to the process could come either by combining the brittle nanocompo
 This work presented the development of a finite element model for the resistance welding of thermoplastic composites, using a nanocomposite heating element. 
 The model allowed to establish a processing window leading to an improvement of up to 28\% in the LSS of welded joints. 
 Furthermore, the model and new experiments presented here increased our knowledge of the phenomena at play when welding using these newly developed HE. 
-The model hinted at the possibility to produce welds at lower power densities and this was validated experimentally. 
+The model demonstrated the possibility to produce welds at lower power densities and this was validated experimentally. 
 Finally, mechanical testing and fractography analysis of the nanocomposite HE highlighted its brittle nature which is currently the limiting factor in the mechanical strength of the welded joints. 
 Future work will aim at producing a conductive nanocomposite with a higher ductility than the current solution or to bond the nanocomposite to a compliant intermediary layer. 
 
@@ -567,7 +570,7 @@ The authors would also like to thank Vincent Rohart for his time and help for th
 \section{Supplementary Information}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-It section present a summary of all the materials properties used in the model. 
+This section presents a summary of all the materials properties used in the model. 
 
 The relative permittivity for the PEI/MWCNT nanocomposite was calculated with the law of mixture from the reported value of 3.15 for SABIC’s PEI grade ULTEM 1010 and a relative permittivity of 15 for MWCNTs \cite{Katsounaros2011}. 
 
@@ -575,6 +578,7 @@ The relative permittivity for the PEI/MWCNT nanocomposite was calculated with th
 % \usepackage{booktabs}
 \begin{table}[ht]
 	\centering
+	\caption{List of all specific heat used in the model}
 	\resizebox{\textwidth}{!}{
 		\begin{tabular}{@{}cccccc@{}}
 			\toprule
@@ -594,12 +598,12 @@ The relative permittivity for the PEI/MWCNT nanocomposite was calculated with th
 			399         & 1790       & 1955       &                  &            &            \\ \midrule
 			Source      & Measured   & Measured   & Measured         & COMSOL     & Suppliers  \\ \bottomrule
 	\end{tabular} }
-	\caption{List of all specific heat used in the model}
 	\label{tab:SI2_table1}
 \end{table}
 
 \begin{table}[ht]
 	\centering
+	\caption{List of all thermal conductivity used in the model}
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{@{}ccccccc@{}}
 			\toprule
@@ -616,7 +620,6 @@ The relative permittivity for the PEI/MWCNT nanocomposite was calculated with th
 			Source      & Measured  & Measured      & Measured  & Measured  & COMSOL    & Suppliers \\ \bottomrule
 		\end{tabular}%
 	}
-	\caption{List of all thermal conductivity used in the model}
 	\label{tab:SI2_table2}
 \end{table}
 
@@ -625,6 +628,7 @@ The relative permittivity for the PEI/MWCNT nanocomposite was calculated with th
 % \usepackage{graphicx}
 \begin{table}[ht]
 	\centering
+	\caption{List of all densities used in the model}
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{@{}llllll@{}}
 			\toprule
@@ -643,19 +647,18 @@ The relative permittivity for the PEI/MWCNT nanocomposite was calculated with th
 			Source            & \cite{Talbot2013}  & Measured           & Measured           & COMSOL             & Suppliers          \\ \bottomrule
 		\end{tabular}%
 	}
-	\caption{List of all densities used in the model}
 	\label{tab:SI2_table3}
 \end{table}
 
 \begin{table}[ht]
 	\centering
+	\caption{List of electrical properties for the model}
 	\begin{tabular}{@{}lccccc@{}}
 		\toprule
 		&                   & \multicolumn{2}{c}{PEI/MWCNT} & \multicolumn{2}{c}{Copper}  \\ \midrule
 		Electrical conductivity & {[}S\,m$^{-1}${]} & 80         & Measured         & $5.998 \times 10^7$ & COMSOL \\
 		Relative permittivity   & {[} \ {]}         & 4.3        & Calculated       & 1                  & COMSOL \\ \bottomrule
 	\end{tabular}%
-	\caption{List of electrical properties for the model}
 	\label{tab:SI2_table4}
 \end{table}
 

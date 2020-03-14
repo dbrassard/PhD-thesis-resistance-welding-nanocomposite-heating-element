@@ -27,6 +27,7 @@ Tout d'abord en ce qui concerne la production d'un élément chauffant nanocompo
 En second lieu, par l'obtention d'une soudure mixte avec un élastomère. 
 
 \section{Objectifs}
+\label{sec:objectifs}
 
 En considérant l'ensemble des connaissances publiées et des besoins du partenaire industriel, voici la liste des objectifs sur lesquels se concentreront ces travaux. 
 
@@ -39,13 +40,82 @@ En considérant l'ensemble des connaissances publiées et des besoins du partena
 
 \section{Cibles de performance}
 
-Afin d'évaluer l'atteinte des objectifs et pour aides dans la sélection des matériaux, ArianeGroup a fourni des cibles de performance calquées sur les caractéristiques de la solution actuelle pour les composites à matrice thermodurcissable. 
+Afin d'évaluer l'atteinte des objectifs et pour aider à la sélection des matériaux, ArianeGroup a fourni des cibles de performance calquées sur les caractéristiques de la solution actuelle pour les composites à matrice thermodurcissable. 
 Voici deux des principaux requis techniques concernant la jonction soudée. 
 
 \begin{enumerate}
-	\item Résistance en cisaillement supérieure à \SI{14}{\mega\pascal}. 
+	\item Résistance en cisaillement supérieure à \SI[locale=FR]{14}{\mega\pascal}. 
 	\item Rupture cohésive de l'élastomère. 
 \end{enumerate}
+
+\section{Éléments méthodologiques}
+
+Avant de procédé au développement d'un élément chauffant nanocomposite, des essais préliminaires ont permis d'établir certaines paramètres expérimentaux. 
+
+\subsection{Choix du polymère pour la matrice de l'élément chauffant nanocomposite}
+
+Pour la matrice du nanocomposite, des essais initiaux ont démontrés la possibilité d'employer du PEEK. 
+Cependant, tôt dans la conception du projet, il a été remarqué que la résistance thermique de l'élastomère serait le facteur limitant du procédé de soudage multimatériaux. 
+Afin de limiter la température du procédé de soudage, il a été décidé d'employer une matrice de PEI en raison de sa miscibilité avec le PEEK \cite{Torre1992,Crevecoeur1991}. 
+De plus, en raison de l'impact de la masse moléculaire sur le temps de reptation des chaînes, il a été décidé d'employer un PEI à faible masse moléculaire pour maximiser les chances d'obtenir des jonctions soudées. 
+Cette décision aura cependant un impact sur les résistance mécaniques obtenues lors des essais de caractérisation. 
+
+\subsection{Conception de l'élément chauffant nanocomposite}
+
+Après avoir déterminé le polymère composant la matrice du nanocomposite, une cible de conductivité électrique a été établie. 
+Cette cible a été établi de façon à limiter le voltage appliqué durant le procédé de soudage tout en considérant la puissance devant être dégagé durant le procédé. 
+L'équation \ref{EQ:conductivite} permet d'évaluer la conductivité électrique nécessaire ($\sigma$) pour dégager une puissance ($P$) définie en fonction de la géométrie du conducteur ($l$ et $A_s$) et de la tension électrique ($V$). 
+
+\begin{equation}
+\label{EQ:conductivite}
+\sigma = \frac{P \times \frac{l}{A_s}}{V^2}
+\end{equation} 
+
+En tenant compte des dimensions prévues de l'élément chauffant et pour une puissance surfacique de \SI[locale=FR]{350}{\kilo\watt\per\square\metre}, une application directe de cette formule permet de calculer qu'une conductivité électrique entre 45 et \SI[locale=FR]{1,8e4}{\siemens\per\metre} est nécessaire afin de maintenir un voltage dans une plage entre 5 et \SI[locale=FR]{100}{\volt}. 
+En raison des conductivités électriques pouvant être obtenues pour des nanocomposite conducteurs, seule une conductivité électrique s'approchant de la limite inférieure a pu être mise en œuvre. 
+Il a été décidé de viser une cible de conductivité électrique de \SI[locale=FR]{100}{\siemens\per\metre} pour l'élément chauffant nanocomposite. 
+
+\subsection{Choix des charges conductrices}
+
+Morphologiquement parlant, le PEI du nanocomposite sert à tenir en place un réseau de charges conductrice qui à leur tour permettent d'atteindre la cible de conductivité nécessaire au procédé de soudage. 
+Cette conception d'un élément chauffant n'est pas très éloignée de la conception conventionnelle qui emploie un grillage en acier inoxydable entre deux films de polymères. 
+Dans ces deux cas, la matrice est présente pour fournir une zone riche en résine pour favoriser le soudage. 
+
+Afin d'atteindre la cible de conductivité électrique établie, plusieurs compositions de nanocomposites ont été évaluées. 
+Tout d'abord, une évaluation des coûts a permis de déterminer que des nanocomposites conducteurs de PEI avec des nanofils d'argent auraient un coût de revient de l'ordre de 30 à 70\$ par grammes contre un coût d'environ 0,40\$ par gramme pour les nanocomposites avec des nanotubes de carbone à haute pureté. 
+En raison de l'échelle visée pour le procédé de soudage, les nanofibres d'argent ont été mises de côté en raison de leur coût trop élevé. 
+Pour les nanofibres de cuivre, leur coût évalué entre 0,90 et 1,30\$ par gramme les rendaient également plus coûteux que les charges à base de carbone. 
+
+Les charges conductrices évaluées lors des essais initiaux étaient des nanotubes de carbone multiparois avec une pureté de 99\% et 95\%, des nanofibres de carbone ainsi que des nanoplaquettes de graphène. 
+Ces charges ont été mélangées à du PEI avec des fractions massiques allant jusqu'à 15\%.
+La conductivité électrique des mélanges obtenus par extrusion a été évaluée à l'aide d'un système de mesure à 4 pointes. 
+La figure \ref{fig:conductivite_lin} présente les résultats des mesures de conductivité électrique. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\textwidth]{conductivity_lin.pdf}
+	\caption{Conductivité de mélanges de PEI et de particules conductrices}
+	\label{fig:conductivite_lin}
+\end{figure}
+ 
+La composition retenue pour le projet est un nanocomposite de PEI avec 10\% massique de nanotubes de carbone avec une pureté de 99\%. 
+La quantité de nanotubes employé dépasse la quantité nécessaire pour atteindre le seuil de percolation. 
+L'emploi d'un grand nombre de nanotubes permet d'atteindre une région de la courbe de conductivité électrique où les variations sont moins prononcées. 
+Cette région ressemble à un plateau avec une faible pente contrairement à la variation brusque à proximité du seuil de percolation. 
+L'emploi d'un nanocomposite avec une telle composition a pour but de maintenir la conductivité électrique à l'état fondu en maximisant les possibilités de maintenir le réseau électrique percolé. 
+ 
+\subsection{Méthode d'évaluation de la dispersion des charges}
+
+Tel que discuté au chapitre \ref{sec:RevLitt}, pour tirer profit des propriétés de conductivité électrique des nanoparticules, il est important de bien les disperser les nanocharges tout en maintenant un certain niveau de contact. 
+L'évaluation de l'état de dispersion peut être réalisée entre autre au microscope électronique à balayage ou avec un microscope à force atomique. 
+Les images obtenues peuvent ensuite être analysés pour évaluer la dispersion. 
+Des techniques existent même pour quantifier objectivement l'état de dispersion de particules \cite{Bray2011,Bray2012}. 
+l'effet de facteur de forme ou de la morphologie des charges évaluées peut également être considéré dans cette analyse \cite{Bray2013a,Sul2011}. 
+
+L'imagerie au microscope électronique à balayage a déjà été appliqué à l'analyse de dispersion de petites quantité de nanoparticules dans des polymères \cite{Xie2005,Diez-Pascual2009,Xin2011,Grossiord2008a,Bauhofer2009,Abbas2016}. 
+Par contre, de façon pratique, pour des niveaux de charges très élevés, l'analyse de la dispersion de nanocharges devient rapidement impossible en raison de la difficulté à correctement identifier les nanoparticules individuels. 
+Dans le cadre de cette thèse, la production par extrusion à l'état fondu a été sélectionnée afin de tenter de minimiser les problèmes d'agglomération et de variation de la composition locale. 
+Cependant, malgré le choix de ce moyen de production, il est probable que des agglomérats subsistent dans le nanocomposite en raison du taux élevé de nanotubes de carbone employé pour obtenir le niveau de conductivité désiré. 
 
 \section{Contenu des chapitres \ref{sec:Theme1} à \ref{sec:Theme3}}
 

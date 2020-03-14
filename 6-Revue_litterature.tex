@@ -3,7 +3,7 @@
 
 \section{Matériaux composites}
 
-Les matériaux structurels peuvent être divisés en 4 grandes classes; les métaux, les polymères, les céramiques et les composites. 
+Les matériaux structurels peuvent être divisés en 4 grandes classes: les métaux, les polymères, les céramiques et les verres, et les composites \cite{ashby2018materials}. 
 Un matériau composite est un assemblage solide d'au moins deux phases hétérogènes aux propriétés différentes dans le but d'obtenir un matériau aux propriétés différentes des phases isolées. 
 Les phases restent distinctes et séparées dans le matériau final \cite{Wikipedia_mat_comp}. 
 Ces mélanges permettent d'obtenir des matériaux sur mesure avec des propriétés ajustées selon le besoin de l'application. 
@@ -14,7 +14,7 @@ Les matériaux composites sont divisés en catégories selon la nature des phase
 Si on exclut le béton, les composites à matrice polymérique représentent la majorité des composites produits industriellement. 
 Chez ceux-ci, comme matériaux de renforts, on retrouve une majorité de composites de fibres inorganiques telles que les fibres de verre ou les fibres de carbone et, dans une plus faible proportion, de composites à base de fibres polymériques telles que l'aramide (ex : Kevlar, Nomex, etc.) ou le polyéthylène à très grande masse moléculaire (ex : Dyneema, Spectra, etc. ). 
 Ces fibres ont été sélectionnées pour leur très grande résistance spécifique et leur module de Young élevé. 
-La figure \ref{gibson2} présente une comparaison des propriétés des fibres utilisées dans les composites modernes. 
+Les composites modernes utilisent une grande variété de fibres aux propriétés variés (Fig. \ref{gibson2}). 
 Les fibres sont disponibles commercialement sous la forme de fibres courtes, de rouleaux de fibres unidirectionnelles ou de toiles tissées. 
 
 \begin{figure}
@@ -28,6 +28,7 @@ Au niveau de la matrice, les développements initiaux des composites à matrice 
 Ces derniers ont été favorisés au départ en raison de la possibilité de les employer à l'état liquide à pression ambiante, avant la polymérisation, pour imprégner les fibres \cite{Chatain2015}. 
 C'est pour cette raison que les composites à matrice thermodurcissables occupent la majorité du marché pour les composites à matrice polymérique encore aujourd'hui. 
 
+\FloatBarrier
 \subsection{Performances}
 
 Les performances mécaniques des composites proviennent de la combinaison des fibres et de la matrice qui les supportent. 
@@ -46,9 +47,9 @@ Un autre avantage de la nature hétérogène des composites réside dans leur r�
 Contrairement aux métaux qui n'offrent pas de frontières à la propagation de fissure, la présence de fibres au travers de la fissure permet de maintenir une intégrité mécanique des pièces malgré la présence d'une fissure. 
 La matrice polymérique peut fissurer et se déformer pour absorber une partie de l'énergie de déformation tandis que les fibres résistent encore un moment en ralentissant la vitesse de propagation des fissures \cite{Hull2001}. 
 
-\subsection{Composites à matrice termoplastique}
+\subsection{Composites à matrice thermoplastique}
 
-Les composites à matrice thermoplastique ont commencé à être considérés sérieusement durant les années 1980 pour améliorer de la durabilité et de la résilience aux impacts à basse vitesse des composites \cite{asmhandbook21}. 
+Les composites à matrice thermoplastique ont commencé à être considérés sérieusement durant les années 1980 pour améliorer la durabilité et la résilience aux impacts à basse vitesse des composites \cite{asmhandbook21}. 
 Même si le marché continue d'utiliser en grande quantité les matrices thermodurcissables, les compagnies aéronautiques telles que ArianeGroup convertissent leurs procédés de fabrication pour utiliser les composites thermoplastiques de plus en plus. 
 Du côté de l'automobile également, afin de rencontrer les cibles de consommation de carburant américaines et européennes, les manufacturiers intègrent un volume croissant de composites à leurs produits. 
 Les composites à matrice thermoplastique occupent d'ailleurs un rôle central dans cette transition \cite{CompositesWorld2019_market2020}. 
@@ -101,30 +102,61 @@ Il est possible de les assembler par co-consolidation, collage ou assemblage mé
 Dans le cas des composites à matrice thermoplastique, un plus large éventail de méthode de soudage s'ajoute aux méthodes déjà disponibles pour les composites thermodurcissables \cite{campbell2003}. 
 Puisque le collage de composites à matrice thermoplastique produit des joints moins résistants que pour les composites à matrice thermodurcissables en raison de la nature des polymères \cite{campbell2003} et que les procédés de soudage sont moins sensibles aux contaminants, ces derniers sont préférés pour l'assemblage des composants. 
 
-\section{Soudage des composites à matrice thermoplastique}
+\section{Reptation des polymères thermoplastique}
 
-Les composites à matrice thermoplastique, contrairement aux composites à matrice thermodurcissable, ont la possibilité d'être fondus pour modifier leur forme. 
-Cette particularité leur permet également d'être pliés ou emboutis pour former des géométries plus complexes à partir de plaques planes ou encore de les assembler par soudage. 
-Lors du soudage, les pièces à joindre sont fondues ou chauffées au point de contact, pressées ensemble et finalement consolidées pour obtenir une seule pièce continue. 
-Lors de la mise en contact des faces à joindre, les chaînes de polymère mobiles diffusent entre les pièces et nous observons progressivement une homogénéisation de la soudure et la disparition de la frontière entre les pièces (Fig. \ref{fig:polymer_diffusion}). 
-L'absence de transition dans le matériau a ouvert la porte à la certification des pièces obtenues pour le domaine de l'aviation \cite{Gardiner2018}. 
+La reptation des chaînes est un phénomène clé pour la compréhension de l'évolution du comportement mécanique des jonction soudées. 
+Pendant le procédé de soudage, lors de la mise en contact des faces à joindre, les chaînes de polymère mobiles diffusent entre les pièces et nous observons progressivement une homogénéisation de la soudure et la disparition de la frontière entre les pièces (Fig. \ref{fig:polymer_diffusion}). 
+Cette diffusion des chaînes se produit principalement en deux étapes. 
+\begin{enumerate}
+	\item Développement du contact intime entre les adhérents.
+	\item Cicatrisation de l'interface
+\end{enumerate}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=1]{welding_chain_diffusion.pdf}
+	\includegraphics[scale=1.2]{welding_chain_diffusion.pdf}
 	\caption{Diffusion des chaînes de polymère durant le soudage a) état initial b) mise en contact des faces c) formation du contact intime entre les faces d) diffusion des chaînes de polymère au travers de l'interface e) disparition de l'interface }
 	\label{fig:polymer_diffusion}
 \end{figure}
 
-La diffusion des chaînes de polymère aux interfaces des polymères est un phénomène documenté. 
-Le temps nécessaire pour cicatriser une fissure a été défini comme étant le temps nécessaire pour que les molécules adjacentes à la fissure diffusent à mi-chemin \cite{Prager1981a}. 
+Avant même que la diffusion des chaînes ne puisse prendre place, les faces en contact doivent atteindre un état de contact intime. 
+Durant cette étape, les surfaces se conforment les unes aux autres mais la diffusion des chaînes de polymère n'a pas encore débuté. 
+La question de contact intime a été abordée très tôt dans le développement des composites à matrice thermoplastique en raison de la nécessité de consolider les plis lors de la fabrication des pièces. 
+Les équations développés pour l'atteinte de cet état prennent en compte la rugosité de la surface à l'aide de paramètres géométriques, la pression de contact et la viscosité de la matrice polymérique. 
+Les premiers modèles simplifiaient la surface en une série de rectangles idéalisés d'aire constante mais dont la hauteur et la largeur varie en fonction du temps \cite{Lee1987}. 
+En intégrant la variation de la pression et de la viscosité, on arrive à l'équation suivante \cite{Mantell1992a} : 
+
+\begin{equation}
+D_{ic} \approx \frac{1}{w^*} \left[ a^* \int_{0}^{t_c} \frac{P_{app}}{\mu _{mf}} \, dt \right]^{\frac{1}{5}}
+\label{eq:contact_intime}
+\end{equation}
+
+Les modèles basés sur des rectangles idéalisés sont incapables de prédire le comportement depuis des mesures directes de la rugosité des interfaces et nécessitent des paramètres d'ajustement obtenus suite à des essais en laboratoire \cite{Yang2001}. 
+Une autre génération de modèle tente plutôt de représenter la surface comme une série de rectangles de tailles diverses parfois semblables à un fractal dont les propriétés peuvent être reliées à des mesures de rugosité des surfaces \cite{Yang2001,Yang2002}. 
+Dans ces modèles, le polymère est écrasé jusqu'à ce que tous les rectangles d'aire constante forment une frontière unique. 
+À partir de données de rugosité, l'auteur a pu établir un modèle montrant une évolution rapide du critère de contact intime suivi d'un ralentissement à l'approche du plein contact \cite{Yang2001}. 
+Dans des conditions isothermes à \SI[locale=FR]{350}{\celsius} avec des pressions de 0,67 et \SI[locale=FR]{1,63}{\mega\pascal}, le contact intime est totalement atteint avec des temps respectivement de \SI[locale=FR]{100}{\second} et de \SI[locale=FR]{40}{\second} pour des laminés en PEEK. 
+Une hausse de la température ou de la pression diminue très rapidement le temps nécessaire pour atteindre la condition de contact intime \cite{Yang2002}. 
+
+La seconde étape du développement de la jonction entre les pièces est la cicatrisation de l'interface. 
+Ce phénomène se produit par la diffusion des chaînes de polymère au travers de l'interface entre un même polymère ou des polymères compatibles \cite{Jud1981b}. 
+La reconfiguration des chaînes dans le polymère se produit par un phénomène de reptation et de mouvement brownien a été conceptualisé, pour les polymères fondus, assez tôt \cite{DeGennes1971,Edwards1978b,Klein1978,Daoud1979}. 
+La cicatrisation par transfert des chaînes de polymère au travers de l'interface peut se produire lorsque des polymères amorphes compatibles sont chauffés au dessus de leur température de transition vitreuse et qu'ils sont en contact \cite{Jud1981a,Prager1981a}. 
+La cicatrisation se produit par le mouvement stochastique de l'extrémité des chaînes entre deux pièces en contact et entraîne une reconfiguration des chaînes. 
+Cette dernière entraîne également la formation d'enchevêtrement de chaînes au travers de l'interface \cite{Wool1983}
+La diffusion des chaînes entraîne la disparition progressive de la démarcation entre les pièces en contact. 
+Le temps nécessaire pour cicatriser une fissure a été défini comme étant le temps nécessaire pour que les molécules adjacentes à la fissure diffusent à mi-chemin \cite{Prager1981a}.
+Tout dépendamment de la nature du polymère, son poids moléculaire, la température et la pression, le processus de cicatrisation peut se produire en quelques minutes ou peut nécessiter plusieurs heures voir même des jours \cite{Prager1981a}. 
+On nomme le temps de reptation ($t_r$) le temps que prend une chaîne de polymère pour quitter totalement sa configuration d'origine et atteindre une nouvelle configuration géométrique. 
+Dans le cas d'une soudure où l'ensemble de la surface n'est pas à une température constante, la cicatrisation commence à se produire progressivement dans les sections ayant déjà atteint le contact intime. 
+
 Un paramètre clé pour évaluer la vitesse du phénomène est le temps de reptation. 
-Pour les polymères amorphes, on peut citer les travaux de Wool \cite{Wool1983,Wool1989} durant les années 1980. 
-Ses travaux se sont concentrés sur l'évolution des propriétés mécaniques durant la phase de transition vers la diffusion complète des chaînes de polymère en condition isotherme. 
+Pour les polymères amorphes, on peut citer les travaux de Wool durant les années 1980 \cite{Wool1983,Wool1989}. 
+Ces travaux traitent de l'évolution des propriétés mécaniques durant la phase de transition vers la diffusion complète des chaînes de polymère en condition isotherme. 
 Il dénote entre autres que l'énergie nécessaire pour séparer des interfaces est une fonction de 4 paramètres : \begin{inparaenum}[(1)]
-	\item le temps
-	\item la température
-	\item la pression
+	\item le temps, 
+	\item la température, 
+	\item la pression et
 	\item la masse moléculaire. 
 \end{inparaenum}
 Ce dernier paramètre étant directement lié au temps de reptation tel que : 
@@ -133,46 +165,91 @@ Ce dernier paramètre étant directement lié au temps de reptation tel que :
 t_r \approx M^3
 \end{equation}
 
-On peut évaluer le temps de reptation à l'aide d'une équation d'Arrhenius où les paramètres $A_r$ et $B_r$  doivent être évalués expérimentalement \cite{Bastien1991,Ageorges1998}. 
+L'impact de la température sur le temps de reptation peut etre évalué à l'aide d'une équation d'Arrhenius où les paramètres $A_r$ et $B_r$  doivent être évalués expérimentalement \cite{Bastien1991,Ageorges1998}. 
 
 \begin{equation}
-t_r = B_r \, exp \left( \frac{A_r}{t} \right)
+t_r = B_r \, exp \left( \frac{A_r}{T} \right)
 \end{equation}
 
-
-Lors de la diffusion des chaînes de polymère dans les soudures en condition non isotherme, d'autres mécanismes entrent en jeu. 
-Avant même que la diffusion des chaînes ne puisse prendre place, les faces en contact doivent atteindre un état de contact intime. 
-Les équations développés pour l'atteinte de cet état prennent en compte la rugosité de la surface à l'aide de paramètres géométriques, la pression de contact et la viscosité de la matrice polymérique \cite{Mantell1992a}. 
+En condition isotherme et pour un temps de reptation donné, les propriétés mécaniques évoluent de façon non-linéaire où le degré de cicatrisation ($D_{h}$) évolue tel que \cite{F.Yang2002} : 
 
 \begin{equation}
-D_{ic} \approx \frac{1}{w^*} \left[ a^* \int_{0}^{t_c} \frac{P_{app}}{\mu _{mf}} \, dt \right]^{\frac{1}{5}}
-\label{eq:contact_intime}
+D_h \left( t \right) = \frac{\sigma}{\sigma_{\infty}} \propto \left( \frac{t}{t_r} \right)^{1/4}
 \end{equation}
 
-Selon les modèles \cite{Yang2002}, le temps pour atteindre le contact intime est assez court et diminue très rapidement avec une hausse de la température et de la pression. 
-En parallèle, dans les sections ayant déjà atteint le contact intime, l'autohésion commence à se produire. 
-Ce paramètre a également fait l'objet d'études et on peut évaluer le degré d'autohésion à l'aide de l'équation \cite{Bastien1991,Ageorges1998} :
+Autrement, en définissant les propriétés mécaniques à un temps infini ($\sigma_{\infty}$) telles que \cite{Wool1983} :
 
 \begin{equation}
-D_{au} = \left( \frac{t}{t_r} \right) ^{\frac{1}{4}}
+\sigma_{\infty} \propto M^{1/2}
 \end{equation}
 
-Bastien \cite{Bastien1991} a pu prévoir la résistance obtenue après un soudage en condition non isotherme, pour des jonctions entre du PEI et du PEEK, en se basant sur des données expérimentales provenant d'essais de condition isotherme afin d'estimer les temps de reptation en fonction de la température. 
-Les résultats obtenus ont des marges d'erreur d'environ 20\%, mais confirment la possibilité d'obtenir des soudages de qualité avec des temps de mise en forme courts. 
-Un modèle subséquent \cite{F.Yang2002} est parvenu à améliorer ces prédictions pour les conditions de variations rapides de température et permet d'évaluer le degré de cicatrisation d'une interface avec plus de précision. 
+Et en observant que les propriétés mécaniques évoluent, pour des temps inférieur au temps de reptation telles que \cite{Wool1983} :
 
-\begin{figure}[]
+\begin{equation}
+\sigma \propto \left( \frac{t}{M} \right) ^{1/4}
+\end{equation}
+
+On obtient, pour la période où le temps ($t$) est inférieur au temps de reptation ($t_r$), une estimation de l'évolution les propriétés mécaniques de la soudure \cite{Wool1983} : 
+
+\begin{equation}
+\frac{\sigma}{\sigma_{\infty}} \propto t^{1/4} M^{-3/4}
+\end{equation}
+
+D'autres chercheurs ont développés les équations décrivant l'évolution de la cicatrisation pour tenir compte de conditions non-isothermes en discrétisant les phénomènes de contact intime et d'autohésion en fonction du temps  \cite{Bastien1991,F.Yang2002,Ageorges1998}. 
+
+Bastien a pu prévoir la résistance obtenue après un soudage en condition non isotherme, pour des jonctions entre des adhérents en PEI, en se basant sur des données expérimentales provenant d'essais de condition isotherme afin d'estimer les temps de reptation en fonction de la température \cite{Bastien1991}. 
+Le modèles de Bastien obtient des temps de reptation du même ordre de grandeur que les temps de reptation évalués expérimentalement (Tab. \ref{tab:temps_de_reptation_Bastien}) en se basant sur la distance moyenne d'interdiffusion plutôt que sur l'évaluation de la longueur des chaînes mineures ayant traversé l'interface. 
+Les résultats obtenus ont des marges d'erreur d'environ 20\%, mais confirment la possibilité d'obtenir des soudages de qualité avec des temps de mise en forme courts.
+
+\begin{table}[h]
+	\centering
+	\caption{Évaluation des expérimentale des temps de reptation et comparaison avec les résultats des modèles}
+	\label{tab:temps_de_reptation_Bastien}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{@{}lcccc@{}}
+			\toprule
+			                     & \multicolumn{1}{l}{} &          \multicolumn{3}{c}{Temps de reptation}          \\
+			Type d'essai         &          Température &      Résultats &          Critère &  Critère de longueur \\
+			                     &                      &   expérimentaux & d'interdiffusion & des chaînes mineures \\
+			                     &      [\si{\celsius}] & [\si{\second}] &   [\si{\second}] &       [\si{\second}] \\ \midrule
+			Moulage à la presse  &                  230 &        300 880 &          510 000 &            5 400 000 \\
+			Essais de fluage     &                  250 &           4800 &             5446 &               99 131 \\
+			Mesures en rhéologie &                  270 &          1 - 8 &               81 &                 2437 \\ \bottomrule
+		\end{tabular}%
+	}
+\end{table}
+
+Un modèle subséquent est parvenu à améliorer les prédictions de temps de cicatrisation pour les conditions de variations rapides de température et permet d'évaluer l'état d'une interface soudée avec plus de précision \cite{F.Yang2002}. 
+Les équations de développement du contact intime et du phénomène de cicatrisation ont été mis en application avec des résultats probants pour élaborer une fenêtre d'opération pour le soudage de composites à matrice thermoplastique \cite{Ageorges1998}. 
+
+La littérature n'est pas aussi développée en ce qui concerne les thermoplastiques semi-cristallins. 
+Cependant, certains travaux ont permis de démontrer l'importance de la co-cristallinité et de la température sur la possibilité d'obtenir un soudage entre thermoplastiques semi-cristallins  \cite{Xue1998,Smith2001}. 
+Le taux de cristallinité a également un grand impact sur la possibilité de souder des pièces. 
+Les cristaux présents dans les adhérents semi-cristallins affectent la facilité avec laquelle les chaînes de polymère peuvent migrer à l'interface \cite{Jarrousse2004}. 
+Un taux de cristallinité élevé crée des entraves au déplacement des chaînes en dessous de la température de fusion tandis qu'un échantillon faiblement cristallin possède des zones amorphes qui peuvent migrer et interdiffuser sous la température de fusion. 
+Lors de la fusion des cristaux, la possibilité de former des cristaux en co-cristallinité qui unissent les deux phases est un facteur important à considérer \cite{Smith2001,Zanetto2001}. 
+Jusqu'à un certain point, plus la température est élevée, plus la soudure pourra se développer jusqu'à atteindre la résistance normale du polymère. 
+
+\section{Soudage des composites à matrice thermoplastique}
+
+Les composites à matrice thermoplastique, contrairement aux composites à matrice thermodurcissable, ont la possibilité d'être fondus pour modifier leur forme. 
+Cette particularité leur permet également d'être pliés ou emboutis pour former des géométries plus complexes à partir de plaques planes ou encore de les assembler par soudage. 
+Lors du soudage, les pièces à joindre sont fondues ou chauffées au point de contact, pressées ensemble et finalement consolidées pour obtenir une seule pièce continue. 
+L'absence de transition dans le matériau a ouvert la porte à la certification des pièces obtenues pour le domaine de l'aviation \cite{Gardiner2018}. 
+
+\begin{figure}[h]
 	\centering
 	\input{tikz/arbre_procedes_soudage.tex}
 	\caption{Procédés de soudage (adapté de \cite{Ageorges2001a}, reproduction avec autorisation)}
 	\label{fig:arbre_procédé_soudage}
 \end{figure}
 
+\FloatBarrier
 De nombreux procédés existent pour souder des polymères. 
 La source de chaleur employée est généralement l'élément différenciateur entre les procédés (Fig. \ref{fig:arbre_procédé_soudage}). 
 Il existe les procédés de chauffe en volume où les composants de l'assemblage sont chauffés en totalité. 
 Ces procédés peuvent être réalisés entre autres dans un autoclave ou une presse chauffante. 
-Un exemple de méthode soudage dans cette catégorie est le procédé Thermabond \cite{Smiley1991a}. 
+Un exemple de méthode de soudage dans cette catégorie est le procédé Thermabond \cite{Smiley1991a}. 
 En raison de leur grande demande énergétique, ces procédés sont généralement considérés comme étant peu efficaces. 
 Une seconde famille de procédés produit un chauffage par friction, vibration \cite{Bates2007d} ou ultrasons. 
 À l'aide d'un mouvement alternatif rapide, la friction entre les composants produit un échauffement local. 
@@ -191,7 +268,7 @@ Finalement, le soudage par résistance utilise les pertes par résistance dans u
 Il s'agit d'une méthode rapide, répétable et pouvant être aisément mise à l'échelle pour produire de plus grandes soudures. 
 Le reste des travaux présentés dans cette thèse porteront sur le soudage par résistance. 
 
-\begin{figure}[t]
+\begin{figure}[h]
 	\centering
 	\input{tikz/setup_soudage_legende_dessous.tex}
 	\caption{Schéma du procédé de soudage par résistance avec identification des modes de conduction de chaleur}
@@ -210,9 +287,9 @@ Les équations de contact intime et d'autohésion par diffusion des chaînes en 
 
 Si l'on fixe la géométrie du montage de soudage et le choix des matériaux, les principaux paramètres ayant une influence sur la qualité du joint sont 
 \begin{inparaenum}[(1)]
-	\item la puissance électrique
-	\item le temps de soudage
-	\item les effets de bords et les modes de conduction de chaleur
+	\item la puissance électrique, 
+	\item le temps de soudage, 
+	\item les effets de bords et les modes de conduction de chaleur et
 	\item la pression appliquée sur la soudure. 
 \end{inparaenum}
 Globalement, il faut également tenir compte des propriétés des matériaux employés ainsi que la géométrie des composants du montage. 
@@ -226,9 +303,9 @@ Globalement, il faut également tenir compte des propriétés des matériaux emp
 
 Afin d'optimiser la qualité de la soudure, la puissance électrique et le temps de soudage peuvent facilement être modifiés. 
 La plage de puissance ainsi que l'énergie nécessaire (produit de la puissance et du temps) à la production d'une soudure satisfaisante sont documentées dans la littérature \cite{Hou1999a}. 
-Lors de l'utilisation de grillages en acier inoxydable comme éléments chauffants, des puissances surfaciques allant de 80 à \SI{150}{\kilo\watt\per\square\metre} permettent typiquement de produire des soudures satisfaisantes. 
-D'autres auteurs ont également utilisé des puissances allant jusqu'à \SI{282}{\kilo\watt\per\square\metre} \cite{Dube2007} avec des temps plus courts. 
-Certains auteurs utilisent également de très fortes puissances pulsées de l'ordre de \SI{600}{\kilo\watt\per\square\metre} avec un temps de repos de quelques secondes entre chaque pulsation afin d'obtenir une température plus uniforme dans la zone soudée et réduire la quantité d'énergie requise  \cite{Arias1996}. 
+Lors de l'utilisation de grillages en acier inoxydable comme éléments chauffants, des puissances surfaciques allant de 80 à \SI[locale=FR]{150}{\kilo\watt\per\square\metre} permettent typiquement de produire des soudures satisfaisantes. 
+D'autres auteurs ont également utilisé des puissances allant jusqu'à \SI[locale=FR]{282}{\kilo\watt\per\square\metre} \cite{Dube2007} avec des temps plus courts. 
+Certains auteurs utilisent également de très fortes puissances pulsées de l'ordre de \SI[locale=FR]{600}{\kilo\watt\per\square\metre} avec un temps de repos de quelques secondes entre chaque pulsation afin d'obtenir une température plus uniforme dans la zone soudée et réduire la quantité d'énergie requise  \cite{Arias1996}. 
 Dans presque tous ces cas, les auteurs ont appliqué le courant en maintenant une tension constante ou en produisant une rampe de voltage. 
 La résistance des éléments chauffants en acier inoxydable augmente lors de la chauffe entraînant une réduction de la puissance dissipée dans le joint à plus haute température. 
 La figure \ref{fig:process_window} présente une fenêtre de puissance de soudage en fonction du temps afin d'obtenir un soudage entre des pièces composites avec un élément chauffant en acier inoxydable ou en composite de fibre de carbone avec une matrice en PEI. 
@@ -240,7 +317,7 @@ E = P \times t
 \end{equation}
 
 Où $E$ est la quantité d'énergie en Joules, $P$ est la puissance en Watts et $t$ est le temps en secondes. 
-On peut obtenir la puissance d'un élément chauffant de section constante, en fonction de ses propriétés électriques et de ses dimensions à l'aide des équations suivantes. Dans ces équations, $V$ est la tension en volts, $I$ est l'intensité du courant en ampères, $R$ est la résistance en $\ohm$, $L$ est la longueur en mètres du conducteur, $A_s$ est l'aire de la section du conducteur en mètres carrés et $\rho_{ele}$ est résistivité en $\ohm \cdot$mètres. 
+On peut obtenir la puissance d'un élément chauffant de section constante, en fonction de ses propriétés électriques et de ses dimensions à l'aide des équations suivantes. Dans ces équations, $V$ est la tension en volts, $I$ est l'intensité du courant en ampères, $R$ est la résistance en $\ohm$, $L$ est la longueur en mètres du conducteur, $A_s$ est l'aire de la section du conducteur en mètres carrés et $\rho_{ele}$ est la résistivité en $\ohm \cdot$mètres. 
 
 \begin{equation}
 P = V \times I
@@ -258,13 +335,13 @@ P = \frac{\rho_{ele} \times L}{A_s} \ I^2
 P = \frac{V^2}{\rho_{ele}} \ \frac{A_s}{L}
 \end{equation}
 
-Il est possible de lier la résistivité ($\rho_{ele}$) d'un matériau à sa conductivité ($\sigma$) en Siemens par mètres à l'aide de l'équation suivante. 
+Il est possible de lier la résistivité ($\rho_{ele}$) d'un matériau à sa conductivité ($\sigma$) en Siemens par mètres à l'aide de l'équation suivante :
 
 \begin{equation}
 \sigma = \frac{1}{\rho_{ele}}
 \end{equation}
 
-Dans le cas des éléments pour le soudage résistif, ces équations sont simplifiées sous la forme suivante. Où $l$ est la largeur en mètre du grillage et $\gamma$ est la résistivité spécifique en $\ohm$. 
+Dans le cas des éléments pour le soudage résistif, ces équations sont simplifiées sous la forme suivante où $l$ est la largeur en mètre du grillage et $\gamma$ est la résistivité spécifique en $\ohm$ :
 
 \begin{equation}
 R = \gamma \ \frac{L}{l}
@@ -280,15 +357,15 @@ Cependant, pour un montage de soudage donné, un contrôle limité de ce paramè
 Comme indiqué à la figure \ref{fig:schema_soudage_resistance}, les pertes thermiques de l'élément chauffant changent de mode de diffusion en fonction de leur position dans la soudure. 
 Dans les zones où l'élément chauffant est positionné entre les adhérents composites ou lorsqu'il est en contact avec les électrodes, la diffusion thermique se produit principalement par conduction. 
 Dans les zones où l'élément chauffant est exposé (entre les bords des adhérents et les électrodes), les pertes thermiques se produisent plutôt par radiation et convection naturelle. 
-Puisque ces derniers modes de conduction de chaleur sont moins efficaces, un certain contrôle de la température au bord du laminé est possible en ajustant la distance de serrage \cite{Talbot2013}. 
+Puisque ces derniers modes de transfert de chaleur sont moins efficaces, un certain contrôle de la température au bord du laminé est possible en ajustant la distance de serrage \cite{Talbot2013}. 
 Il est impossible d'éliminer totalement ces effets de bord, mais il est possible de viser des paramètres de soudage qui en réduisent l'effet. 
 
-En ce qui concerne la pression appliquée sur la soudure, plusieurs chercheurs ont présenté l'impact de la pression sur la qualité des soudures obtenues. 
-En premier lieu, pour les soudures de laminés avec une matrice en polyétherimide (PEI), Ageorges \cite{Ageorges2000a} a observé des signes de déconsolidation des laminés lorsqu'une faible pression, de l'ordre de \SI{0.1}{\mega\pascal}, est employée.
-Il a aussi noté le déplacement des fibres et un trop grand écoulement causé par la compression du laminé lorsqu'une pression supérieure à \SI{1.6}{\mega\pascal} est employée. 
-Il définit au final une plage entre 0.2 et \SI{1.6}{\mega\pascal} comme cible. 
+En ce qui concerne la pression appliquée sur la soudure, plusieurs chercheurs ont présenté l'effet de la pression sur la qualité des soudures obtenues. 
+En premier lieu, pour les soudures de laminés avec une matrice en polyétherimide (PEI), Ageorges \cite{Ageorges2000a} a observé des signes de déconsolidation des laminés lorsqu'une faible pression, de l'ordre de \SI[locale=FR]{0.1}{\mega\pascal}, est employée.
+Il a aussi noté le déplacement des fibres et un trop grand écoulement causé par la compression du laminé lorsqu'une pression supérieure à \SI[locale=FR]{1.6}{\mega\pascal} est employée. 
+Il définit au final une plage entre 0,2 et \SI[locale=FR]{1.6}{\mega\pascal} comme cible. 
 Une autre étude plus détaillée \cite{Shi2017} a observé l'effet de la pression sur la formation de porosités et la déconsolidation pour des laminés de fibres de verre et PEI. 
-Les résultats ont démontré qu'une pression d'au moins \SI{0.8}{\mega\pascal} est nécessaire pour éliminer les porosités à l'interface causées par l'humidité et la déconsolidation du laminé. 
+Les résultats ont démontré qu'une pression d'au moins \SI[locale=FR]{0.8}{\mega\pascal} est nécessaire pour éliminer les porosités à l'interface causées par l'humidité et la déconsolidation du laminé. 
 
 \begin{figure}[h]
 	\centering
@@ -308,13 +385,25 @@ Il est également possible d'isoler le grillage métallique à l'aide d'un revê
 Ce revêtement empêche tout contact électrique entre les fibres et l'élément chauffant. 
 Finalement, il est également possible d'employer une couche d'un polymère possédant une température de mise en forme inférieure à la température de fonte du polymère de base \cite{Stavrov2005a}. 
 
-Le soudage par résistances des composites thermoplastique est généralement réalisé avec un élément chauffant en acier inoxydable ou encore en fibre de carbone. 
-Initialement, il était naturel pour les chercheurs d'utiliser en élément chauffant en composites à fibre de carbone \cite{Ageorges2000a,houghton1984bonding,Eveno1988}. 
+Le soudage par résistances des composites thermoplastiques est généralement réalisé avec un élément chauffant en acier inoxydable ou encore en fibre de carbone. 
+Initialement, il était naturel pour les chercheurs d'utiliser un élément chauffant en composites à fibre de carbone \cite{Ageorges2000a,houghton1984bonding,Eveno1988}. 
 Cependant, des problèmes persistants étaient causés par la connexion électrique avec les fibres, le manque de répétabilité dans les résultats obtenus et la mise à l'échelle \cite{McKnight1997}. 
 Le passage à des éléments chauffants en acier inoxydable a permis d'améliorer grandement la répétabilité du procédé ainsi que sa capacité à être mis à l'échelle \cite{Hou1999a}.  
 Cependant, dans certaines circonstances, le manque d'adhésion entre les éléments chauffants en acier inoxydable et la matrice peut être le point faible d'une soudure par résistance \cite{Dube2007,Dube2012a,Dube2009a,Shi2014,Shi2015a}. 
 Également, les éléments chauffants métalliques peuvent poser d'autres problèmes tel qu'une augmentation de l'écho radar \cite{Ageorges2001a}. 
 
+Le soudage par résistance des composites partage un point particulier avec le procédé de soudage avec film amorphe aussi appelé procédé Thermabond \cite{Smiley1991a}. 
+Dans ce procédé, un film amorphe est comoulé à la surface d'un polymère semi-cristallin fondant à une température que le polymère amorphe. 
+L'assemblage est ensuite chauffé dans une plage de température permettant la soudure du polymère amorphe mais évitant la fonte du polymère semi-cristallin (Fig. \ref{fig:thermabond_process}). 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.55\textwidth]{Thermabond_Bastien1991.jpg}
+	\caption{Modules du PEEK et du PEI illustrant la plage de température du procédé de soudage avec un film amorphe (tiré de \cite{Bastien1991}, reproduction avec autorisation)}
+	\label{fig:thermabond_process}
+\end{figure}
+
+\FloatBarrier
 \subsection{Soudage avec matériaux mixtes}
 
 Les composites à matrice thermoplastiques peuvent également être joints à d'autres matériaux. 
@@ -325,31 +414,33 @@ Lors du soudage subséquent, le polymère vient remplir les porosités créées 
 Ce procédé a d'ailleurs fait l'objet d'une démonstration technologique visant à présenter une cellule de production automatisée pour des pièces du domaine automobile \cite{Gardiner2019a}. 
 
 En plus des métaux, il est possible, dans certains cas de souder des adhérents en composites à matrice thermodurcissable. 
-En employant une couche de polymère thermoplastique moulée avec le thermodurcissable lors de sa fabrication, des chercheurs ont pu souder des composites thermoplastiques avec des pièces en époxy \cite{Lionetto2018a,FernandezVillegas2015}
+En employant une couche de polymère thermoplastique moulée avec le thermodurcissable lors de sa fabrication, des chercheurs ont pu souder des composites thermoplastiques avec des pièces en époxy \cite{Lionetto2018a,FernandezVillegas2015}.
 
 \section{Nanocomposites conducteurs}
 
 Les nanocomposites sont définis par l'Office québécois de la langue française depuis 2005 comme : 
 
 \begin{quote}
-	Matériau qui comporte deux ou plusieurs phases distinctes dont une au moins intègre des éléments qui possèdent une dimension pouvant varier entre 1 et 100 nanomètres.
+	\textit{Matériau qui comporte deux ou plusieurs phases distinctes dont une au moins intègre des éléments qui possèdent une dimension pouvant varier entre 1 et 100 nanomètres.}
 \end{quote}
 
 Les nanocomposites sont constitués, au minimum, d'une matrice, souvent polymérique, et de particules de taille nanométriques. 
-L'ajout de nanoparticules aux polymères permet de modifier leurs propriétés mécaniques \cite{Thostenson2002a}, électriques \cite{Zheng2003a}, optiques \cite{Hu2014} et thermiques \cite{Diez-Pascual2009, Al-Saleh2009c}. 
-Les nanocomposites trouvent des applications dans plusieurs domaines \cite{Andrews2001, Thostenson2001c, Mittal2014h}. 
+L'ajout de nanoparticules aux polymères permet entre autre de modifier leurs propriétés mécaniques \cite{Thostenson2002a}, électriques \cite{Zheng2003a}, optiques \cite{Hu2014} et thermiques \cite{Diez-Pascual2009, Al-Saleh2009c}. 
+Les nanocomposites trouvent des applications dans plusieurs domaines comme, par exemple, la protection contre la foudre et les interférences électromagnétiques, le dégivrage des surfaces, les capteurs et la cryptographie \cite{Andrews2001, Thostenson2001c, Mittal2014h, Gaztelumendi2017, Chu2014, Hu2016, Al-Saleh2009, Chopra2003}. 
 
 Les modifications des propriétés conférées par les nanoparticules sont dépendantes de leurs propriétés propres ainsi que de leur géométrie. 
 Les propriétés exceptionnelles des nanoparticules proviennent en partie du ratio entre leur surface et leur volume. 
 Elles exposent des surfaces spécifiques beaucoup plus importantes que tout autre matériau macroscopique. 
 
 En raison de leur excellente conductivité électrique, les nanoparticules à base de carbone sont utilisées dans ce projet. 
-Pour cette raison, la revue de l'état des connaissances se concentre sur cette famille de nanoparticules ainsi que sur leurs nanocomposites associés. 
+Les nanoparticules métalliques telles que les nanofibres d'argent ou de cuivre n'ont pas été retenues au début du projet en raison de leur coûts plus élevées et des faibles volumes disponibles commercialement. 
+Pour cette raison, les prochaines sections de la revue de l'état des connaissances se concentre sur les nanoparticules à base de carbone ainsi que sur leurs nanocomposites associés. 
 
 \subsection{Nanotubes de carbone}
 
 Découverts accidentellement en 1991 \cite{iijima1991}, les nanotubes de carbones se retrouvent maintenant dans presque tous les domaines de la science des matériaux et de nouvelles applications leur sont trouvées régulièrement. 
-Les nanotubes de carbone sont composés d'une structure régulière de feuilles graphitiques de carbone enroulées et jointes pour former un ou des tubes concentriques qui peuvent être refermés aux extrémités par des structures sphériques, comme présenté à la figure \ref{structure_nanotube}. 
+Les nanotubes de carbone sont composés d'une structure régulière de feuilles graphitiques de carbone enroulées et jointes pour former un ou des tubes concentriques qui peuvent être refermés aux extrémités par des structures sphériques (Fig. \ref{structure_nanotube}). 
+Généralement, leur diamètre varie entre 2 et \SI{80}{\nano\metre} en fonction du nombre de couches et ils peuvent présenter des rapports de forme supérieurs à 1000. 
 
 \begin{figure}[htb]
 	\centering
@@ -362,61 +453,80 @@ On différencie les nanotubes à simple paroi des nanotubes à parois multiples 
 Le comportement des nanotubes est fonction de l'angle d'hélice de la structure. 
 Pour les nanotubes à simple paroi on peut obtenir des nanotubes aux propriétés métalliques jusqu'à semi-conductrices avec des variations de cet angle \cite{Saito1992}. 
 Des traitements permettent de purifier les nanotubes et surtout de les séparer selon leur comportement \cite{Makama2013}. 
-Généralement, pour les nanotubes multi parois, l'angle d'hélice est moins bien contrôlé et varie d'une couche à l'autre.
+Généralement, pour les nanotubes multiparois, l'angle d'hélice est moins bien contrôlé et varie d'une couche à l'autre.
 On obtient ainsi des nanotubes aux propriétés intermédiaires. 
 
-Les nanotubes de carbone ont des conductivités électriques allant jusqu'à \SI{10e6}{\siemens\per\centi\metre}  \cite{Sathyanarayana2013} et thermiques de l'ordre de \SI{6600}{\watt\per\metre\per\kelvin} \cite{Berber2000}
+Les nanotubes de carbone ont des conductivités électriques allant jusqu'à \SI[locale=FR]{10e6}{\siemens\per\centi\metre}  \cite{Sathyanarayana2013} et thermiques de l'ordre de \SI[locale=FR]{6600}{\watt\per\metre\per\kelvin} \cite{Berber2000}. 
 Ces propriétés sont fortement dépendantes de l'orientation et la présence de défauts dans la structure cristalline des nanotubes. 
-Les modules de Young rapportés pour les nanotubes de carbone multi parois sont aux alentours de 2 TPa avec des résistances à la traction entre 11 et \SI{63}{\giga\pascal} \cite{Mittal2014h}. 
-Les propriétés des nanotubes de carbone en font d'excellents candidats pour la fabrication de nanocomposites.
+Les modules de Young rapportés pour les nanotubes de carbone multiparois sont aux alentours de 2 TPa avec des résistances à la traction entre 11 et \SI[locale=FR]{63}{\giga\pascal} \cite{Mittal2014h}. 
+Les propriétés des nanotubes de carbone en font d'excellents candidats pour la fabrication de nanocomposites. 
 
 Les nanotubes de carbone sont principalement produits par décharge d'arc, par ablation laser, par déposition chimique en phase vapeur \cite{Sathyanarayana2013} ou à l'aide de torches au plasma \cite{Kim2009e}. 
 Les nanotubes produits peuvent présenter des défauts de cristallinité tels que la présence de pentagones et d'heptagones ou encore des absences dans la structure régulière d'hexagones. 
 Ces défauts affectent les propriétés, mais peuvent également être utilisés pour introduire des fonctionnalisations de surface. 
 
-%\subsection{Nanofibres de carbone}
-%
-%Les nanofibres de carbone partagent un bon nombre de similarité avec les nanotubes de carbone mais un coût beaucoup plus faible. 
-%Ils sont produits par déposition chimique en phase vapeur tout comme les nanotubes de carbone. 
-%Ils peuvent ensuite être graphitisés pour améliorer leur pureté et augmenter leur conductivité électrique \cite{Al-Saleh2009c}. 
-%La principale différence entre les nanotube et les nanofibres se situe au niveau de leur morphologie. 
-%Les nanofibres ont généralement une structure semblable à des bols empilés. 
-%Ces bols peuvent être distincts ou liés ensemble en spirale \cite{Al-Saleh2009c}. 
-%Cette structure est distincte des tubes circulaires qui composent les nanotubes. 
-%Les propriétés des nanofibres sont également similaires à celles des nanotubes de carbone mais avec un niveau de conductivité électrique réduit. 
-%
-%\subsection{Graphène}
-%
-%Les nanoparticules de graphène possèdent la même structure hexagonale que les atomes de carbone des parois des nanotubes de carbone. 
-%Cependant, au lieu de former un tube, les atomes forment des lamelles de l'épaisseur d'un seul atome de carbone. 
+Il est également nécessaire d'ajouter que la géométrie des nanotubes de carbone, et plus particulièrement leur facteur de forme, a un grand impact sur la conductivité électriques des nanocomposites produits. 
+Un facteur de forme plus élevé permet d'obtenir des conductivité électriques plus élevées et des seuils de percolation plus bas en raison de la résistance électrique de contact non négligeable entre les nanotubes \cite{Hu2008}. 
+
+\subsection{Nanofibres de carbone}
+
+Les nanofibres de carbone partagent un bon nombre de similarité avec les nanotubes de carbone mais un coût beaucoup plus faible. 
+Ils sont produits par déposition chimique en phase vapeur tout comme les nanotubes de carbone. 
+Ils peuvent ensuite être graphitisés pour améliorer leur pureté et augmenter leur conductivité électrique \cite{Al-Saleh2009c}. 
+La principale différence entre les nanotube et les nanofibres se situe au niveau de leur morphologie et de leur taille. 
+Au lieu d'une structure tubulaire, Les nanofibres ont généralement une structure semblable à des bols empilés pour former une série de couches. 
+Ces couches superposées peuvent être distincts ou liés ensemble en spirale \cite{Al-Saleh2009c}. 
+Cette structure est distincte des tubes circulaires qui composent les nanotubes. 
+Les diamètres des nanofibres sont également légèrement plus grand que pour les nanotubes et se trouvent entre 70 et \SI{200}{\nano\metre}. 
+Les propriétés des nanofibres sont similaires à celles des nanotubes de carbone mais avec un niveau de conductivité électrique réduit. 
+
+\subsection{Graphène}
+
+Les nanoparticules de graphène possèdent la même structure hexagonale que les atomes de carbone des parois des nanotubes de carbone. 
+Cependant, au lieu de former un tube, les atomes forment des couches planes de l'épaisseur d'un seul atome de carbone. 
+Ces plans atomiques se superposent pour former des plaquettes pouvant ensuite être séparées par exfoliation. 
+Le graphène peut également être intégré à un polymère pour en augmenter la conductivité électrique \cite{Jin2013,Wu2012a,Dweiri2015}. 
+
+\subsection{Combinaison de charges}
+
+Certains auteurs ont pu démontrer la présence d'une synergie positive lorsque des charges de différent facteurs de forme ou tailles sont employées.
+L'augmentation de la conductivité observée lors de la combinaison d'au moins deux types de charges peut atteindre des niveaux plus élevés que si l'effet de ces charges est pris individuellement \cite{Dweiri2015}. 
 
 \subsection{Méthodes de production des nanocomposites}
 
 Pour tirer profit à l'échelle macroscopique des propriétés des nanomatériaux, il est nécessaire de les mélanger dans une matrice. 
 Plusieurs méthodes permettent d'obtenir des mélanges avec les polymères thermoplastiques. 
 
-Une première méthode est la mise en solution des nanotubes \cite{Mohammad2006}.
+Une première méthode est la dispersion des nanotubes dans un solvant \cite{Mohammad2006}.
 Lors de cette procédure, les nanotubes sont mis en suspension métastable dans un solvant. 
+Parla suite, des surfactants sont souvent utilisés pour stabiliser les dispersions de nanoparticules \cite{Huang2012}. 
 Cette méthode est appropriée pour les polymères solubles, les polymères à très faible viscosité et pour les monomères \cite{Ma2010}. 
 Pour obtenir une distribution homogène, il est nécessaire d'employer un générateur d'ultrason afin de séparer les agglomérats de nanoparticules. 
-Des surfactants sont souvent utilisés pour stabiliser les dispersions de nanoparticules \cite{Huang2012}. 
-Le brassage par bassin à ultrason est une des seules méthodes procurant la densité d'énergie nécessaire pour réduire les agglomérats de nanotubes à simple paroi (densité d'énergie de \SI{100}{\mega\pascal}), mais elle peut également induire des dommages et raccourcir les tubes \cite{Huang2012}. 
-Cette méthode ne doit donc pas être employée sans considération des propriétés nécessaires pour l'application finale puisque la réduction de la longueur des tubes \cite{Grossiord2008a} et les traitements de surface \cite{Diez-Pascual2010, Ma2008} peuvent affecter les propriétés finales.  
-Il est à noter que la densité énergétique nécessaire pour séparer les nanotubes multi parois est beaucoup plus faible et que d'autres méthodes peuvent les séparer sans induire autant de dommage à leur structure \cite{Huang2012}. 
-Un nanotube simple paroi nécessite une densité énergétique d'approximativement \SI{100}{\mega\pascal} tandis qu'un nanotube multi parois nécessite une densité énergétique de l'ordre de \SI{16}{\kilo\pascal} \cite{Huang2012}. 
+On peut évaluer la contrainte en cisaillement ($\sigma_s$) à laquelle sont soumis les agglomérats à l'aide de l'équation suivante dépendant de la viscosité ($\eta$) et de la vitesse de déformation ($\dot{\gamma}$) : 
+
+\begin{equation}
+\sigma_s = \eta \dot{\gamma}
+\end{equation}
+
+Le brassage par bassin à ultrason ou à l'aide d'une soude à ultrason est une des seules méthodes procurant les contraintes nécessaire pour réduire les agglomérats de nanotubes à simple paroi dans des solvants à faible viscosité (contrainte de \SI[locale=FR]{100}{\mega\pascal}), mais elle peut également induire des dommages et raccourcir les tubes \cite{Huang2012}. 
+Cette méthode ne doit donc pas être employée sans considération des propriétés nécessaires pour l'application finale puisque la réduction de la longueur des tubes et les traitements de surface peuvent affecter les propriétés finales \cite{Grossiord2008a, Diez-Pascual2010, Ma2008}.  
+Il est à noter que les contraintes nécessaire pour séparer des nanotubes multiparois sont beaucoup plus faible et que d'autres méthodes peuvent les séparer sans induire autant de dommage à leur structure \cite{Huang2012, Ma2010}. 
+Un nanotube simple paroi nécessite une contrainte d'approximativement \SI[locale=FR]{100}{\mega\pascal} tandis qu'un nanotube multiparois requiert approximativement \SI[locale=FR]{16}{\kilo\pascal} \cite{Huang2012}. 
 Le mélange produit par la mise en solution peut être employé directement ou, si le solvant utilisé est compatible avec le polymère utilisé, il est possible d'obtenir un composite homogène en évaporant le solvant pour conserver les nanoparticules ainsi que le polymère. 
 
-Une seconde méthode de production est le mélange à l'état fondu. 
-Cette méthode est particulièrement applicable aux polymères thermoplastiques, la viscosité résiduelle du polymère induit des efforts de cisaillement avec une densité d'énergie suffisante pour réduire les agglomérats de nanotubes multi parois (densité énergétique de l'ordre de \SI{20}{\kilo\pascal}) \cite{Huang2012}. 
+Une seconde méthode de production est le mélange à l'état fondu \cite{Ma2010}. 
+Cette méthode est particulièrement applicable aux polymères thermoplastiques, la viscosité résiduelle du polymère induit des efforts de cisaillement avec des contraintes suffisante pour réduire les agglomérats de nanotubes multiparois (contraintes en cisaillement de \SI[locale=FR]{20}{\kilo\pascal}) \cite{Huang2012}. 
 Ce brassage peut s'effectuer avec un mélangeur mécanique ou à l'aide d'une d'extrudeuse. 
-Ces deux techniques ont l'avantage de ne pas causer de dommages aux nanotubes. 
+Ces deux dernières techniques de brassage ont l'avantage de ne pas causer de dommages aux nanotubes \cite{Ma2010}. 
+De plus, la production de nanocomposite par extrusion offre l'avantage de pouvoir atteindre des taux de renfort très élevés \cite{Ma2010}. 
 
 Une autre technique pouvant s'appliquer aux polymères thermoplastiques est le broyage par boulets. 
-Ce processus utilise les chocs et le brassage des billes métalliques dans un contenant fermé en rotation pour réduire en poudre les polymères et ainsi que les agglomérats de nanotubes.
-Cette technique endommage les nanotubes, mais il est possible d'y introduire des composés chimiques pour fonctionnaliser les nanotubes afin de modifier leurs propriétés \cite{Ma2010}. 
+Ce processus utilise les chocs et le brassage des billes métalliques dans un contenant fermé en rotation pour réduire en poudre les polymères ainsi que les agglomérats de nanotubes.
+Cette technique endommage les nanotubes, mais il est possible d'y introduire des composés chimique pour fonctionnaliser les nanotubes afin de modifier leurs propriétés, par exemple, l'ajout de bicarbonate d'ammonium permet l'obtention de groupes fonctionnels amide et amines améliorant la conductivité électrique des nanotubes \cite{Ma2010, Ma2008a}. 
 
 \begin{table}[]
 	\centering
+	\caption{Résumé des méthodes de mélange (adapté de \cite{Ma2010})}
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{@{}l p{1.2in} p{2.5in} p{2.75in} @{}}
 			\toprule
@@ -428,7 +538,6 @@ Cette technique endommage les nanotubes, mais il est possible d'y introduire des
 			Mélange par agitation & Non                         & Thermoplastiques, polymère soluble, polymère ou oligomère à faible viscosité, monomère & Taille et géométrie de l'agitateur, vitesse de rotation, temps de mélange                           \\ \bottomrule
 		\end{tabular}
 	}
-	\caption{Résumé des méthodes de mélange (adapté de \cite{Ma2010})}
 	\label{tab:methodes_de_melange}
 \end{table}
 
@@ -455,7 +564,7 @@ En dessous du seuil de percolation, la conductivité du nanocomposite reste à p
 Lorsque le réseau est initialement formé, la conductivité électrique du nanocomposite change totalement et une augmentation très rapide de la conductivité électrique, de l'ordre de plusieurs décades, peut être observée. 
 Par la suite, la conductivité du nanocomposite continue d'augmenter avec l'ajout de nanoparticules, mais avec une pente beaucoup plus faible. 
 L'évolution de la conductivité électrique d'un nanocomposite suit trois régimes distincts qui sont fonction de la concentration en nanocharges conductrices. 
-La figure \ref{fig:percolation_electrique} présente une courbe de conductivité électrique en fonction de la concentration en nanotubes de carbone multi parois dans une matrice de PEEK. 
+La figure \ref{fig:percolation_electrique} présente une courbe de conductivité électrique en fonction de la concentration en nanotubes de carbone multiparois dans une matrice de PEEK. 
 Le facteur de forme \cite{Hu2008}, le niveau de dispersion, l'orientation des particules dans la matrice \cite{Xie2011c} et les traitements de surface sont des facteurs qui ont un impact direct sur le seuil de percolation. 
 
 \begin{figure}[h]
@@ -477,22 +586,23 @@ Une portion des résultats publiés sont résumés à la figure \ref{fig:percola
 	\label{fig:percolation_articles}
 \end{figure}
 
-En ce qui concerne les concentrations plus élevées de nanoparticules conductrices, quelques articles peuvent être soulignés. 
-Par exemple, une conductivité de \SI{10e4}{\siemens\per\metre} a été atteinte avec une matrice de PMMA et une concentration de 10\% de nanotubes à simple paroi \cite{Bauhofer2009}. 
-Pour fin de comparaison, la conductivité électrique de l'acier inoxydable est de \SI{14.5e5}{\siemens\per\metre} soit une valeur 15 fois plus élevée. 
+\FloatBarrier
+En ce qui concerne l'exploration des concentrations plus élevées de nanoparticules conductrices, quelques articles peuvent être soulignés. 
+Par exemple, une conductivité de \SI[locale=FR]{10e4}{\siemens\per\metre} a été atteinte avec une matrice de PMMA et une concentration de 10\% de nanotubes à simple paroi \cite{Bauhofer2009}. 
+Pour fin de comparaison, la conductivité électrique de l'acier inoxydable est de \SI[locale=FR]{14.5e5}{\siemens\per\metre} soit une valeur 15 fois plus élevée. 
 Malgré quelques rares résultats exceptionnels, l'ensemble des données publiées présente une très grande variabilité, car un grand nombre de facteurs varient entre chaque étude.
-Il n'existe aucune courbe maître pouvant permettre de généraliser tous ces résultats. 
-Le consensus est qu'une bonne dispersion favorise la conductivité électrique \cite{Bauhofer2009} et que les principaux paramètres gouvernant la conductivité sont 
+Il n'existe aucune courbe maître permettant de généraliser tous ces résultats. 
+Le consensus est qu'une bonne dispersion favorise la conductivité électrique \cite{Bauhofer2009} et que les principaux paramètres gouvernant la conductivité sont: 
 \begin{inparaenum}
-	\item le facteur de forme des nanotubes
-	\item une bonne dispersion des agglomérats de nanotubes à l'échelle nanométrique
+	\item le facteur de forme des nanotubes, 
+	\item une bonne dispersion des agglomérats de nanotubes à l'échelle nanométrique et
 	\item une distribution uniforme des nanotubes ou des agglomérats à l'échelle microscopique   
 \end{inparaenum} \cite{Li2007a}.
 Une autre approche pour atteindre le seuil de percolation avec un minimum de charges réside dans l'établissement de réseaux percolés. 
 Ceux-ci peuvent s'obtenir de plusieurs façons. 
 Il est possible de disperser les nanotubes de façon à obtenir une mauvaise distribution pour maintenir des contacts entre les agrégats \cite{Al-Saleh2009c,Deng2014a}. 
 Cette technique vise à produire une structure similaire à ce qui est présenté à la figure \ref{fig:dispersion_distribution}. 
-Autrement, il est possible d'obtenir un réseau percolé aux frontières entre des granules en les recouvrant leur surfaces de particules conductrices \cite{Al-Saleh2011,Pang2014c}. 
+Autrement, il est possible d'obtenir un réseau percolé aux frontières entre des granules en recouvrant leur surfaces de particules conductrices afin d'obtenir une structure ségrégée \cite{Al-Saleh2011,Pang2014c}. 
 Finalement, il est également possible d'employer l'affinité des nanoparticules afin de les disperser préférentiellement dans une seule phase ou à l'interface d'un mélange binaire de polymère \cite{Pang2014c,Deng2014a}. 
 
 \begin{figure}[h]
@@ -509,17 +619,22 @@ La dépendance envers la résistance de contact a également été rapporté par
 La fonctionnalisation des nanotubes est généralement employée pour faciliter leur dispersion, mais elle peut également affecter les propriétés électriques du nanocomposite. 
 Certaines modifications vont entraîner une chute de la conductivité électrique tandis que d'autres vont permettre de réduire la résistance de contact. 
 
+\FloatBarrier
 Cette variation des effets des divers types de fonctionnalisation par rapport à la conductivité électrique est documentée dans la littérature scientifique. 
 Par exemple, il a été démontré que la fonctionnalisation avec des groupes carboxyliques (COOH) produit une réduction très importante de la conductivité \cite{Guadagno2011}. 
 Dans cette dernière étude, même en quadruplant la quantité de nanotubes de carbone, les nanotubes fonctionnalisés présentaient une conductivité électrique encore inférieure aux nanotubes non traités. 
 La fonctionnalisation avec des groupements amines (NH$_2$) produit également une réduction de la conductivité électrique \cite{Ma2008} et il est postulé que cette réduction est en partie due à la dégradation de la structure des nanotubes nécessaire au dépôt des groupes fonctionnels qui réduit la conductivité des nanotubes sans réduire la résistance de contact \cite{Pandey2012a}.
 Même dans le cas de particules métalliques, l'ajout d'une fonctionnalisation à base du composé organique 
-1-Octanethiol a causé une baisse de la conductivité électrique \cite{Gelves2008a}. 
+1-octanethiol a causé une baisse de la conductivité électrique \cite{Gelves2008a}. 
 Au contraire, le dépôt de particules d'argent a pour effet de permettre une réduction de la résistance de contact et ainsi augmente la conductivité électrique  \cite{Ma2010,Cauchy2017}
 
 Les méthodes de fonctionnalisation par enroulement de polymère produisent généralement une réduction de la conductivité électrique \cite{Diez-Pascual2010, Huang2012}. 
 Un auteur a cependant obtenu une hausse de la conductivité lorsqu'il a utilisé du polyaniline (PANI), un polymère conducteur, comme agent de revêtement des nanotubes \cite{Vankayala2011}. 
 En utilisant un polymère conducteur compatible avec les nanotubes de carbone et avec une matrice de polycaprolactame, l'auteur a pu réduire la résistance de contact tout en améliorant la dispersion des charges. 
+
+Les considérations quant à l'emploi d'un nanocomposite dans le cadre d'un procédé entraînant la fonte de la matrice polymère ne sont pas explorés dans la littérature. 
+L'évolution et le maintient de la conductivité lors de la fonte est un élément encore inconnu. 
+Dans le cas des réseaux percolés par ségrégation de phase, la diffusion des particules conductrices lors de la fusion pourrait modifier grandement la conductivité électrique du nanocomposite. 
 
 \subsection{Élément chauffant en assemblage de nanoparticules}
 
@@ -527,7 +642,7 @@ Une autre façon d'employer les nanoparticules conductrices pour obtenir un él�
 
 Le \textit{buckypaper} peut être composé de plusieurs sortes de nanoparticules dont entre autres des nanotubes de carbone ou des nanofibres d'argent. 
 Tout comme pour les nanocomposites, un \textit{buckypaper} peut agir comme élément chauffant. 
-D'ailleurs, plusieurs chercheurs on déjà utilisés ce type de solution pour produire des éléments chauffants pouvant au dégivrer des surfaces \cite{Pyo2016,Chu2014,Zhang2013}.
+D'ailleurs, plusieurs chercheurs on déjà utilisés ce type de solution pour produire des éléments chauffants pouvant servir à dégivrer des surfaces \cite{Pyo2016,Chu2014,Zhang2013}.
 Ces chercheurs ont utilisé autant des \textit{buckypaper} de nanotubes de carbone que des feuilles de nanofibres d'argent combinées à un polymère conducteur. 
 
 Pour les films de nanotubes alignés, un film peut être obtenu en enroulant des nanotubes sur un mandrin ou un cadre depuis un substrat sur lequel une forêt de nanotubes a été produite par déposition chimique en phase vapeur. 
@@ -555,7 +670,7 @@ Une résistance en traction égale à 96\% de celle d'un barreau sans soudure a 
 
 Un second concept clé pour la réalisation d'une jonction flexible est en lien avec la nature des élastomères thermoplastiques. 
 Les élastomères en général sont une famille de polymère dont la plage de température d'utilisation se situe au-dessus de la température de transition vitreuse. 
-Au-delà de celle-ci, les polymères entrent en phase caoutchoutique et les chaînes de peuvent commencer à se déplacer et glisser les unes par rapport aux autres. 
+Au-delà de celle-ci, les polymères entrent en phase caoutchoutique et les chaînes peuvent commencer à se déplacer et glisser les unes par rapport aux autres. 
 
 \begin{figure}[h]
 	\centering
@@ -572,6 +687,14 @@ Les blocs rigides, composés de polymère qui sont utilisés sous leur températ
 Les blocs rigides sont également capables de fondre une fois chauffés.
 On peut ainsi remettre en forme l'élastomère. 
 
+Les élastomères thermoplastiques ont généralement des structures copolymères en triblocs (Fig \ref{fig:polymere_tri_bloc}) ou multiblocs (Fig. \ref{fig:polymere_multi_bloc}). 
+Les élastomères copolymères triblocs ont des segments rigides aux deux extrémités. 
+Ces dernières sont connectées au travers d'un réseau biphasique dans la structure de l'élastomère (Fig. \ref{fig:structure_tribloc}). 
+Contrairement aux élastomères triblocs, figés aux deux extrémités, les élastomères multiblocs utilisent l'enchevêtrement et l'interaction entre les chaînes souples et rigides pour maintenir leur intégrité. 
+La présence de segments de polymère semi-cristallins au travers d'une chaîne amorphe permet aux segments cristallins de se lier pour bloquer l'écoulement de la structure (Fig. \ref{fig:structure_TPECryst}). 
+Alternativement, dans certains cas, les segments cristallins peuvent également être des segments de polymère amorphe \cite{Holden2002}. 
+
+\vspace{6pt}
 \begin{figure}[h]
 	\subfigcapskip=6pt
 	\centering
@@ -581,7 +704,7 @@ On peut ainsi remettre en forme l'élastomère.
 		\makebraces[5pt,5pt]{\!\!n}{op}{cl}
 		\bigskip
 	} \quad
-	\subfigure[Structure tri bloc]
+	\subfigure[Structure tribloc]
 	{\label{fig:polymere_tri_bloc} 					
 		\chemfig{
 			-[@{opa,.75},,,,opacity=0]A-[@{cla,0.25}]
@@ -612,13 +735,6 @@ On peut ainsi remettre en forme l'élastomère.
 	\label{fig:polymere_structure}
 \end{figure}
 
-Les élastomères thermoplastiques ont généralement des structures copolymères en tri blocs (Fig \ref{fig:polymere_tri_bloc}) ou multi blocs (Fig. \ref{fig:polymere_multi_bloc}). 
-Les élastomères copolymères tri blocs ont des segments rigides aux deux extrémités. 
-Ces dernières sont connectées au travers d'un réseau biphasique dans la structure de l'élastomère (Fig. \ref{fig:structure_tribloc}). 
-Contrairement aux élastomères triblocs, figés aux deux extrémités, les élastomères multi blocs utilisent l'enchevêtrement et l'interaction entre les chaînes souples et rigides pour maintenir leur intégrité. 
-La présence de segments de polymère semi-cristallins au travers d'une chaîne amorphe permet aux segments cristallins de se lier pour bloquer l'écoulement de la structure (Fig. \ref{fig:structure_TPECryst}). 
-Alternativement, dans certains cas, les segments cristallins peuvent également être des segments de polymère amorphe \cite{Holden2002}. 
-
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.3]{CrystTPE_CC0.pdf}
@@ -626,6 +742,7 @@ Alternativement, dans certains cas, les segments cristallins peuvent également 
 	\label{fig:structure_TPECryst}
 \end{figure}
 
+\FloatBarrier
 En ce qui concerne la soudure des élastomères, très peu de références peuvent être trouvées à ce propos et encore moins en ce qui concerne le soudage entre des matériaux mixtes. 
 Un article répertorié documentait le soudage par ultrason de tissus imprégnés de polyuréthane thermoplastique \cite{Hollande1998}. 
 Les soudure présentaient les fibres et l'élastomère comme étant deux phases distinctes l'une de l'autre sans diffusion entre celles-ci. 
@@ -639,3 +756,17 @@ Cependant, cette méthode présente plusieurs faiblesses.
 Tout d'abord, elle impose un temps de fabrication très long en raison du temps de réticulation de l'époxy. 
 En second lieu, elle est très sensible à la présence de contaminants et nécessite une très bonne préparation de surface. 
 Finalement, la solution employée n'est pas robuste, elle ne produit pas des résultats totalement répétables en raison de sa sensibilité aux contaminants. 
+
+\section{Enjeux scientifiques}
+
+La revue de la littérature a permis d'identifier une série d'enjeux scientifique directement liés à cette thèse. 
+Tout d'abord, en considérant le contexte du projet qui vise la réalisation d'une jonction entre un composite thermoplastique et un élastomère, il sera nécessaire de considérer la problématique de la compatibilité des polymères et de la diffusion des chaînes entre plusieurs matériaux dissimilaires. 
+
+Également, en considérant le nanocomposite qui sera employé pour le procédé de soudage par résistance, on peut cerner deux enjeux. 
+En premier lieu, il y a une grande incertitude quant au comportement électrique d'un nanocomposite conducteur caractérisé à l'état solide une fois rendu à l'état fondu. 
+On peut se questionner à savoir si les contacts entre les nanotubes seront maintenus durant la fonte ou si ces liaisons seront affectées et que la conductivité électrique sera perdue. 
+En second lieu, lors de l'élaboration d'un nanocomposite conducteur, il peut devenir important de bien contrôler les processus de distribution et de dispersion des charges conductrices dans la matrice polymérique. 
+
+
+
+
