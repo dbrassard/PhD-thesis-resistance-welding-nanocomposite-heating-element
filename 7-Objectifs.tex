@@ -72,8 +72,10 @@ L'équation \ref{EQ:conductivite} permet d'évaluer la conductivité électrique
 \end{equation} 
 
 En tenant compte des dimensions prévues de l'élément chauffant et pour une puissance surfacique de \SI[locale=FR]{350}{\kilo\watt\per\square\metre}, une application directe de cette formule permet de calculer qu'une conductivité électrique entre 45 et \SI[locale=FR]{1,8e4}{\siemens\per\metre} est nécessaire afin de maintenir un voltage dans une plage entre 5 et \SI[locale=FR]{100}{\volt}. 
-En raison des conductivités électriques pouvant être obtenues pour des nanocomposite conducteurs, seule une conductivité électrique s'approchant de la limite inférieure a pu être mise en œuvre. 
+En raison des faibles conductivités électriques pouvant être obtenues pour des nanocomposite conducteurs, il a été seulement possible de développer des nanocomposites conducteurs avec une conductivité électrique s'approchant de la limite inférieure. 
 Il a été décidé de viser une cible de conductivité électrique de \SI[locale=FR]{100}{\siemens\per\metre} pour l'élément chauffant nanocomposite. 
+Cette cible se situe près des limites supérieures des mesures de conductivité électrique rapportées dans la littérature et est généralement peu explorée. 
+Ce choix a un impact sur le voltage nécessaire lors du soudage et une attention particulière a été portée afin de limiter les fuites de courant dans les adhérents. 
 
 \subsection{Choix des charges conductrices}
 
@@ -82,11 +84,11 @@ Cette conception d'un élément chauffant n'est pas très éloignée de la conce
 Dans ces deux cas, la matrice est présente pour fournir une zone riche en résine pour favoriser le soudage. 
 
 Afin d'atteindre la cible de conductivité électrique établie, plusieurs compositions de nanocomposites ont été évaluées. 
-Tout d'abord, une évaluation des coûts a permis de déterminer que des nanocomposites conducteurs de PEI avec des nanofils d'argent auraient un coût de revient de l'ordre de 30 à 70\$ par grammes contre un coût d'environ 0,40\$ par gramme pour les nanocomposites avec des nanotubes de carbone à haute pureté. 
+Tout d'abord, une évaluation des coûts a permis de déterminer que des nanocomposites conducteurs de PEI avec des nanofils d'argent auraient un coût de revient de l'ordre de 30 à 70\$ par gramme contre un coût d'environ 0,40\$ par gramme pour les nanocomposites avec des nanotubes de carbone à haute pureté. 
 En raison de l'échelle visée pour le procédé de soudage, les nanofibres d'argent ont été mises de côté en raison de leur coût trop élevé. 
 Pour les nanofibres de cuivre, leur coût évalué entre 0,90 et 1,30\$ par gramme les rendaient également plus coûteux que les charges à base de carbone. 
 
-Les charges conductrices évaluées lors des essais initiaux étaient des nanotubes de carbone multiparois avec une pureté de 99\% et 95\%, des nanofibres de carbone ainsi que des nanoplaquettes de graphène. 
+Les charges conductrices évaluées lors des essais initiaux étaient des nanotubes de carbone multiparois avec une pureté de 99\% et 95\% (produits par Raymor Industries), des nanofibres de carbone (grade PR--19--XT--LHT produits par Pyrograf Products Inc.) ainsi que des nanoplaquettes de graphène (xGnP grade C-300 produits par XGSciences). 
 Ces charges ont été mélangées à du PEI avec des fractions massiques allant jusqu'à 15\%.
 La conductivité électrique des mélanges obtenus par extrusion a été évaluée à l'aide d'un système de mesure à 4 pointes. 
 La figure \ref{fig:conductivite_lin} présente les résultats des mesures de conductivité électrique. 
@@ -99,10 +101,16 @@ La figure \ref{fig:conductivite_lin} présente les résultats des mesures de con
 \end{figure}
  
 La composition retenue pour le projet est un nanocomposite de PEI avec 10\% massique de nanotubes de carbone avec une pureté de 99\%. 
-La quantité de nanotubes employé dépasse la quantité nécessaire pour atteindre le seuil de percolation. 
-L'emploi d'un grand nombre de nanotubes permet d'atteindre une région de la courbe de conductivité électrique où les variations sont moins prononcées. 
-Cette région ressemble à un plateau avec une faible pente contrairement à la variation brusque à proximité du seuil de percolation. 
+La fraction de nanotubes employé dépasse de beaucoup la fraction nécessaire pour atteindre le seuil de percolation.
+Le nanocomposite obtenu se trouve dans la portion presque linéaire de la courbe de conductivité électrique où l'ajout d'une grande quantité de charges est nécessaire pour obtenir une augmentation modeste de la conductivité électrique. 
+Les variations de la conductivité électrique causées par le contrôle de la composition du nanocomposite sont moins prononcées dans cette portion de la courbe puisque cette région ressemble à un plateau avec une faible pente contrairement à la variation brusque à proximité du seuil de percolation. 
 L'emploi d'un nanocomposite avec une telle composition a pour but de maintenir la conductivité électrique à l'état fondu en maximisant les possibilités de maintenir le réseau électrique percolé. 
+
+L'option d'employer un nanocomposite de PEI avec 15\% massique de nanotubes de carbone avec une pureté de 99\% a été considérée, mais rejetée en raison de le grande variabilité entre les mesures de conductivité. 
+La variabilité observée peut s'expliquer par un plus grand niveau d'agglomération des nanotubes.  
+Le mélange par extrusion, avec les paramètres employées, n'était pas capable de désagglomérer les nanotubes aussi efficacement qu'avec un mélange à 10\% massique. 
+Également, les nanocomposites obtenus avec 15\% massique de nanotubes de carbone étaient beaucoup plus cassants avec une grande réduction de leur ductilité. 
+Un dernier élément ayant mené au rejet du mélange à 15\% massique est le modeste gain en conductivité électrique obtenu malgré une augmentation de 50\% de la quantité de nanotubes et de leur coût associé. 
  
 \subsection{Méthode d'évaluation de la dispersion des charges}
 
