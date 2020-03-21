@@ -30,11 +30,11 @@ The use of thermoplastic composite (TPC) materials is rising \cite{Mathijsen2016
 Their short processing cycle, improved impact resistance, end-of-life recyclability and chemical stability \cite{cogswell1992} make them good candidates for lightweight structural components compared to traditional thermoset resins. 
 A major difference between thermosets and thermoplastics is the methods to join parts together: while adhesive bonding and mechanical assembly is the norm for thermoset composites, assemblies of TPCs are preferably produced by welding together individual components. 
 This is achieved by localized heating of the weld zone through resistance, induction or ultrasonic welding. 
-During resistance welding, the weld zone temperature increases via Joule heating of a resistive heating element (HE) located between the adherents \cite{Ageorges2001a,Stavrov2005a,Dube2007c,Shi2014,Brassard2019a,Eveno1988} (Fig. \ref{fig:2_Fig1}). 
+During resistance welding, the weld zone temperature increases via Joule heating of a resistive heating element (HE) located between the adherents \cite{Ageorges2001a,Stavrov2005a,Dube2007c,Shi2014,Brassard2019a,Eveno1988} (Fig.~\ref{fig:2_Fig1}). 
 This process offers good mechanical performance and short processing times of the order of minutes, and can be achieved with HE such as carbon fibre plies \cite{Eveno1988}, stainless steel (SS) meshes \cite{Stavrov2005a,Dube2007c,Shi2014} or, more recently, an electrically conductive nanocomposite polymer \cite{Brassard2019a}. 
 
 \begin{figure}[ht]
-	\center
+	\centering
 	\includegraphics[scale=1]{2_Fig1}
 	\caption{Schematic view of the resistance welding process highlighting local thermal transport mechanisms \cite{Brassard2019b}}
 	\label{fig:2_Fig1}
@@ -47,7 +47,7 @@ The development of a processing window is needed to assess the full capabilities
 The main parameters controlling the resistance welding process are the power density (electrical power divided by the heating element area), duration, welding pressure, geometry of the components of the jig holding the adherents and the properties of the materials used as thermal insulators. 
 Good control of the heating parameters is required to keep the heat-affected zone (HAZ) as close as possible to the bonding surfaces to avoid deconsolidation and fibre movements \cite{Stavrov2005a}. 
 The power density and process duration affect the size and shape of the HAZ by controlling the rate and amount of energy dissipated within the weld, while pressure on the laminates prevents the formation of porosity from deconsolidation of the plies \cite{Shi2017}. 
-For a given welding jig configuration, the clamping distance and the dimensions and nature of the electrodes dictate edge effects, which are caused by the sharp transition in the heat dissipation mechanism of the HE from conduction in the weld and adherents to radiation and potentially convection outside the weld as illustrated in Fig. \ref{fig:2_Fig1} \cite{Ageorges2001b}. 
+For a given welding jig configuration, the clamping distance and the dimensions and nature of the electrodes dictate edge effects, which are caused by the sharp transition in the heat dissipation mechanism of the HE from conduction in the weld and adherents to radiation and potentially convection outside the weld as illustrated in Fig.~\ref{fig:2_Fig1} \cite{Ageorges2001b}. 
 Edge effects can have a strong impact on the temperature distribution within the weld. 
 Inappropriate adjustment of the clamping distance may lead to incomplete welding or degradation at the edges \cite{Talbot2013}. 
 Finally, the thermal properties and geometry of the insulators will have a strong impact on optimal processing parameters, making those parameters dependant on the design of the welding jig. 
@@ -71,11 +71,11 @@ This model is subsequently used to predict good welding conditions and establish
 A transient finite element model of the resistance welding process is developed with the COMSOL Multiphysics\textregistered \ software. 
 The model evaluates the effects of welding parameters on the temperature distribution and profile in the joint over time with the goal of establishing a processing window leading to good weld quality and mechanical performance based on these results. 
 This model evaluates the electrical field in the electrodes and nanocomposite HE, Joule heating of the nanocomposite HE, heat transfer in the solids, heat dissipation through convection and radiation and thermal contact conductance between critical components. 
-The geometry of the components is detailed in Fig. \ref{fig:2_Fig2}. 
+The geometry of the components is detailed in Fig.~\ref{fig:2_Fig2}. 
 The gaps identified in the geometry were \mbox{0.1\,mm}.
 
 \begin{figure}[h!]
-	\center
+	\centering
 	\resizebox{0.9\textwidth}{!}{
 	\input{tikz/modele_iso_comsol_soudage_BW.tex}}
 	\caption{Three-quarter section view of the geometry of the model highlighting the components of the model and location of the 0.1 mm air gaps \cite{Brassard2019b}}
@@ -157,7 +157,7 @@ Pr = \frac{C_p \mu}{k}
 \label{eq:prandtl_number}
 \end{equation}
 
-Considering that the clamping distance (Fig. \ref{fig:2_Fig2}) is usually less than \mbox{2\,mm}, it is assumed that no convective cooling takes place in the gaps of the model and in the enclosed space between the sides of the composite and the electrodes. 
+Considering that the clamping distance (Fig.~\ref{fig:2_Fig2}) is usually less than \mbox{2\,mm}, it is assumed that no convective cooling takes place in the gaps of the model and in the enclosed space between the sides of the composite and the electrodes. 
 For the other outer surfaces of the model, natural convection described as in Eq. \ref{eq:natural_convection} is applied. 
 The natural convection coefficient ($h_{conv}$) for vertical surfaces with $10^4 < Pr \ Gr < 10^9$ can be approximated with Eq. \ref{eq:convection_vertical_plate} at \mbox{20\,W\,m$^{-1}$\,K$^{-1}$} \cite{Incropera2007}.
 This value is applied as a constant in the model for all outer surfaces. 
@@ -313,11 +313,11 @@ The copper electrodes were connected to a \mbox{10\,kW} programmable DC power su
 The power supply was set up to operate at a constant power output during each test. 
 The power for each test was calculated based on the power density and the area of the nanocomposite between the electrodes, accounting for the area within the clamping distance in addition to the area within the weld. 
 The power density, the clamping distance, the pressure on the weld and the time during which power is applied were varied during the experiments. 
-Four K type thermocouples were located between the top adherent and the alumina silicate ceramic insulator block above the welding zone, as shown in \mbox{Fig. \ref{fig:2_Fig3}}, to serve as reference points to compare with the model. 
+Four K type thermocouples were located between the top adherent and the alumina silicate ceramic insulator block above the welding zone, as shown in \mbox{Fig.~\ref{fig:2_Fig3}}, to serve as reference points to compare with the model. 
 Thermocouples could not be located inside the weld as they were subject to electrical interferences, even when protected by Kapton\textregistered \ tape, and they altered the heat transfer mechanism leading to premature degradation.  
 
 \begin{figure}[ht]
-	\center
+	\centering
 	\resizebox{0.75\textwidth}{!}{
 	\input{tikz/thermocouple_welding_article2.tex}}
 	\caption{Location of thermocouples during welding experiments}
@@ -384,14 +384,14 @@ The microhardness was set at \mbox{0.1\,GPa} in the model.
 
 The model was first validated with experimental data. 
 Four resistance welding experiments under different conditions served as references. 
-The same welding conditions were reproduced by the model and the resulting validation curves are presented in \mbox{Fig. \ref{fig:2_Fig4}}. 
+The same welding conditions were reproduced by the model and the resulting validation curves are presented in \mbox{Fig.~\ref{fig:2_Fig4}}. 
 Initial modelling efforts neglected the electrical contact resistance between the electrodes and the nanocomposite and did not fit the observations. 
 Upon further inspection, the contact electrical resistance was measured by subtracting the theoretical nanocomposite’s HE electrical resistance to the total resistance of the welding setup between both electrodes measured with a handheld multimeter. 
 The electrical contact resistance accounts for approximately 50\% of the total electrical resistance of the setup. 
 Reducing the power by 45\% provided a good agreement with the experiments allowing for the model to explore the general behaviour of the welding process. 
 
 \begin{figure}[ht]
-	\center
+	\centering
 	\includegraphics[width=0.95\textwidth]{2_Fig4}
 	\caption{Validation curves for the model under various welding conditions with solid line representing experimental results, dotted lines for COMSOL results and colours assigned to each thermocouple locations \cite{Brassard2019b}}
 	\label{fig:2_Fig4}
@@ -399,13 +399,13 @@ Reducing the power by 45\% provided a good agreement with the experiments allowi
 
 \FloatBarrier
 As it was not possible to monitor the temperature directly at the weld interface without disturbing the thermal profile and affecting the results, the model offers us insight that could not be obtained from experiments. 
-The temperature distribution along the length of the weld (\textit{x-axis}) varies based on the clamping distance and power density, as previously reported \cite{Talbot2013} (\mbox{Fig. \ref{fig:2_Fig5}}). 
+The temperature distribution along the length of the weld (\textit{x-axis}) varies based on the clamping distance and power density, as previously reported \cite{Talbot2013} (\mbox{Fig.~\ref{fig:2_Fig5}}). 
 It can be controlled with a variation of the clamping distance but the profile across the width of the weld (\textit{y-axis}) is mostly unaffected by the clamping distance. 
-A cold edge (at y = \mbox{0\,mm} in \mbox{Fig. \ref{fig:2_Fig5}}) is always present at the top surface of the nanocomposite on the side where the adherent exits the weld due edge effects caused by the high axial thermal conductivity of the carbon fibres in the UD TPC adherents. 
-On the bottom surface of the nanocomposite, the cold edge is located on the mirror side of the weld (at y = \mbox{12.7\,mm}) due to the adherent leaving the weld on the other side (details in bottom sections of \mbox{Fig. \ref{fig:2_Fig2}} and \mbox{Fig. \ref{fig:2_Fig3}}). 
+A cold edge (at y = \mbox{0\,mm} in \mbox{Fig.~\ref{fig:2_Fig5}}) is always present at the top surface of the nanocomposite on the side where the adherent exits the weld due edge effects caused by the high axial thermal conductivity of the carbon fibres in the UD TPC adherents. 
+On the bottom surface of the nanocomposite, the cold edge is located on the mirror side of the weld (at y = \mbox{12.7\,mm}) due to the adherent leaving the weld on the other side (details in bottom sections of \mbox{Fig.~\ref{fig:2_Fig2}} and \mbox{Fig.~\ref{fig:2_Fig3}}). 
 
 \begin{figure}[ht]
-	\center
+	\centering
 	\includegraphics[width=\textwidth]{2_Fig5}
 	\caption{Temperature distributions after 900 and 120 seconds for respective power densities of 275 and \SI{350}{\kilo\watt\per\square\metre} at the interface on top of the nanocomposite HE with clamping distances of 0.001, 1.3 and 2.0 mm \cite{Brassard2019b}}
 	\label{fig:2_Fig5}
@@ -415,26 +415,26 @@ On the bottom surface of the nanocomposite, the cold edge is located on the mirr
 Simulations were performed to observe the temperature uniformity along the length of the weld (\textit{x-axis}) to optimize the clamping distance and to evaluate the sensitivity of this parameter. 
 The optimal clamping distance is the distance which minimizes the temperature difference between the centre of the weld and the maximum temperature at the edges. 
 Polymer degradation at the edge begins when the clamping distance is too large. 
-The clamping distances for both conditions vary almost linearly as a function of the power density over the experimental domain (\mbox{Fig. \ref{fig:2_Fig6}}). 
+The clamping distances for both conditions vary almost linearly as a function of the power density over the experimental domain (\mbox{Fig.~\ref{fig:2_Fig6}}). 
 Additionally, an almost constant difference of \mbox{0.4\,mm} exists between the optimal clamping distance and the length causing thermal degradation at the edge. 
 Thus, the dimensional tolerance for the location of the electrodes during the resistance welding with a nanocomposite HE process can be on the order of a few tenths of millimetres. 
 
 \begin{figure}[ht]
-	\center
+	\centering
 	\includegraphics[scale=0.75]{2_Fig6}
 	\caption{Sensitivity analysis for the clamping distance showing the clamping distances resulting in optimal temperature distribution and the beginning of edge degradation as a function of power density \cite{Brassard2019b}}
 	\label{fig:2_Fig6}
 \end{figure} 
 
 It is now possible to expand the scope of the analysis. 
-The resulting process window (\mbox{Fig. \ref{fig:2_Fig7}}) presents the time required for the hottest point at the interface to reach \mbox{370\,$^{\circ}$C}, \mbox{400\,$^{\circ}$C} and \mbox{440\,$^{\circ}$C}, \mbox{10\,$^{\circ}$C} below the degradation temperature of PEI \cite{Carroccio2000}. 
+The resulting process window (\mbox{Fig.~\ref{fig:2_Fig7}}) presents the time required for the hottest point at the interface to reach \mbox{370\,$^{\circ}$C}, \mbox{400\,$^{\circ}$C} and \mbox{440\,$^{\circ}$C}, \mbox{10\,$^{\circ}$C} below the degradation temperature of PEI \cite{Carroccio2000}. 
 The temperature of the lower bound and the average temperature within the weld at that moment (approximately \mbox{390\,$^{\circ}$C}) are higher than the reported temperatures required to obtain reptation times compatible with the resistance welding process for PEI/PEEK interfaces \cite{Bastien1991}. 
 On the other hand, the addition of a large fraction of MWCNT is limiting polymer chain mobility at lower temperatures \cite{Mu2009,Kabanemi2010} and a higher temperature or more time is required to achieve similar diffusion of the chains. 
 Additional welding experiments were conducted based on the suggested processing window and previous results to validate the model’s results. 
-The average single lap shear strength for all welded joints are presented in \mbox{Fig. \ref{fig:2_Fig7}}.  
+The average single lap shear strength for all welded joints are presented in \mbox{Fig.~\ref{fig:2_Fig7}}.  
 
 \begin{figure}[ht]
-	\center
+	\centering
 	\includegraphics[width=\textwidth]{2_Fig7}
 	\caption{Process window (grayed zone) based on the simulation results with optimal clamping distance, the lines represent the time to reach a local maximum temperatures of 370\,$^{\circ}$C, 400\,$^{\circ}$C and 440\,$^{\circ}$C on the top surface of the nanocomposite in the model while the markers presents the single lap shear results from all the welding experiments \cite{Brassard2019b}}
 	\label{fig:2_Fig7}
@@ -448,7 +448,7 @@ The average single lap shear strength for all welded joints are presented in \mb
 Current leakage in the composite adherents can be a problem for resistance welding of carbon fibre laminates at high power and it currently limits resistance welding with a nanocomposite HE to unidirectional adherents. 
 The model pointed toward the possibility to produce welds at lower power and longer times to reduce the voltage difference along the length of the nanocomposite HE to minimize the risk of current leakage. 
 Successful welding tests were performed with power densities as low as \mbox{250\,kW\,m$^{-2}$} (resulting LSS $\sim$ \mbox{14\,MPa}). 
-These additional tests, along with previous results are included in \mbox{Fig. \ref{fig:2_Fig7}} and in \mbox{Table \ref{tab:T2_table3} and \ref{tab:T2_table4}}. 
+These additional tests, along with previous results are included in \mbox{Fig.~\ref{fig:2_Fig7}} and in \mbox{Table \ref{tab:T2_table3} and \ref{tab:T2_table4}}. 
 The highest average LSS (\mbox{24.9\,MPa}) was obtained at a power density of \mbox{350\,kW\,m$^{-2}$}, a clamping distance of \mbox{1.3\,mm}, a pressure of \mbox{1\,MPa} on the weld and a welding time of \mbox{120\,s}. 
 This LSS corresponds to a 28\% improvement relative to previously published results, thanks to a better processing window predicted by the finite element model, with LSS ranging from 14.1 to \mbox{35.2\,MPa}. 
 LSS results of joints welded using non-optimal sets of welding parameters are also presented in Table \ref{tab:T2_table3} and \ref{tab:T2_table4} \cite{Brassard2019b}. 
@@ -525,18 +525,18 @@ The variability in the performances of the nanocomposite is in line with the var
 \subsection{Fractography}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Direct imaging of the fractured surfaces (\mbox{Fig. \ref{fig:2_Fig8}}) provided some insight on the failure modes of the welded joints. 
+Direct imaging of the fractured surfaces (\mbox{Fig.~\ref{fig:2_Fig8}}) provided some insight on the failure modes of the welded joints. 
 First, signs of unstable crack propagation due to the brittleness of the nanocomposite are clearly visible. 
-Evenly spaced cracks in the matrix residues are visible on one face (\mbox{Fig. \ref{fig:2_Fig8}}a) and evenly spaced ridges are visible in the mirror matching face (\mbox{Fig. \ref{fig:2_Fig8}}b). 
-A close look at those ridges (\mbox{Fig. \ref{fig:2_Fig8}}c) shows polymer well bonded to the composite substrate. 
-Second, broken fibres can be seen embedded on top of nanocomposite residues still attached to opposing faces (\mbox{Fig. \ref{fig:2_Fig8}}d). 
+Evenly spaced cracks in the matrix residues are visible on one face (\mbox{Fig.~\ref{fig:2_Fig8}}a) and evenly spaced ridges are visible in the mirror matching face (\mbox{Fig.~\ref{fig:2_Fig8}}b). 
+A close look at those ridges (\mbox{Fig.~\ref{fig:2_Fig8}}c) shows polymer well bonded to the composite substrate. 
+Second, broken fibres can be seen embedded on top of nanocomposite residues still attached to opposing faces (\mbox{Fig.~\ref{fig:2_Fig8}}d). 
 Both of these observations are signs that the bonding between the nanocomposite and the composite adherents is not the weakest link. 
-Signs of thermal degradation could be observed in \mbox{Fig. \ref{fig:2_Fig8}}e serving as an example of porosities left by vaporized polymer. 
+Signs of thermal degradation could be observed in \mbox{Fig.~\ref{fig:2_Fig8}}e serving as an example of porosities left by vaporized polymer. 
 Carbon fibres with no polymer attached to them or degraded polymer residues can be seen at other locations. 
-Finally, when thermal degradation and unstable cracks combine in the same zone, a different failure mode can be observed where cracks form between adjacent porosities and through the nanocomposite (\mbox{Fig. \ref{fig:2_Fig8}}f).
+Finally, when thermal degradation and unstable cracks combine in the same zone, a different failure mode can be observed where cracks form between adjacent porosities and through the nanocomposite (\mbox{Fig.~\ref{fig:2_Fig8}}f).
 
 \begin{figure}[htb]
-	\center
+	\centering
 	\includegraphics[width=0.98\textwidth]{2_Fig8}
 	\caption{SEM fractography of welded specimens showing : a) unstable crack propagation causing evenly spaced cracks in the nanocomposite, b) and c) ridges left on the opposing surface when cracks forms, d) fibre adherence to the nanocomposite HE, e) signs of localized thermal degradation, f) unstable crack propagation combined with thermal degradation \cite{Brassard2019b}}
 	\label{fig:2_Fig8}
