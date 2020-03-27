@@ -6,20 +6,28 @@
 Les articles présentés dans le cadre de cette thèse ne constituent qu'une portion de l'ensemble des travaux réalisés. 
 Ce chapitre présente une partie de ces travaux supplémentaires. 
 
-\subsection{Conception du montage de soudage par résistance}
+\subsection{Conception d'un système de soudage par résistance}
 
 Afin de pouvoir réaliser des essais de soudage, il a été nécessaire de concevoir et de fabriquer un système de soudage par résistance. 
-La conception du montage a nécessité de définir la géométrie du montage, le choix de la source, le système d'acquisition de données et l'interface de contrôle. 
-Le montage de soudage a été conçu itérativement.
+La conception du système a nécessité de définir la géométrie du montage, le choix de la source, le système d'acquisition de données et l'interface de contrôle. 
+L'ensemble a été conçu itérativement.
 Au total, 3 versions ont été développées avant d'obtenir la configuration finale. 
-Le système produit vise à être polyvalent et pourra servir à de nombreux projets de recherche. 
+Le système produit vise à être flexible et polyvalent afin de servir à de nombreux projets de recherche. 
 
-À la suite des essais de soudage initiaux, la flexibilité du système de soudage a d'ailleurs été requise pour régler des problèmes de répétabilité. 
-En raison de variations dans les dimensions des éléments chauffants et d'un mode de contrôle en voltage constant, la puissance dissipée dans les joints variait énormément d'un essai à l'autre. 
-Développer le mode de contrôle en puissance constante a permis de stabiliser la quantité d'énergie dissipée dans le joint et d'obtenir des résultats répétables. 
-Désormais, même lors d'essais de soudage avec des éléments chauffants en acier inoxydable, la variation de résistance causée par l'augmentation de température ne vient plus affecter la quantité d'énergie dissipée lors de l'utilisation du mode de contrôle en puissance constante. 
-
+Dans sa configuration finale, le système de soudage permet un ajustement complet de la position des électrodes grâce à des vérins pneumatiques plats positionnés à l'aide de rails de guidage. 
+L'emploi de vérins plats permet d'éviter l'interférence entre ces derniers, et ce, tout en maintenant des forces élevées. 
+Le contrôle de la pression sur la zone soudée ainsi que de la pression de contact des électrodes est effectué à l'aide de deux régulateurs indépendants. 
+La pression sur la soudure est mesurée en continu à l'aide d'une cellule de charge tandis que la pression des électrodes est déterminée depuis une mesure de la pression pneumatique. 
+Chaque vérin peut être actionné indépendamment. 
+La base du montage est composée d'une plaque en fibres de verre isolante permettant d'isoler électriquement le montage. 
+Une plaque de montage amovible permet de changer aisément le gabarit de soudage en fonction de la géométrie à souder. 
+La structure en portique du montage est un assemblage d'extrusions d'aluminium permettant d'obtenir un système modulaire pouvant être aisément adapté aux besoins futurs. 
 Le montage de soudage est contrôlé à l'aide d'une interface graphique permettant de configurer tous les paramètres du procédé et d'enregistrer de façon synchrone les conditions d'opération (températures, forces, voltage, courant, etc. ). 
+
+À la suite des essais de soudage initiaux, la flexibilité du système de soudage a été requise pour régler des problèmes de répétabilité. 
+En raison de variations dans les dimensions des éléments chauffants et d'un mode de contrôle en voltage constant, la puissance dissipée dans les joints variait énormément d'un essai à l'autre. 
+Développer un mode de contrôle en puissance constante a donc permis de stabiliser la quantité d'énergie dissipée dans le joint et d'obtenir des résultats répétables. 
+Désormais, même lors d'essais de soudage avec des éléments chauffants en acier inoxydable, la variation de résistance causée par l'augmentation de température ne vient plus affecter la quantité d'énergie dissipée. 
 
 \FloatBarrier
 \subsection{Résistance de contact des électrodes}

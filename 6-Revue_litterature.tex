@@ -102,6 +102,21 @@ Il est possible de les assembler par co-consolidation, collage ou assemblage mé
 Dans le cas des composites à matrice thermoplastique, un plus large éventail de méthodes de soudage s'ajoute aux méthodes déjà disponibles pour les composites thermodurcissables \cite{campbell2003}. 
 Puisque le collage de composites à matrice thermoplastique produit des joints moins résistants que pour les composites à matrice thermodurcissable --- en raison de la nature des polymères \cite{campbell2003} --- et que les procédés de soudage sont moins sensibles aux contaminants, ces derniers sont préférés pour l'assemblage des composants. 
 
+\section{Compatibilité des mélanges de polymères}
+
+Il est possible de valider la compatibilité des composants d'un mélange de polymères avec la théorie de Flory-Huggins, développée par Flory \cite{Flory1941} et Huggins \cite{Huggins1941}. 
+Ce modèle basé sur le comportement thermodynamique des solutions polymères prend en compte l'effet de longueur des chaines de polymères dans le calcul de l'entropie de mélange et du changement de l'énergie libre de Gibbs ($\Delta G_m$). 
+À partir de la constante universelle des gaz parfaits ($R_m$), de la température ($T$), des nombres de moles ($n_1$ et $n_2$) et des fractions volumiques ($\phi_1$ et $\phi_2$) des composants, on peut évaluer la relation entre la variation de l'énergie libre de Gibbs et le paramètre de Flory ($\chi_{12}$), définissant l'affinité entre les composants, à l'aide de l'équation suivante.
+
+\begin{equation}
+\Delta G_m = R_m T \left[ n_1 \ln \phi_1 + n_2 \ln \phi_2 + n_1 \phi_2 \chi_{12} \right]
+\end{equation}
+
+La théorie de Flory-Huggins a initialement été développée pour les solutions de polymères dans un solvant, mais a été étendue à des mélanges binaires de polymères et d'autres combinaisons pouvant inclure des solvants \cite{Huggins1942a,Scott1949,Fredrickson1994c}. 
+On peut également utiliser le paramètre de Flory pour étudier la compatibilité et le comportement des copolymères \cite{Scott1952c}. 
+Des facteurs de corrections entropiques prenant en compte l'architecture des polymères (structure linéaire, à branches ou en étoile) et leur degré de conformation ont également été développés pour améliorer le modèle \cite{Fredrickson1994c}. 
+Plus récemment, certains auteurs ont contesté la validité de ce paramètre pour proposer un nouveau critère ($g$) indépendant de la concentration et de la température \cite{Tambasco2006c,Higgins2010c,White2012c}. 
+
 \section{Reptation des polymères thermoplastiques}
 
 La reptation des chaines est un phénomène clé pour la compréhension de l'évolution du comportement mécanique des jonctions soudées. 
@@ -109,7 +124,7 @@ Pendant le procédé de soudage, lors de la mise en contact des faces à joindre
 Cette diffusion des chaines se produit principalement en deux étapes. 
 \begin{enumerate}
 	\item Développement du contact intime entre les adhérents.
-	\item Cicatrisation de l'interface.
+	\item Interdiffusion des chaines au travers de l'interface.
 \end{enumerate}
 
 \begin{figure}[h]
@@ -138,17 +153,17 @@ Dans ces modèles, le polymère est écrasé jusqu'à ce que tous les rectangles
 Dans des conditions isothermes à \SI[locale=FR]{350}{\celsius} avec des pressions de 0,67 et \SI[locale=FR]{1,63}{\mega\pascal}, le contact intime est totalement atteint avec des temps respectivement de \SI[locale=FR]{100}{\second} et de \SI[locale=FR]{40}{\second} pour des laminés en Polyétheréthercétone (PEEK). 
 Une hausse de la température ou de la pression diminue très rapidement le temps nécessaire pour atteindre la condition de contact intime \cite{Yang2002}. 
 
-La seconde étape du développement de la jonction entre les pièces est la cicatrisation de l'interface. 
-Ce phénomène se produit par la diffusion des chaines de polymères au travers de l'interface entre un même polymère ou des polymères compatibles \cite{Jud1981b}. 
+La seconde étape du développement de la jonction entre les pièces est l'interdiffusion des chaines au travers de l'interface. 
+Ce phénomène se produit par un mouvement des chaines de polymères au travers de l'interface entre un même polymère ou des polymères compatibles \cite{Jud1981b}. 
 La reconfiguration des chaines dans le polymère se produit par un phénomène de reptation et de mouvement brownien qui a été conceptualisé, pour les polymères fondus, assez tôt \cite{DeGennes1971,Edwards1978b,Klein1978,Daoud1979}. 
-La cicatrisation par transfert des chaines de polymères au travers de l'interface peut se produire lorsque des polymères amorphes compatibles sont chauffés au-dessus de leur température de transition vitreuse et qu'ils sont en contact \cite{Jud1981a,Prager1981a}. 
-La cicatrisation se produit par le mouvement stochastique de l'extrémité des chaines entre deux pièces en contact et entraine une reconfiguration des chaines. 
+L'interdiffusion par transfert des chaines de polymères au travers de l'interface peut se produire lorsque des polymères amorphes compatibles sont chauffés au-dessus de leur température de transition vitreuse et qu'ils sont en contact \cite{Jud1981a,Prager1981a}. 
+L'interdiffusion se produit par le mouvement stochastique de l'extrémité des chaines entre deux pièces en contact et entraine une reconfiguration des chaines. 
 Cette dernière entraine également la formation d'enchevêtrements de chaines au travers de l'interface \cite{Wool1983}. 
 La diffusion des chaines entraine la disparition progressive de la démarcation entre les pièces en contact. 
-Le temps requis pour cicatriser une fissure a été défini comme étant le temps nécessaire pour que les molécules adjacentes à la fissure diffusent à mi-chemin \cite{Prager1981a}.
-Selon la nature du polymère, son poids moléculaire, la température et la pression, le processus de cicatrisation peut se produire en quelques minutes ou peut nécessiter plusieurs heures voire même des jours \cite{Prager1981a}. 
+Le temps requis pour éliminer une fissure a été défini comme étant le temps nécessaire pour que les molécules adjacentes à la fissure diffusent à mi-chemin \cite{Prager1981a}.
+Selon la nature du polymère, son poids moléculaire, la température et la pression, le processus d'interdiffusion peut se produire en quelques minutes ou peut nécessiter plusieurs heures voire même des jours \cite{Prager1981a}. 
 On nomme le temps de reptation ($t_r$) le temps que prend une chaine de polymère pour quitter totalement sa configuration d'origine et atteindre une nouvelle configuration géométrique. 
-Dans le cas d'une soudure où l'ensemble de la surface n'est pas à une température constante, la cicatrisation commence à se produire progressivement dans les sections ayant déjà atteint le contact intime. 
+Dans le cas d'une soudure où l'ensemble de la surface n'est pas à une température constante, l'interdiffusion commence à se produire progressivement dans les sections ayant déjà atteint le contact intime. 
 
 Le temps de reptation est un paramètre clé pour évaluer la vitesse du phénomène de diffusion des chaines de polymères. 
 Pour les polymères amorphes, on peut citer les travaux de Wool \cite{Wool1983,Wool1989}. 
@@ -187,7 +202,7 @@ L'impact de la température sur le temps de reptation peut être évalué à l'a
 t_r = B_r \, exp \left( \frac{A_r}{T} \right)
 \end{equation}
 
-En condition isotherme et pour un temps de reptation donné, les propriétés mécaniques ($\sigma$ et $\sigma_{\infty}$) évoluent, en fonction du temps ($t$), de façon non linéaire où le degré de cicatrisation ($D_{h}$) est estimé tel que \cite{F.Yang2002} : 
+En condition isotherme et pour un temps de reptation donné, les propriétés mécaniques ($\sigma$ et $\sigma_{\infty}$) évoluent, en fonction du temps ($t$), de façon non linéaire où le degré d'interdiffusion ($D_{h}$) est estimé tel que \cite{F.Yang2002} : 
 
 \begin{equation}
 D_h \left( t \right) = \frac{\sigma}{\sigma_{\infty}} \propto \left( \frac{t}{t_r} \right)^{1/4}
@@ -211,7 +226,7 @@ on obtient, pour la période où le temps ($t$) est inférieur au temps de repta
 \frac{\sigma}{\sigma_{\infty}} \propto t^{1/4} M^{-3/4}
 \end{equation}
 
-D'autres chercheurs (tels que Bastien, Yang et Ageorges) ont développé des équations décrivant l'évolution de la cicatrisation pour tenir compte de conditions non isothermes en discrétisant les phénomènes de contact intime et d'autohésion en fonction du temps  \cite{Bastien1991,F.Yang2002,Ageorges1998}. 
+D'autres chercheurs (tels que Bastien, Yang et Ageorges) ont développé des équations décrivant l'évolution de l'interdiffusion pour tenir compte de conditions non isothermes en discrétisant les phénomènes de contact intime et d'autohésion en fonction du temps  \cite{Bastien1991,F.Yang2002,Ageorges1998}. 
 
 En se basant sur des données expérimentales provenant d'essais en condition isotherme réalisés dans le but d'estimer les temps de reptation en fonction de la température, Bastien a pu prévoir la résistance obtenue après un soudage en condition non isotherme, pour des jonctions entre des adhérents en polyétherimide (PEI) \cite{Bastien1991}. 
 Les modèles développés par Bastien utilisent des critères développés par Wool, soit la longueur moyenne des chaines mineures ayant traversé l'interface en fonction du temps ($l(t)$) et la distance moyenne d'interpénétration des monomères en fonction du temps ($\chi(t)$) \cite{Wool1983}. 
@@ -235,8 +250,8 @@ Les résultats obtenus avec le paramètre d'interpénétration ont des marges d'
 	\end{tabular}%
 \end{table}
 
-Un modèle subséquent est parvenu à améliorer les prédictions de temps de cicatrisation pour les conditions de variations rapides de température et permet d'évaluer avec plus de précision l'état d'une interface soudée \cite{F.Yang2002}. 
-Les équations de développement du contact intime et du phénomène de cicatrisation ont été mises en application avec des résultats probants pour élaborer une fenêtre d'opération pour le soudage de composites à matrice thermoplastique~\cite{Ageorges1998}. 
+Un modèle subséquent est parvenu à améliorer les prédictions de temps d'interdiffusion pour les conditions de variations rapides de température et permet d'évaluer avec plus de précision l'état d'une interface soudée \cite{F.Yang2002}. 
+Les équations de développement du contact intime et du phénomène de d'interdiffusion ont été mises en application avec des résultats probants pour élaborer une fenêtre d'opération pour le soudage de composites à matrice thermoplastique~\cite{Ageorges1998}. 
 
 La littérature n'est pas aussi développée en ce qui concerne les thermoplastiques semi-cristallins. 
 Cependant, certains travaux ont permis de démontrer l'importance de la co-cristallinité et de la température sur la possibilité d'obtenir un soudage entre thermoplastiques semi-cristallins  \cite{Xue1998,Smith2001}. 
@@ -278,7 +293,7 @@ En raison de leur grande demande énergétique, les procédés de chauffe en vol
 \end{figure}
 
 \FloatBarrier
-Une seconde famille regroupe les procédés produisant un chauffage par friction, vibration ou ultrasons \cite{Bates2007d}. 
+Une seconde famille regroupe les procédés produisant un chauffage par friction, vibration ou ultrasons \cite{Bates2007d,Levy2014}. 
 À l'aide d'un mouvement alternatif rapide, la friction entre les composants produit un échauffement local. 
 Ce même effet peut également être obtenu à l'aide d'ultrasons en raison de l'hystérésis thermomécanique des matériaux. 
 Ces méthodes pour joindre des composants sont rapides, mais peuvent induire un déplacement des fibres. 
@@ -345,14 +360,14 @@ E = P \times t
 \end{equation}
 
 où $E$ est la quantité d'énergie en Joules, $P$ est la puissance en Watts et $t$ est le temps en secondes. 
-On peut obtenir la puissance d'un élément chauffant de section constante, en fonction de ses propriétés électriques et de ses dimensions, à l'aide des équations suivantes. Dans ces équations, $V$ est la tension en volts, $I$ est l'intensité du courant en ampères, $R$ est la résistance en $\ohm$, $L$ est la longueur en mètres du conducteur, $A_s$ est l'aire de la section du conducteur en mètres carrés et $\rho_{ele}$ est la résistivité en $\ohm \cdot$mètres. 
+On peut obtenir la puissance d'un élément chauffant de section constante, en fonction de ses propriétés électriques et de ses dimensions, à l'aide des équations suivantes. Dans ces équations, $V$ est la tension en volts, $I$ est l'intensité du courant en ampères, $R_e$ est la résistance en $\ohm$, $L$ est la longueur en mètres du conducteur, $A_s$ est l'aire de la section du conducteur en mètres carrés et $\rho_{ele}$ est la résistivité en $\ohm \cdot$mètres. 
 
 \begin{equation}
 P = V \times I
 \end{equation}
 
 \begin{equation}
-P = R \times I^2
+P = R_e \times I^2
 \end{equation}
 
 \begin{equation}
@@ -715,7 +730,7 @@ Au-delà de celle-ci, les polymères entrent en phase caoutchoutique et les chai
 Les élastomères commerciaux sont souvent obtenus par une réticulation partielle entre les chaines de polymères, appelée vulcanisation dans le cas de la transformation du  caoutchouc naturel, ayant pour but de bloquer une partie de la mobilité des chaines sans pour autant leur retirer leur flexibilité. 
 Les élastomères thermoplastiques obtiennent quant à eux ce comportement à l'aide de leur structure et de leur composition. 
 Par l'emploi de segments de natures différentes, on obtient dans les élastomères thermoplastiques triblocs une structure où les terminaisons composées de segments rigides viennent se lier pour former des blocs à l'intérieur de la structure du matériau \cite{Holden1969}. 
-En raison de la faible miscibilité entre les deux polymères causée par une incompatibilité thermodynamique, on observe une ségrégation entre les différentes phases (Fig.~\ref{fig:structure_tribloc}). 
+En raison de la faible miscibilité entre les deux polymères causée par une incompatibilité thermodynamique, on observe une ségrégation entre les différentes phases (Fig.~\ref{fig:structure_tribloc}) \cite{Scott1952c}. 
 Les blocs rigides, composés de polymères qui sont utilisés sous leur température de transition vitreuse, procurent le même effet que la réticulation entre les chaines composées, dans leur portion centrale, d'un second polymère utilisé au-dessus de sa température de transition vitreuse \cite{Holden2002}. 
 Les blocs rigides sont également capables de fondre une fois chauffés.
 On peut ainsi remettre en forme l'élastomère. 
