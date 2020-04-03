@@ -82,7 +82,7 @@ Le procédé développé pour joindre les plaques de composites à l'élastomèr
 
 \subsection{Jonction des pièces en composite}
 
-En raison de la nature directionnelle des propriétés des matériaux composites,la jonction effectuant le transfert de charge entre les composants mécaniques ne peut être conçue comme pour les matériaux isotropes. 
+En raison de la nature directionnelle des propriétés des matériaux composites, la jonction effectuant le transfert de charge entre les composants mécaniques ne peut être conçue comme pour les matériaux isotropes. 
 Les jonctions entre pièces de composites présentent des discontinuités dans la structure même du matériau. 
 De façon plus prononcée que pour les pièces réalisées à l'aide de matériaux isotropes, les jonctions représentent des zones critiques lors de la conception de structures en composite. 
 En raison de la flexibilité des processus de mise en forme, il est possible de réduire le nombre de jonctions en produisant des composants aux géométries plus complexes. 
@@ -105,7 +105,7 @@ Puisque le collage de composites à matrice thermoplastique produit des joints m
 \section{Compatibilité des mélanges de polymères}
 
 Il est possible de valider la compatibilité des composants d'un mélange de polymères avec la théorie de Flory-Huggins, développée par Flory \cite{Flory1941} et Huggins \cite{Huggins1941}. 
-Ce modèle basé sur le comportement thermodynamique des solutions polymères prend en compte l'effet de longueur des chaines de polymères dans le calcul de l'entropie de mélange et du changement de l'énergie libre de Gibbs ($\Delta G_m$). 
+Ce modèle basé sur le comportement thermodynamique des solutions polymères prend en compte l'effet de la longueur des chaines de polymères dans le calcul de l'entropie de mélange et du changement de l'énergie libre de Gibbs ($\Delta G_m$). 
 À partir de la constante universelle des gaz parfaits ($R_m$), de la température ($T$), des nombres de moles ($n_1$ et $n_2$) et des fractions volumiques ($\phi_1$ et $\phi_2$) des composants, on peut évaluer la relation entre la variation de l'énergie libre de Gibbs et le paramètre de Flory ($\chi_{12}$), définissant l'affinité entre les composants, à l'aide de l'équation suivante.
 
 \begin{equation}
@@ -129,11 +129,12 @@ Cette diffusion des chaines se produit principalement en deux étapes.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=1.2]{welding_chain_diffusion.pdf}
+	\includegraphics[scale=1.1]{welding_chain_diffusion.pdf}
 	\caption{Diffusion des chaines de polymères durant le soudage : a) état initial, b) mise en contact des faces, c) formation du contact intime entre les faces, d) diffusion des chaines de polymères au travers de l'interface et e) disparition de l'interface. }
 	\label{fig:polymer_diffusion}
 \end{figure}
 
+\FloatBarrier
 Avant même que la diffusion des chaines ne puisse prendre place, les faces en contact doivent atteindre un état de contact intime. 
 Durant cette étape, les surfaces se conforment les unes aux autres, mais la diffusion des chaines de polymères n'a pas encore débuté. 
 La question de contact intime a été abordée très tôt dans le développement des composites à matrice thermoplastique en raison de la nécessité de consolider les couches lors de la fabrication des pièces. 
@@ -202,31 +203,31 @@ L'impact de la température sur le temps de reptation peut être évalué à l'a
 t_r = B_r \, exp \left( \frac{A_r}{T} \right)
 \end{equation}
 
-En condition isotherme et pour un temps de reptation donné, les propriétés mécaniques ($\sigma$ et $\sigma_{\infty}$) évoluent, en fonction du temps ($t$), de façon non linéaire où le degré d'interdiffusion ($D_{h}$) est estimé tel que \cite{F.Yang2002} : 
+En condition isotherme et pour un temps de reptation donné, la résistance de la soudure ($\sigma$) évolue, en fonction du temps ($t$), de façon non linéaire où le degré d'interdiffusion ($D_{h}$) est estimé tel que \cite{F.Yang2002} : 
 
 \begin{equation}
 D_h \left( t \right) = \frac{\sigma}{\sigma_{\infty}} \propto \left( \frac{t}{t_r} \right)^{1/4}
 \end{equation}
 
-Autrement, en définissant les propriétés mécaniques à un temps infini ($\sigma_{\infty}$) telles que \cite{Wool1983} :
+Autrement, en définissant la résistance de la soudure à un temps infini ($\sigma_{\infty}$) telles que \cite{Wool1983} :
 
 \begin{equation}
 \sigma_{\infty} \propto M^{1/2}
 \end{equation}
 
-et en observant que les propriétés mécaniques évoluent, pour des temps inférieurs au temps de reptation, telles que \cite{Wool1983} :
+et en observant que la résistance de la soudure évolue, pour des temps inférieurs au temps de reptation, telle que \cite{Wool1983} :
 
 \begin{equation}
 \sigma \propto \left( \frac{t}{M} \right) ^{1/4}
 \end{equation}
 
-on obtient, pour la période où le temps ($t$) est inférieur au temps de reptation ($t_r$), une estimation de l'évolution les propriétés mécaniques de la soudure \cite{Wool1983} : 
+on obtient, pour la période où le temps ($t$) est inférieur au temps de reptation ($t_r$), une estimation de l'évolution de la résistance de la soudure \cite{Wool1983} : 
 
 \begin{equation}
 \frac{\sigma}{\sigma_{\infty}} \propto t^{1/4} M^{-3/4}
 \end{equation}
 
-D'autres chercheurs (tels que Bastien, Yang et Ageorges) ont développé des équations décrivant l'évolution de l'interdiffusion pour tenir compte de conditions non isothermes en discrétisant les phénomènes de contact intime et d'autohésion en fonction du temps  \cite{Bastien1991,F.Yang2002,Ageorges1998}. 
+D'autres chercheurs (tels que Bastien, Yang et Ageorges) ont développé des équations décrivant l'évolution d'une soudure pour tenir compte de conditions non isothermes en discrétisant les phénomènes de contact intime et d'interdiffusion en fonction du temps  \cite{Bastien1991,F.Yang2002,Ageorges1998}. 
 
 En se basant sur des données expérimentales provenant d'essais en condition isotherme réalisés dans le but d'estimer les temps de reptation en fonction de la température, Bastien a pu prévoir la résistance obtenue après un soudage en condition non isotherme, pour des jonctions entre des adhérents en polyétherimide (PEI) \cite{Bastien1991}. 
 Les modèles développés par Bastien utilisent des critères développés par Wool, soit la longueur moyenne des chaines mineures ayant traversé l'interface en fonction du temps ($l(t)$) et la distance moyenne d'interpénétration des monomères en fonction du temps ($\chi(t)$) \cite{Wool1983}. 
@@ -251,7 +252,7 @@ Les résultats obtenus avec le paramètre d'interpénétration ont des marges d'
 \end{table}
 
 Un modèle subséquent est parvenu à améliorer les prédictions de temps d'interdiffusion pour les conditions de variations rapides de température et permet d'évaluer avec plus de précision l'état d'une interface soudée \cite{F.Yang2002}. 
-Les équations de développement du contact intime et du phénomène de d'interdiffusion ont été mises en application avec des résultats probants pour élaborer une fenêtre d'opération pour le soudage de composites à matrice thermoplastique~\cite{Ageorges1998}. 
+Les équations de développement du contact intime et du phénomène d'interdiffusion ont été mises en application avec des résultats probants pour élaborer une fenêtre d'opération pour le soudage de composites à matrice thermoplastique~\cite{Ageorges1998}. 
 
 La littérature n'est pas aussi développée en ce qui concerne les thermoplastiques semi-cristallins. 
 Cependant, certains travaux ont permis de démontrer l'importance de la co-cristallinité et de la température sur la possibilité d'obtenir un soudage entre thermoplastiques semi-cristallins  \cite{Xue1998,Smith2001}. 
@@ -325,7 +326,7 @@ Après un temps prédéterminé, la source électrique est arrêtée tout en mai
 Une fois la soudure refroidie en dessous de la température de transition vitreuse des polymères, il est possible de retirer du montage l'assemblage obtenu. 
 Il est à noter que l'élément chauffant reste captif de la soudure à la fin du procédé. 
 La possibilité de produire des soudures continues en soudage par résistance a également été démontrée en laboratoire \cite{Shi2015a}. 
-Les équations de contact intime et d'autohésion par diffusion des chaines en situation de soudage non isotherme ont été appliquées par Ageorges \cite{Ageorges1998} et Colak \cite{Colak2002} afin d'approximer théoriquement des fenêtres d'opération. 
+Les équations de contact intime et d'interdiffusion en situation de soudage non isotherme ont été appliquées par Ageorges \cite{Ageorges1998} et Colak \cite{Colak2002} afin d'approximer théoriquement des fenêtres d'opération. 
 
 Si on fixe la géométrie du montage de soudage et le choix des matériaux, les principaux paramètres ayant une influence sur la qualité du joint sont 
 \begin{inparaenum}[(1)]
@@ -411,13 +412,6 @@ Il définit une plage de pression entre 0,2 et \SI[locale=FR]{1.6}{\mega\pascal}
 Shi a observé quant à lui l'effet de la pression sur la formation de porosités et sur la déconsolidation pour des laminés de fibres de verre et PEI \cite{Shi2017}. 
 Les résultats ont démontré qu'une pression d'au moins \SI[locale=FR]{0.8}{\mega\pascal} est nécessaire pour éliminer les porosités à l'interface causées par l'humidité et la déconsolidation du laminé. 
 
-\begin{figure}[h]
-	\centering
-	\input{tikz/courant_de_fuite.tex}
-	\caption{Schéma du phénomène de fuite de courant}
-	\label{fig:schema_fuite_de_courant}
-\end{figure}
-
 Un phénomène à surveiller lors du soudage résistif est la fuite de courant dans le corps des laminés de fibres de carbone. 
 Ce phénomène peut se produire lorsque les bords de l'élément chauffant entrent en contact électrique avec les fibres de carbone du laminé et forment un circuit électrique parallèle à l'élément résistif \cite{Hou1999a,Ageorges2000}. 
 Ce nouveau circuit réduit le chauffage de la zone soudée, peut empêcher la soudure au centre du joint et peut dégrader le polymère aux bords \cite{Dube2008}. 
@@ -429,12 +423,20 @@ Il est également possible d'isoler le grillage métallique à l'aide d'un revê
 Ce revêtement empêche tout contact électrique entre les fibres et l'élément chauffant. 
 Finalement, il est possible d'employer une couche d'un polymère possédant une température de mise en forme inférieure à la température de fonte du polymère de base \cite{Stavrov2005a}. 
 
+\begin{figure}[h]
+	\centering
+	\input{tikz/courant_de_fuite.tex}
+	\caption{Schéma du phénomène de fuite de courant}
+	\label{fig:schema_fuite_de_courant}
+\end{figure}
+
+\FloatBarrier
 Le soudage par résistance des composites thermoplastiques est généralement réalisé avec un élément chauffant en acier inoxydable ou encore en fibre de carbone. 
 Initialement, il était naturel pour les chercheurs d'utiliser un élément chauffant en composite à fibres de carbone \cite{Ageorges2000a,houghton1984bonding,Eveno1988}. 
 Cependant, des problèmes persistants étaient causés par la connexion électrique avec les fibres ainsi que par le manque de répétabilité dans les résultats obtenus et la mise à l'échelle \cite{McKnight1997}. 
 Le passage à des éléments chauffants en acier inoxydable a permis d'améliorer grandement la répétabilité du procédé ainsi que sa capacité à être mis à l'échelle \cite{Hou1999a}.  
 Par contre, dans certaines circonstances, le manque d'adhésion entre les éléments chauffants en acier inoxydable et la matrice peut être le point faible d'une soudure par résistance \cite{Dube2007,Dube2012a,Dube2009a,Shi2014,Shi2015a}. 
-Également, les éléments chauffants métalliques peuvent poser d'autres problèmes tels qu'une augmentation de l'écho radar \cite{Ageorges2001a}. 
+Également, les éléments chauffants métalliques pourraient causer une augmentation de l'écho radar \cite{Ageorges2001a}. 
 
 \FloatBarrier
 \subsection{Soudage avec matériaux mixtes}
@@ -532,7 +534,7 @@ Le graphène peut également être intégré à un polymère pour en augmenter l
 
 Certains auteurs ont tenté de démontrer la présence d'une synergie lorsque des charges de différents facteurs de forme ou de différentes tailles sont employées \cite{Kumar2010,Huang2012a,Dweiri2015,Wei2010,Safdari2012}.
 Selon les travaux de Kumar, avec une proportion constante de 0,5\% de charges conductrices, la combinaison de nanoplaquettes de graphène et de nanotubes de carbone a obtenu une conductivité électrique supérieure à un nanocomposite composé uniquement de nanoplaquettes de graphène et légèrement supérieure à un nanocomposite avec uniquement des nanotubes de carbone \cite{Kumar2010}. 
-Kumar attribue ces résultats au fait que les nanoplaquettes de graĥène agiraient comme une protection des nanotubes durant la mise en forme par ultrasonification en leur permettant de conserver leur facteur de forme et ainsi leur contribution à l'augmentation de la conductivité du nanocomposite. 
+Kumar attribue ces résultats au fait que les nanoplaquettes de graphène agiraient comme une protection des nanotubes durant la mise en forme par ultrasonification en leur permettant de conserver leur facteur de forme et ainsi leur contribution à l'augmentation de la conductivité du nanocomposite. 
 Dans ses travaux sur des nanocomposites à matrice d'époxy avec de grandes concentrations de charges, Huang dénote quant à lui l'absence de synergie lorsque le taux de renfort est supérieur à 30\% \cite{Huang2012a}. 
 Cependant, d'autres chercheurs présentent des résultats beaucoup plus mitigés \cite{Dweiri2015,Wei2010}. 
 Ces derniers dénotent une augmentation de la conductivité lorsqu'une partie des charges de graphène ou de noir de carbone sont remplacées par des nanotubes de carbone. 
@@ -624,6 +626,7 @@ Le facteur de forme \cite{Hu2008}, le niveau de dispersion, l'orientation des pa
 	\label{fig:percolation_electrique}
 \end{figure}
 
+\FloatBarrier
 La plupart des auteurs se concentrent sur la caractérisation du seuil de percolation.
 Peu de mesures de conductivité sont donc disponibles pour des concentrations élevées de nanotubes. 
 Les plus grands gains en conductivité électrique peuvent être observés à des concentrations s'approchant du seuil de percolation.
@@ -643,7 +646,7 @@ Quant à l'exploration des concentrations plus élevées de nanoparticules condu
 Par exemple, une conductivité de \SI[locale=FR]{10e4}{\siemens\per\metre} a été atteinte avec une matrice de polyméthacrylate de méthyle (PMMA) et une concentration de 10\% de nanotubes à simple paroi \cite{Bauhofer2009}. 
 Pour fins de comparaison, la conductivité électrique de l'acier inoxydable est de \SI[locale=FR]{14.5e5}{\siemens\per\metre}, soit une valeur 15 fois plus élevée. 
 Malgré quelques rares résultats exceptionnels, l'ensemble des données publiées présente une très grande variabilité, car un grand nombre de facteurs varient entre chaque étude.
-Il n'existe aucune courbe maitre permettant de généraliser tous ces résultats. 
+Il n'existe aucune courbe maitresse permettant de généraliser tous ces résultats. 
 Le consensus est qu'une bonne dispersion favorise la conductivité électrique \cite{Bauhofer2009} et que les principaux paramètres gouvernant la conductivité sont: le facteur de forme des nanotubes, une bonne dispersion des agglomérats de nanotubes à l'échelle nanométrique et une distribution uniforme des nanotubes ou des agglomérats à l'échelle microscopique \cite{Li2007a}.
 Une autre approche pour atteindre le seuil de percolation avec un minimum de charges réside dans la méthode employée pour établir le réseau percolé. 
 Celui-ci peut s'obtenir de plusieurs façons. 
