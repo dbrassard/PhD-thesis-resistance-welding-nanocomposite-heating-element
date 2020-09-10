@@ -3,9 +3,9 @@
 \selectlanguage{french}
 \section{Introduction}
 
-Cet article présente les travaux de modélisation du soudage résistif de composites thermopastiques avec un élément chauffant nanocomposite. Ces travaux avaient pour but d'optimiser les performances mécaniques des joints et d'établir une fenêtre d'opération. La planification des travaux, la réalisation des expériences, l'analyse des résultats et la rédaction de cet article ont été réalisés par David Brassard. Martine Dubé et Jason R. Tavares ont supervisé l'ensemble des travaux et ont contribué à la révision de l'article. 
+Cet article présente les travaux de modélisation du soudage résistif de composites thermopastiques avec un élément chauffant nanocomposite. Ces travaux avaient pour but d'optimiser les performances mécaniques des joints et d'établir une fenêtre d'opération. La planification des travaux, la réalisation des expériences, l'analyse des résultats et la rédaction de cet article ont été réalisés par David Brassard. Martine Dubé et Jason Robert Tavares ont supervisé l'ensemble des travaux et ont contribué à la révision de l'article. 
 
-\textbf{Auteurs} : David Brassard, Martine Dubé et Jason R. Tavares
+\textbf{Auteurs} : David Brassard, Martine Dubé et Jason Robert Tavares
 
 \textbf{Article soumis dans la revue} : \textit{Composites Part B: Engineering}
 
@@ -91,7 +91,7 @@ The model evaluates the electrical field in the nanocomposite HE and the electro
 The resulting field is used to compute the Joule losses from current and electrical resistance. 
 The constitutive rules for conservation of current and charges are imposed, with the application of the general equations \ref{eq:current_conservation_1} to \ref{eq:current_conservation_3} describing the electrical field within the nanocomposite HE and the copper electrodes. 
 The equation of continuity (Eq. \ref{eq:current_conservation_1}) defines that the divergence ($\nabla$) of the current density ($\mathbf{J}$) is equal to the current source ($Q_j$) (both expressed in \mbox{A\,m$^{-2}$}). 
-Ohm’s law (Eq. \ref{eq:current_conservation_2}) defines that the current density ($\mathbf{J}$) is equal to the sum of imposed external current density ($\mathbf{J_e}$ in \mbox{A\,m$^{-2}$}) and the product of the sum of the electrical conductivity ($\sigma$ in \mbox{S\,m$^{-1}$}) and the product of the permittivity of vacuum ($\varepsilon_0$ in \mbox{F\,m$^{-1}$}) and the relative permittivity ($\varepsilon_r$ a dimensionless value) as function of time with the electric field ($\mathbf{E}$ in \mbox{V\,m$^{-1}$}). 
+Ohm’s law (Eq. \ref{eq:current_conservation_2}) defines that the current density ($\mathbf{J}$) is equal to the sum of imposed external current density ($\mathbf{J_e}$ in \mbox{A\,m$^{-2}$}) and the product of the sum of the electrical conductivity ($\sigma_{ele}$ in \mbox{S\,m$^{-1}$}) and the product of the permittivity of vacuum ($\varepsilon_0$ in \mbox{F\,m$^{-1}$}) and the relative permittivity ($\varepsilon_r$ a dimensionless value) as function of time with the electric field ($\mathbf{E}$ in \mbox{V\,m$^{-1}$}). 
 Finally, Eq. \ref{eq:current_conservation_3} defines the electric field ($\mathbf{E}$ in \mbox{V\,m$^{-1}$}) as the negative of divergence ($\nabla$) of the electric potential ($V$ in V). 
 
 \begin{equation}
@@ -100,7 +100,7 @@ Finally, Eq. \ref{eq:current_conservation_3} defines the electric field ($\mathb
 \end{equation}
 
 \begin{equation}
-\mathbf{J} = \left( \sigma + \varepsilon_0 \varepsilon_r \frac{\partial}{\partial t} \right) \mathbf{E} + \mathbf{J_e}
+\mathbf{J} = \left( \sigma_{ele} + \varepsilon_0 \varepsilon_r \frac{\partial}{\partial t} \right) \mathbf{E} + \mathbf{J_e}
 \label{eq:current_conservation_2}
 \end{equation}
 
